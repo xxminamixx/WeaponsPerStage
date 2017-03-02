@@ -1,4 +1,4 @@
-//
+		//
 //  ViewController.swift
 //  WeaponsPerStage
 //
@@ -15,11 +15,16 @@ class ViewController: UIViewController {
     @IBOutlet weak var weaponsPerStageTableView: UITableView!
     
     override func viewDidLoad() {
+        navigationItem.title = "イカウェポナー"
         weaponsPerStageTableView.dataSource = self
         weaponsPerStageTableView.delegate = self
         let nib = UINib.init(nibName: WaponsPerStageTableViewCell.nibName, bundle: nil)
         weaponsPerStageTableView.register(nib, forCellReuseIdentifier: WaponsPerStageTableViewCell.nibName)
         super.viewDidLoad()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+         weaponsPerStageTableView.reloadData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -48,6 +53,7 @@ extension ViewController: UITableViewDelegate {
     
     func tableView(_ table: UITableView,didSelectRowAt indexPath: IndexPath) {
         let viewController = storyboard?.instantiateViewController(withIdentifier: "WeaponsSelectionViewController")
+        IndexManager.indexPath = indexPath
         self.navigationController?.pushViewController(viewController!, animated: true)
     }
 }

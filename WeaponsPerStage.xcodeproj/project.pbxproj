@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6AA6030D1E6837E80098FAC1 /* Resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6AA6030C1E6837E80098FAC1 /* Resources.bundle */; };
+		6AA603101E68406B0098FAC1 /* IndexManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA6030F1E68406B0098FAC1 /* IndexManager.swift */; };
 		9D3A43631E680E52001CE036 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3A43621E680E52001CE036 /* AppDelegate.swift */; };
 		9D3A43651E680E52001CE036 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3A43641E680E52001CE036 /* ViewController.swift */; };
 		9D3A43681E680E52001CE036 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D3A43661E680E52001CE036 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 
 /* Begin PBXFileReference section */
 		6AA6030C1E6837E80098FAC1 /* Resources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Resources.bundle; sourceTree = SOURCE_ROOT; };
+		6AA6030F1E68406B0098FAC1 /* IndexManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexManager.swift; sourceTree = "<group>"; };
 		9D3A435F1E680E52001CE036 /* WeaponsPerStage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeaponsPerStage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D3A43621E680E52001CE036 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D3A43641E680E52001CE036 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +74,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6AA6030E1E6840450098FAC1 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				6AA6030F1E68406B0098FAC1 /* IndexManager.swift */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
 		9D3A43561E680E52001CE036 = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +103,7 @@
 		9D3A43611E680E52001CE036 /* WeaponsPerStage */ = {
 			isa = PBXGroup;
 			children = (
+				6AA6030E1E6840450098FAC1 /* Manager */,
 				9D3A438D1E681D82001CE036 /* View */,
 				9D3A438C1E681D74001CE036 /* Controller */,
 				9D3A43621E680E52001CE036 /* AppDelegate.swift */,
@@ -186,6 +197,7 @@
 				TargetAttributes = {
 					9D3A435E1E680E52001CE036 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = KRPQ8E7V25;
 						ProvisioningStyle = Automatic;
 					};
 					9D3A43721E680E53001CE036 = {
@@ -242,6 +254,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AA603101E68406B0098FAC1 /* IndexManager.swift in Sources */,
 				9D3A43901E681DC4001CE036 /* WeaponsTableViewCell.swift in Sources */,
 				9D3A43651E680E52001CE036 /* ViewController.swift in Sources */,
 				9D3A43871E681110001CE036 /* JsonManager.swift in Sources */,
@@ -387,6 +400,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KRPQ8E7V25;
 				INFOPLIST_FILE = WeaponsPerStage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.spl.WeaponsPerStage;
@@ -399,6 +413,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KRPQ8E7V25;
 				INFOPLIST_FILE = WeaponsPerStage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.spl.WeaponsPerStage;

@@ -13,6 +13,7 @@ class WeaponsSelectionViewController: UIViewController {
     @IBOutlet weak var weaponsTableView: UITableView!
     
     override func viewDidLoad() {
+        navigationItem.title = "なにを持つ？"
         weaponsTableView.dataSource = self
         weaponsTableView.delegate = self
         let nib = UINib.init(nibName: WeaponsTableViewCell.nibName, bundle: nil)
@@ -47,7 +48,7 @@ extension WeaponsSelectionViewController: UITableViewDelegate {
     
     func tableView(_ table: UITableView,didSelectRowAt indexPath: IndexPath) {
         // タップした武器名をDatasouceの武器名とする
-        DataSource.weaponsList[indexPath.row] = JsonManager.weaponsName()[indexPath.row]
+        DataSource.weaponsList[IndexManager.indexPath.row] = JsonManager.weaponsName()[indexPath.row]
         
         // ポップして前画面に戻る
         navigationController?.popViewController(animated: true)
