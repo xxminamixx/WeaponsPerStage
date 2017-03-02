@@ -78,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				6AA6030F1E68406B0098FAC1 /* IndexManager.swift */,
+				9D3A43861E681110001CE036 /* JsonManager.swift */,
 			);
 			name = Manager;
 			sourceTree = "<group>";
@@ -107,7 +108,6 @@
 				9D3A438D1E681D82001CE036 /* View */,
 				9D3A438C1E681D74001CE036 /* Controller */,
 				9D3A43621E680E52001CE036 /* AppDelegate.swift */,
-				9D3A43861E681110001CE036 /* JsonManager.swift */,
 				9D3A43881E681A54001CE036 /* DataSource.swift */,
 				9D3A43691E680E52001CE036 /* Assets.xcassets */,
 				9D3A436B1E680E53001CE036 /* LaunchScreen.storyboard */,
