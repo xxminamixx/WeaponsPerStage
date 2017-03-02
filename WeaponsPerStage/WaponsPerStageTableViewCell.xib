@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="WaponsPerStageTableViewCell" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="WaponsPerStageTableViewCell" customModule="WeaponsPerStage" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="stage" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Orb-Ah-TN6">
+                        <rect key="frame" x="10" y="12" width="120" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="120" id="pPv-cu-8wU"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="weapon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sFC-nD-QRX">
+                        <rect key="frame" x="160" y="11" width="150" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="sFC-nD-QRX" firstAttribute="leading" secondItem="Orb-Ah-TN6" secondAttribute="trailing" constant="30" id="7OQ-QL-sgn"/>
+                    <constraint firstItem="Orb-Ah-TN6" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="8Cf-sX-cXl"/>
+                    <constraint firstAttribute="trailing" secondItem="sFC-nD-QRX" secondAttribute="trailing" constant="10" id="Bnw-pw-m5E"/>
+                    <constraint firstItem="Orb-Ah-TN6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="hmG-qJ-szZ"/>
+                    <constraint firstItem="sFC-nD-QRX" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="pCp-19-vku"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="stage" destination="sFC-nD-QRX" id="ia1-Vq-WZy"/>
+                <outlet property="weapon" destination="sFC-nD-QRX" id="ExR-IJ-HJc"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
