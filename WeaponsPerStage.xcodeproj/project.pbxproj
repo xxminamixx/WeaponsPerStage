@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6AA6030D1E6837E80098FAC1 /* Resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6AA6030C1E6837E80098FAC1 /* Resources.bundle */; };
 		9D3A43631E680E52001CE036 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3A43621E680E52001CE036 /* AppDelegate.swift */; };
 		9D3A43651E680E52001CE036 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3A43641E680E52001CE036 /* ViewController.swift */; };
 		9D3A43681E680E52001CE036 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D3A43661E680E52001CE036 /* Main.storyboard */; };
@@ -33,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6AA6030C1E6837E80098FAC1 /* Resources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Resources.bundle; sourceTree = SOURCE_ROOT; };
 		9D3A435F1E680E52001CE036 /* WeaponsPerStage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeaponsPerStage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D3A43621E680E52001CE036 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D3A43641E680E52001CE036 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				9D3A43691E680E52001CE036 /* Assets.xcassets */,
 				9D3A436B1E680E53001CE036 /* LaunchScreen.storyboard */,
 				9D3A436E1E680E53001CE036 /* Info.plist */,
+				6AA6030C1E6837E80098FAC1 /* Resources.bundle */,
 			);
 			path = WeaponsPerStage;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D3A436D1E680E53001CE036 /* LaunchScreen.storyboard in Resources */,
+				6AA6030D1E6837E80098FAC1 /* Resources.bundle in Resources */,
 				9D3A436A1E680E52001CE036 /* Assets.xcassets in Resources */,
 				9D3A43851E680FCE001CE036 /* WaponsPerStageTableViewCell.xib in Resources */,
 				9D3A43911E681DC4001CE036 /* WeaponsTableViewCell.xib in Resources */,
@@ -450,6 +454,7 @@
 				9D3A437E1E680E53001CE036 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9D3A437F1E680E53001CE036 /* Build configuration list for PBXNativeTarget "WeaponsPerStageTests" */ = {
 			isa = XCConfigurationList;
@@ -458,6 +463,7 @@
 				9D3A43811E680E53001CE036 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

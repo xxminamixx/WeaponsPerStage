@@ -48,6 +48,7 @@ extension WeaponsSelectionViewController: UITableViewDelegate {
     func tableView(_ table: UITableView,didSelectRowAt indexPath: IndexPath) {
         // タップした武器名をDatasouceの武器名とする
         DataSource.weaponsList[indexPath.row] = JsonManager.weaponsName()[indexPath.row]
+        
         // ポップして前画面に戻る
         navigationController?.popViewController(animated: true)
 

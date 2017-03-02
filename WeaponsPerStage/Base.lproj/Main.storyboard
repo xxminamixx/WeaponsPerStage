@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="P6c-4g-Y88">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="P6c-4g-Y88">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Weapons Selection View Controller-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="WeaponsSelectionViewController" customModule="WeaponsPerStage" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="WeaponsPerStage" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -36,8 +36,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="MKi-sS-qAZ"/>
                     <connections>
-                        <outlet property="WaponsPerStageTableView" destination="EDX-VK-q4T" id="5kG-3O-hj2"/>
-                        <outlet property="weaponsTableView" destination="EDX-VK-q4T" id="Bjl-IA-O0b"/>
+                        <outlet property="weaponsPerStageTableView" destination="EDX-VK-q4T" id="POY-Xj-HzZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -47,7 +46,7 @@
         <!--Weapons Selection View Controller-->
         <scene sceneID="tiK-dR-adS">
             <objects>
-                <viewController id="vHA-OL-RdZ" customClass="WeaponsSelectionViewController" customModule="WeaponsPerStage" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WeaponsSelectionViewController" id="vHA-OL-RdZ" customClass="WeaponsSelectionViewController" customModule="WeaponsPerStage" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RSB-XM-L7G"/>
                         <viewControllerLayoutGuide type="bottom" id="ndU-eP-gIw"/>
@@ -69,6 +68,9 @@
                             <constraint firstItem="OWM-5Q-yNE" firstAttribute="top" secondItem="yjf-Ip-S5e" secondAttribute="top" id="qPL-kd-vVO"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="weaponsTableView" destination="OWM-5Q-yNE" id="Q4O-5I-w0c"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bzh-kc-ggD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

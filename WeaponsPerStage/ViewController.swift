@@ -11,13 +11,14 @@ import UIKit
 class ViewController: UIViewController {
 
     // TODO: 名前のスペルミスと頭文字大文字を小文字に修正
-    @IBOutlet weak var WaponsPerStageTableView: UITableView!
+    
+    @IBOutlet weak var weaponsPerStageTableView: UITableView!
     
     override func viewDidLoad() {
-        WaponsPerStageTableView.dataSource = self
-        WaponsPerStageTableView.delegate = self
+        weaponsPerStageTableView.dataSource = self
+        weaponsPerStageTableView.delegate = self
         let nib = UINib.init(nibName: WaponsPerStageTableViewCell.nibName, bundle: nil)
-        WaponsPerStageTableView.register(nib, forCellReuseIdentifier: WaponsPerStageTableViewCell.nibName)
+        weaponsPerStageTableView.register(nib, forCellReuseIdentifier: WaponsPerStageTableViewCell.nibName)
         super.viewDidLoad()
     }
 
@@ -29,8 +30,7 @@ class ViewController: UIViewController {
 extension ViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // 武器個数
-        return JsonManager.CountAllWeapons()
+        return DataSource.stageList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
