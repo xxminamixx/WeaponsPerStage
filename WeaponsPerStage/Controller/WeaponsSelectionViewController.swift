@@ -15,7 +15,7 @@ class WeaponsSelectionViewController: UIViewController {
     
     override func viewDidLoad() {
         // NavigationBarのタイトル
-        navigationItem.title = "なにを持つ？"
+        navigationItem.title = ConstText.weaponsSelection
         
         // tableView初期設定
         weaponsTableView.dataSource = self

@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		6AA6030D1E6837E80098FAC1 /* Resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6AA6030C1E6837E80098FAC1 /* Resources.bundle */; };
 		8075CC350F6F097E44A26A31 /* Pods_WeaponsPerStageTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 761AFB948E228A3FD8E04F61 /* Pods_WeaponsPerStageTests.framework */; };
+		9D1A033E1E6969C000EAFAFB /* ConstText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1A033D1E6969C000EAFAFB /* ConstText.swift */; };
+		9D1A03411E696EBA00EAFAFB /* ConstColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1A03401E696EBA00EAFAFB /* ConstColor.swift */; };
+		9D1A03431E69709A00EAFAFB /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1A03421E69709A00EAFAFB /* NavigationController.swift */; };
 		9D3A43631E680E52001CE036 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3A43621E680E52001CE036 /* AppDelegate.swift */; };
 		9D3A43681E680E52001CE036 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D3A43661E680E52001CE036 /* Main.storyboard */; };
 		9D3A436A1E680E52001CE036 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D3A43691E680E52001CE036 /* Assets.xcassets */; };
@@ -45,6 +48,9 @@
 		6AA6030C1E6837E80098FAC1 /* Resources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Resources.bundle; sourceTree = SOURCE_ROOT; };
 		761AFB948E228A3FD8E04F61 /* Pods_WeaponsPerStageTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeaponsPerStageTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		897FE971890AF0FDAD81D7B1 /* Pods-WeaponsPerStage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeaponsPerStage.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeaponsPerStage/Pods-WeaponsPerStage.release.xcconfig"; sourceTree = "<group>"; };
+		9D1A033D1E6969C000EAFAFB /* ConstText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConstText.swift; path = Const/ConstText.swift; sourceTree = "<group>"; };
+		9D1A03401E696EBA00EAFAFB /* ConstColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConstColor.swift; path = Const/ConstColor.swift; sourceTree = "<group>"; };
+		9D1A03421E69709A00EAFAFB /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NavigationController.swift; path = Controller/NavigationController.swift; sourceTree = "<group>"; };
 		9D3A435F1E680E52001CE036 /* WeaponsPerStage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeaponsPerStage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D3A43621E680E52001CE036 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D3A43671E680E52001CE036 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -100,6 +106,15 @@
 			name = Manager;
 			sourceTree = "<group>";
 		};
+		9D1A033F1E6969C700EAFAFB /* Const */ = {
+			isa = PBXGroup;
+			children = (
+				9D1A033D1E6969C000EAFAFB /* ConstText.swift */,
+				9D1A03401E696EBA00EAFAFB /* ConstColor.swift */,
+			);
+			name = Const;
+			sourceTree = "<group>";
+		};
 		9D3A43561E680E52001CE036 = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				9D3A43621E680E52001CE036 /* AppDelegate.swift */,
+				9D1A033F1E6969C700EAFAFB /* Const */,
 				9D74A7581E692E4300AC66A6 /* Model */,
 				9D74A74B1E69294900AC66A6 /* DataSources */,
 				9D3A438D1E681D82001CE036 /* View */,
@@ -150,6 +166,7 @@
 				9D74A75B1E692E5E00AC66A6 /* ViewController.swift */,
 				9D74A75C1E692E5E00AC66A6 /* WeaponsSelectionViewController.swift */,
 				9D74A7641E69552500AC66A6 /* ConfigViewController.swift */,
+				9D1A03421E69709A00EAFAFB /* NavigationController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -423,12 +440,15 @@
 				9D74A75D1E692E5E00AC66A6 /* ViewController.swift in Sources */,
 				9D74A7651E69552500AC66A6 /* ConfigViewController.swift in Sources */,
 				9D74A75A1E692E5200AC66A6 /* DataSource.swift in Sources */,
+				9D1A03431E69709A00EAFAFB /* NavigationController.swift in Sources */,
 				9D74A7631E6945B300AC66A6 /* WeaponsPerStageStoreManager.swift in Sources */,
 				9D74A7611E6943D400AC66A6 /* WeaponsPerStageEntity.swift in Sources */,
 				9D74A7521E692E2C00AC66A6 /* WeaponsTableViewCell.swift in Sources */,
 				9D74A7571E692E3A00AC66A6 /* JsonManager.swift in Sources */,
 				9D74A7561E692E3A00AC66A6 /* IndexManager.swift in Sources */,
+				9D1A033E1E6969C000EAFAFB /* ConstText.swift in Sources */,
 				9D3A43631E680E52001CE036 /* AppDelegate.swift in Sources */,
+				9D1A03411E696EBA00EAFAFB /* ConstColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

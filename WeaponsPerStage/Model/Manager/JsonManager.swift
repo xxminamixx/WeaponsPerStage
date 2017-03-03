@@ -27,10 +27,10 @@ class JsonManager {
     }
     
     static func weaponsList() -> Array<Dictionary<String, String>>? {
-        let json = try! JSONSerialization.jsonObject(with: getResourceJson(name: "weapons")!,
+        let json = try! JSONSerialization.jsonObject(with: getResourceJson(name: ConstText.weapons)!,
                                                      options: JSONSerialization.ReadingOptions.allowFragments) as! NSDictionary
         
-        guard let weapons = json.value(forKey: "weapons") as! Array<Dictionary<String, String>>? else {
+        guard let weapons = json.value(forKey: ConstText.weapons) as! Array<Dictionary<String, String>>? else {
             return nil
         }
         
@@ -50,21 +50,21 @@ class JsonManager {
     ///
     /// - Returns: 武器名配列
     static func weaponsName() -> Array<String> {
-        return weaponsElementList(key: "name")
+        return weaponsElementList(key: ConstText.name)
     }
     
     /// 武器マスタからサブ名だけの配列を作成し返す
     ///
     /// - Returns: サブ名配列
     static func subWeaponsNameList() -> Array<String> {
-        return weaponsElementList(key: "sub")
+        return weaponsElementList(key: ConstText.sub)
     }
     
     /// 武器マスタからスペシャル名だけの配列を作成し返す
     ///
     /// - Returns: スペシャル名配列
     static func specialWeaponsList() -> Array<String> {
-        return weaponsElementList(key: "special")
+        return weaponsElementList(key: ConstText.special)
     }
     
     /// 武器マスタからkeyに応じたkey配列を返す

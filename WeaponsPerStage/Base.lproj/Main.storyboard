@@ -41,7 +41,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2844" y="135.38230884557723"/>
+            <point key="canvasLocation" x="2858" y="136"/>
         </scene>
         <!--Weapons Selection View Controller-->
         <scene sceneID="tiK-dR-adS">
@@ -79,7 +79,7 @@
         <!--Item-->
         <scene sceneID="PEP-rU-Y1W">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="P6c-4g-Y88" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="P6c-4g-Y88" customClass="NavigationController" customModule="WeaponsPerStage" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="SFg-3v-adV"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="R1K-X8-VAl">
@@ -152,6 +152,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="HKe-O8-pHR" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="gba-Ui-Xe1">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>

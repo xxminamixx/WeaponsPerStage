@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         // NavigationBarのタイトル
-        navigationItem.title = "イカウェポナー"
+        navigationItem.title = ConstText.home
         
         // ステージと武器一覧のTableViewの初期設定
         weaponsPerStageTableView.dataSource = self
