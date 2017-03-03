@@ -48,7 +48,7 @@ extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: WaponsPerStageTableViewCell.nibName, for: indexPath) as! WaponsPerStageTableViewCell
         // TODO: 引数が長いので外出ししてスマートにしたい
-        cell.setup(stage: DataSource.stageList[indexPath.row], weapon: DataSource.weaponsList[indexPath.row])
+        cell.setup(stage: DataSource.stageList[indexPath.row], weapon: DataSource.weaponsList[indexPath.row], subWeapon: DataSource.subWeaponsList[indexPath.row], specialWeapon: DataSource.specialWeaponsList[indexPath.row])
         return cell
     }
 }

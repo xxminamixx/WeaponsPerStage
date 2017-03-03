@@ -14,7 +14,6 @@ class JsonManager {
         let json = try! JSONSerialization.jsonObject(with: getResourceJson(name: "weapons")!,
                                                      options: JSONSerialization.ReadingOptions.allowFragments) as! NSDictionary
         
-        
         guard let weapons = json.value(forKey: "weapons") as! Array<Dictionary<String, String>>? else {
             return nil
         }
@@ -31,26 +30,43 @@ class JsonManager {
         return weaponsList.count
     }
     
+    /// 武器マスタから武器名だけの配列を作成し返す
+    ///
+    /// - Returns: 武器名配列
     static func weaponsName() -> Array<String> {
-        guard let weaponsList = weaponsList() else {
+        return weaponsElementList(key: "name")
+    }
+    
+    /// 武器マスタからサブ名だけの配列を作成し返す
+    ///
+    /// - Returns: サブ名配列
+    static func subWeaponsNameList() -> Array<String> {
+        return weaponsElementList(key: "sub")
+    }
+    
+    /// 武器マスタからスペシャル名だけの配列を作成し返す
+    ///
+    /// - Returns: スペシャル名配列
+    static func specialWeaponsList() -> Array<String> {
+        return weaponsElementList(key: "special")
+    }
+    
+    /// 武器マスタからkeyに応じたkey配列を返す
+    ///
+    /// - Parameter key: 武器辞書から欲しいkey
+    /// - Returns: key配列 ex: 引数nameとするとname配列を返す
+    static func weaponsElementList(key: String) -> Array<String> {
+        guard let weaponsList = JsonManager.weaponsList() else {
             return []
         }
         
-        // Stirngの空配列を定義
-        var weaponsNameList = [String]()
-        /*
-            name: ""
-            sub: ""
-            special: ""
-         
-         というjsonからnameだけ取り出し配列化する
-         */
+        var keyNameList = [String]()
         for weapon in weaponsList {
-            if let name = weapon["name"] {
-                weaponsNameList.append(name)
+            if let value = weapon[key] {
+                keyNameList.append(value)
             }
         }
-        return weaponsNameList
+        return keyNameList
     }
     
     /// jsonデータをData型で返す

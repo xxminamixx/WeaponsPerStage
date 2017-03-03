@@ -104,8 +104,8 @@
 		9D3A43611E680E52001CE036 /* WeaponsPerStage */ = {
 			isa = PBXGroup;
 			children = (
-				9D74A7581E692E4300AC66A6 /* Model */,
 				9D3A43621E680E52001CE036 /* AppDelegate.swift */,
+				9D74A7581E692E4300AC66A6 /* Model */,
 				9D74A74B1E69294900AC66A6 /* DataSources */,
 				9D3A438D1E681D82001CE036 /* View */,
 				9D3A438C1E681D74001CE036 /* Controller */,
