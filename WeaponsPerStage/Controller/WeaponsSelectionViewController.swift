@@ -10,14 +10,19 @@ import UIKit
 
 class WeaponsSelectionViewController: UIViewController {
 
+    /// 武器選択のテーブルビュー
     @IBOutlet weak var weaponsTableView: UITableView!
     
     override func viewDidLoad() {
+        // NavigationBarのタイトル
         navigationItem.title = "なにを持つ？"
+        
+        // tableView初期設定
         weaponsTableView.dataSource = self
         weaponsTableView.delegate = self
         let nib = UINib.init(nibName: WeaponsTableViewCell.nibName, bundle: nil)
         weaponsTableView.register(nib, forCellReuseIdentifier: WeaponsTableViewCell.nibName)
+        
         super.viewDidLoad()
     }
 
@@ -26,6 +31,8 @@ class WeaponsSelectionViewController: UIViewController {
     }
 }
 
+
+// MARK: - TableViewDataSource
 extension WeaponsSelectionViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -40,9 +47,12 @@ extension WeaponsSelectionViewController: UITableViewDataSource {
     }
 }
 
+
+// MARK: - TableViewDelegate
 extension WeaponsSelectionViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        // TODO: カスタムセルの高さを固定にしているため定数にしているが、変更に対応できるように変数にしたい
         return 50
     }
     
@@ -51,7 +61,6 @@ extension WeaponsSelectionViewController: UITableViewDelegate {
         DataSource.weaponsList[IndexManager.indexPath.row] = JsonManager.weaponsName()[indexPath.row]
         
         // ポップして前画面に戻る
-        navigationController?.popViewController(animated: true)
-
+        _ = navigationController?.popToRootViewController(animated: true)
     }
 }

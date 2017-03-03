@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		6AA6030D1E6837E80098FAC1 /* Resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6AA6030C1E6837E80098FAC1 /* Resources.bundle */; };
-		6AA603101E68406B0098FAC1 /* IndexManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA6030F1E68406B0098FAC1 /* IndexManager.swift */; };
 		9D3A43631E680E52001CE036 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3A43621E680E52001CE036 /* AppDelegate.swift */; };
-		9D3A43651E680E52001CE036 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3A43641E680E52001CE036 /* ViewController.swift */; };
 		9D3A43681E680E52001CE036 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D3A43661E680E52001CE036 /* Main.storyboard */; };
 		9D3A436A1E680E52001CE036 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D3A43691E680E52001CE036 /* Assets.xcassets */; };
 		9D3A436D1E680E53001CE036 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D3A436B1E680E53001CE036 /* LaunchScreen.storyboard */; };
 		9D3A43781E680E53001CE036 /* WeaponsPerStageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3A43771E680E53001CE036 /* WeaponsPerStageTests.swift */; };
-		9D3A43841E680FCE001CE036 /* WaponsPerStageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3A43821E680FCE001CE036 /* WaponsPerStageTableViewCell.swift */; };
-		9D3A43851E680FCE001CE036 /* WaponsPerStageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D3A43831E680FCE001CE036 /* WaponsPerStageTableViewCell.xib */; };
-		9D3A43871E681110001CE036 /* JsonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3A43861E681110001CE036 /* JsonManager.swift */; };
-		9D3A43891E681A54001CE036 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3A43881E681A54001CE036 /* DataSource.swift */; };
-		9D3A438B1E681CC8001CE036 /* WeaponsSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3A438A1E681CC8001CE036 /* WeaponsSelectionViewController.swift */; };
-		9D3A43901E681DC4001CE036 /* WeaponsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3A438E1E681DC4001CE036 /* WeaponsTableViewCell.swift */; };
-		9D3A43911E681DC4001CE036 /* WeaponsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D3A438F1E681DC4001CE036 /* WeaponsTableViewCell.xib */; };
+		9D74A7501E692E2C00AC66A6 /* WaponsPerStageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D74A74C1E692E2C00AC66A6 /* WaponsPerStageTableViewCell.swift */; };
+		9D74A7511E692E2C00AC66A6 /* WaponsPerStageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D74A74D1E692E2C00AC66A6 /* WaponsPerStageTableViewCell.xib */; };
+		9D74A7521E692E2C00AC66A6 /* WeaponsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D74A74E1E692E2C00AC66A6 /* WeaponsTableViewCell.swift */; };
+		9D74A7531E692E2C00AC66A6 /* WeaponsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D74A74F1E692E2C00AC66A6 /* WeaponsTableViewCell.xib */; };
+		9D74A7561E692E3A00AC66A6 /* IndexManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D74A7541E692E3A00AC66A6 /* IndexManager.swift */; };
+		9D74A7571E692E3A00AC66A6 /* JsonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D74A7551E692E3A00AC66A6 /* JsonManager.swift */; };
+		9D74A75A1E692E5200AC66A6 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D74A7591E692E5200AC66A6 /* DataSource.swift */; };
+		9D74A75D1E692E5E00AC66A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D74A75B1E692E5E00AC66A6 /* ViewController.swift */; };
+		9D74A75E1E692E5E00AC66A6 /* WeaponsSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D74A75C1E692E5E00AC66A6 /* WeaponsSelectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +36,8 @@
 
 /* Begin PBXFileReference section */
 		6AA6030C1E6837E80098FAC1 /* Resources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Resources.bundle; sourceTree = SOURCE_ROOT; };
-		6AA6030F1E68406B0098FAC1 /* IndexManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexManager.swift; sourceTree = "<group>"; };
 		9D3A435F1E680E52001CE036 /* WeaponsPerStage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeaponsPerStage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D3A43621E680E52001CE036 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9D3A43641E680E52001CE036 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9D3A43671E680E52001CE036 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9D3A43691E680E52001CE036 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D3A436C1E680E53001CE036 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,13 +45,15 @@
 		9D3A43731E680E53001CE036 /* WeaponsPerStageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeaponsPerStageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D3A43771E680E53001CE036 /* WeaponsPerStageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponsPerStageTests.swift; sourceTree = "<group>"; };
 		9D3A43791E680E53001CE036 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9D3A43821E680FCE001CE036 /* WaponsPerStageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaponsPerStageTableViewCell.swift; sourceTree = "<group>"; };
-		9D3A43831E680FCE001CE036 /* WaponsPerStageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WaponsPerStageTableViewCell.xib; sourceTree = "<group>"; };
-		9D3A43861E681110001CE036 /* JsonManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonManager.swift; sourceTree = "<group>"; };
-		9D3A43881E681A54001CE036 /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
-		9D3A438A1E681CC8001CE036 /* WeaponsSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeaponsSelectionViewController.swift; sourceTree = "<group>"; };
-		9D3A438E1E681DC4001CE036 /* WeaponsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeaponsTableViewCell.swift; sourceTree = "<group>"; };
-		9D3A438F1E681DC4001CE036 /* WeaponsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeaponsTableViewCell.xib; sourceTree = "<group>"; };
+		9D74A74C1E692E2C00AC66A6 /* WaponsPerStageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WaponsPerStageTableViewCell.swift; path = View/WaponsPerStageTableViewCell.swift; sourceTree = "<group>"; };
+		9D74A74D1E692E2C00AC66A6 /* WaponsPerStageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WaponsPerStageTableViewCell.xib; path = View/WaponsPerStageTableViewCell.xib; sourceTree = "<group>"; };
+		9D74A74E1E692E2C00AC66A6 /* WeaponsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WeaponsTableViewCell.swift; path = View/WeaponsTableViewCell.swift; sourceTree = "<group>"; };
+		9D74A74F1E692E2C00AC66A6 /* WeaponsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WeaponsTableViewCell.xib; path = View/WeaponsTableViewCell.xib; sourceTree = "<group>"; };
+		9D74A7541E692E3A00AC66A6 /* IndexManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IndexManager.swift; path = Model/Manager/IndexManager.swift; sourceTree = "<group>"; };
+		9D74A7551E692E3A00AC66A6 /* JsonManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JsonManager.swift; path = Model/Manager/JsonManager.swift; sourceTree = "<group>"; };
+		9D74A7591E692E5200AC66A6 /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataSource.swift; path = DataSources/DataSource.swift; sourceTree = "<group>"; };
+		9D74A75B1E692E5E00AC66A6 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Controller/ViewController.swift; sourceTree = "<group>"; };
+		9D74A75C1E692E5E00AC66A6 /* WeaponsSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WeaponsSelectionViewController.swift; path = Controller/WeaponsSelectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +77,8 @@
 		6AA6030E1E6840450098FAC1 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
-				6AA6030F1E68406B0098FAC1 /* IndexManager.swift */,
-				9D3A43861E681110001CE036 /* JsonManager.swift */,
+				9D74A7541E692E3A00AC66A6 /* IndexManager.swift */,
+				9D74A7551E692E3A00AC66A6 /* JsonManager.swift */,
 			);
 			name = Manager;
 			sourceTree = "<group>";
@@ -104,13 +104,12 @@
 		9D3A43611E680E52001CE036 /* WeaponsPerStage */ = {
 			isa = PBXGroup;
 			children = (
-				6AA6030E1E6840450098FAC1 /* Manager */,
+				9D74A7581E692E4300AC66A6 /* Model */,
+				9D3A43621E680E52001CE036 /* AppDelegate.swift */,
+				9D74A74B1E69294900AC66A6 /* DataSources */,
 				9D3A438D1E681D82001CE036 /* View */,
 				9D3A438C1E681D74001CE036 /* Controller */,
-				9D3A43621E680E52001CE036 /* AppDelegate.swift */,
-				9D3A43881E681A54001CE036 /* DataSource.swift */,
 				9D3A43691E680E52001CE036 /* Assets.xcassets */,
-				9D3A436B1E680E53001CE036 /* LaunchScreen.storyboard */,
 				9D3A436E1E680E53001CE036 /* Info.plist */,
 				6AA6030C1E6837E80098FAC1 /* Resources.bundle */,
 			);
@@ -129,8 +128,8 @@
 		9D3A438C1E681D74001CE036 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				9D3A43641E680E52001CE036 /* ViewController.swift */,
-				9D3A438A1E681CC8001CE036 /* WeaponsSelectionViewController.swift */,
+				9D74A75B1E692E5E00AC66A6 /* ViewController.swift */,
+				9D74A75C1E692E5E00AC66A6 /* WeaponsSelectionViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -138,13 +137,30 @@
 		9D3A438D1E681D82001CE036 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9D3A436B1E680E53001CE036 /* LaunchScreen.storyboard */,
 				9D3A43661E680E52001CE036 /* Main.storyboard */,
-				9D3A43821E680FCE001CE036 /* WaponsPerStageTableViewCell.swift */,
-				9D3A43831E680FCE001CE036 /* WaponsPerStageTableViewCell.xib */,
-				9D3A438E1E681DC4001CE036 /* WeaponsTableViewCell.swift */,
-				9D3A438F1E681DC4001CE036 /* WeaponsTableViewCell.xib */,
+				9D74A74C1E692E2C00AC66A6 /* WaponsPerStageTableViewCell.swift */,
+				9D74A74D1E692E2C00AC66A6 /* WaponsPerStageTableViewCell.xib */,
+				9D74A74E1E692E2C00AC66A6 /* WeaponsTableViewCell.swift */,
+				9D74A74F1E692E2C00AC66A6 /* WeaponsTableViewCell.xib */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		9D74A74B1E69294900AC66A6 /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				9D74A7591E692E5200AC66A6 /* DataSource.swift */,
+			);
+			name = DataSources;
+			sourceTree = "<group>";
+		};
+		9D74A7581E692E4300AC66A6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6AA6030E1E6840450098FAC1 /* Manager */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,9 +250,9 @@
 				9D3A436D1E680E53001CE036 /* LaunchScreen.storyboard in Resources */,
 				6AA6030D1E6837E80098FAC1 /* Resources.bundle in Resources */,
 				9D3A436A1E680E52001CE036 /* Assets.xcassets in Resources */,
-				9D3A43851E680FCE001CE036 /* WaponsPerStageTableViewCell.xib in Resources */,
-				9D3A43911E681DC4001CE036 /* WeaponsTableViewCell.xib in Resources */,
 				9D3A43681E680E52001CE036 /* Main.storyboard in Resources */,
+				9D74A7511E692E2C00AC66A6 /* WaponsPerStageTableViewCell.xib in Resources */,
+				9D74A7531E692E2C00AC66A6 /* WeaponsTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,13 +270,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6AA603101E68406B0098FAC1 /* IndexManager.swift in Sources */,
-				9D3A43901E681DC4001CE036 /* WeaponsTableViewCell.swift in Sources */,
-				9D3A43651E680E52001CE036 /* ViewController.swift in Sources */,
-				9D3A43871E681110001CE036 /* JsonManager.swift in Sources */,
-				9D3A43841E680FCE001CE036 /* WaponsPerStageTableViewCell.swift in Sources */,
-				9D3A438B1E681CC8001CE036 /* WeaponsSelectionViewController.swift in Sources */,
-				9D3A43891E681A54001CE036 /* DataSource.swift in Sources */,
+				9D74A7501E692E2C00AC66A6 /* WaponsPerStageTableViewCell.swift in Sources */,
+				9D74A75E1E692E5E00AC66A6 /* WeaponsSelectionViewController.swift in Sources */,
+				9D74A75D1E692E5E00AC66A6 /* ViewController.swift in Sources */,
+				9D74A75A1E692E5200AC66A6 /* DataSource.swift in Sources */,
+				9D74A7521E692E2C00AC66A6 /* WeaponsTableViewCell.swift in Sources */,
+				9D74A7571E692E3A00AC66A6 /* JsonManager.swift in Sources */,
+				9D74A7561E692E3A00AC66A6 /* IndexManager.swift in Sources */,
 				9D3A43631E680E52001CE036 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

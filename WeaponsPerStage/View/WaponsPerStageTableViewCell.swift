@@ -10,9 +10,12 @@ import UIKit
 
 class WaponsPerStageTableViewCell: UITableViewCell {
 
+    /// セルID
     static let nibName = "WaponsPerStageTableViewCell"
     
+    /// ステージ名ラベル
     @IBOutlet weak var stage: UILabel!
+    /// 武器名ラベル
     @IBOutlet weak var weapon: UILabel!
     
     override func awakeFromNib() {
@@ -23,6 +26,11 @@ class WaponsPerStageTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
+    /// 自身のプロパティに値をセットする
+    ///
+    /// - Parameters:
+    ///   - stage: ステージ名
+    ///   - weapon: 武器名
     func setup(stage: String, weapon: String) {
         self.stage.text = stage
         self.weapon.text = weapon
