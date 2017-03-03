@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6AA6030D1E6837E80098FAC1 /* Resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6AA6030C1E6837E80098FAC1 /* Resources.bundle */; };
+		8075CC350F6F097E44A26A31 /* Pods_WeaponsPerStageTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 761AFB948E228A3FD8E04F61 /* Pods_WeaponsPerStageTests.framework */; };
 		9D3A43631E680E52001CE036 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3A43621E680E52001CE036 /* AppDelegate.swift */; };
 		9D3A43681E680E52001CE036 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D3A43661E680E52001CE036 /* Main.storyboard */; };
 		9D3A436A1E680E52001CE036 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D3A43691E680E52001CE036 /* Assets.xcassets */; };
@@ -22,6 +23,10 @@
 		9D74A75A1E692E5200AC66A6 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D74A7591E692E5200AC66A6 /* DataSource.swift */; };
 		9D74A75D1E692E5E00AC66A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D74A75B1E692E5E00AC66A6 /* ViewController.swift */; };
 		9D74A75E1E692E5E00AC66A6 /* WeaponsSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D74A75C1E692E5E00AC66A6 /* WeaponsSelectionViewController.swift */; };
+		9D74A7611E6943D400AC66A6 /* WeaponsPerStageEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D74A7601E6943D400AC66A6 /* WeaponsPerStageEntity.swift */; };
+		9D74A7631E6945B300AC66A6 /* WeaponsPerStageStoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D74A7621E6945B300AC66A6 /* WeaponsPerStageStoreManager.swift */; };
+		9D74A7651E69552500AC66A6 /* ConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D74A7641E69552500AC66A6 /* ConfigViewController.swift */; };
+		A2AE6346D067B046F0C386A1 /* Pods_WeaponsPerStage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F90DC3D630E966152D55EAEC /* Pods_WeaponsPerStage.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +40,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		28AB7E11C77E8FE21BD084AA /* Pods-WeaponsPerStage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeaponsPerStage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeaponsPerStage/Pods-WeaponsPerStage.debug.xcconfig"; sourceTree = "<group>"; };
+		385A6CF511379D6343538F06 /* Pods-WeaponsPerStageTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeaponsPerStageTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeaponsPerStageTests/Pods-WeaponsPerStageTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6AA6030C1E6837E80098FAC1 /* Resources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Resources.bundle; sourceTree = SOURCE_ROOT; };
+		761AFB948E228A3FD8E04F61 /* Pods_WeaponsPerStageTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeaponsPerStageTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		897FE971890AF0FDAD81D7B1 /* Pods-WeaponsPerStage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeaponsPerStage.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeaponsPerStage/Pods-WeaponsPerStage.release.xcconfig"; sourceTree = "<group>"; };
 		9D3A435F1E680E52001CE036 /* WeaponsPerStage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeaponsPerStage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D3A43621E680E52001CE036 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D3A43671E680E52001CE036 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -54,6 +63,11 @@
 		9D74A7591E692E5200AC66A6 /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataSource.swift; path = DataSources/DataSource.swift; sourceTree = "<group>"; };
 		9D74A75B1E692E5E00AC66A6 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Controller/ViewController.swift; sourceTree = "<group>"; };
 		9D74A75C1E692E5E00AC66A6 /* WeaponsSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WeaponsSelectionViewController.swift; path = Controller/WeaponsSelectionViewController.swift; sourceTree = "<group>"; };
+		9D74A7601E6943D400AC66A6 /* WeaponsPerStageEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WeaponsPerStageEntity.swift; path = Model/Entity/WeaponsPerStageEntity.swift; sourceTree = "<group>"; };
+		9D74A7621E6945B300AC66A6 /* WeaponsPerStageStoreManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WeaponsPerStageStoreManager.swift; path = Model/Manager/WeaponsPerStageStoreManager.swift; sourceTree = "<group>"; };
+		9D74A7641E69552500AC66A6 /* ConfigViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConfigViewController.swift; path = Controller/ConfigViewController.swift; sourceTree = "<group>"; };
+		F90DC3D630E966152D55EAEC /* Pods_WeaponsPerStage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeaponsPerStage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD6CE7A3601BD2049FCAA9A8 /* Pods-WeaponsPerStageTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeaponsPerStageTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeaponsPerStageTests/Pods-WeaponsPerStageTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2AE6346D067B046F0C386A1 /* Pods_WeaponsPerStage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8075CC350F6F097E44A26A31 /* Pods_WeaponsPerStageTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +95,7 @@
 			children = (
 				9D74A7541E692E3A00AC66A6 /* IndexManager.swift */,
 				9D74A7551E692E3A00AC66A6 /* JsonManager.swift */,
+				9D74A7621E6945B300AC66A6 /* WeaponsPerStageStoreManager.swift */,
 			);
 			name = Manager;
 			sourceTree = "<group>";
@@ -89,6 +106,8 @@
 				9D3A43611E680E52001CE036 /* WeaponsPerStage */,
 				9D3A43761E680E53001CE036 /* WeaponsPerStageTests */,
 				9D3A43601E680E52001CE036 /* Products */,
+				D96B5F4244DD175BFCB71B7E /* Pods */,
+				D7C9BD3031CE7BA9DA5C9F64 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,6 +149,7 @@
 			children = (
 				9D74A75B1E692E5E00AC66A6 /* ViewController.swift */,
 				9D74A75C1E692E5E00AC66A6 /* WeaponsSelectionViewController.swift */,
+				9D74A7641E69552500AC66A6 /* ConfigViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -158,9 +178,38 @@
 		9D74A7581E692E4300AC66A6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9D74A75F1E69437E00AC66A6 /* Entity */,
 				6AA6030E1E6840450098FAC1 /* Manager */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		9D74A75F1E69437E00AC66A6 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				9D74A7601E6943D400AC66A6 /* WeaponsPerStageEntity.swift */,
+			);
+			name = Entity;
+			sourceTree = "<group>";
+		};
+		D7C9BD3031CE7BA9DA5C9F64 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F90DC3D630E966152D55EAEC /* Pods_WeaponsPerStage.framework */,
+				761AFB948E228A3FD8E04F61 /* Pods_WeaponsPerStageTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D96B5F4244DD175BFCB71B7E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				28AB7E11C77E8FE21BD084AA /* Pods-WeaponsPerStage.debug.xcconfig */,
+				897FE971890AF0FDAD81D7B1 /* Pods-WeaponsPerStage.release.xcconfig */,
+				385A6CF511379D6343538F06 /* Pods-WeaponsPerStageTests.debug.xcconfig */,
+				FD6CE7A3601BD2049FCAA9A8 /* Pods-WeaponsPerStageTests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,9 +219,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9D3A437C1E680E53001CE036 /* Build configuration list for PBXNativeTarget "WeaponsPerStage" */;
 			buildPhases = (
+				7EE83E8C1901149FA2D5EB71 /* [CP] Check Pods Manifest.lock */,
 				9D3A435B1E680E52001CE036 /* Sources */,
 				9D3A435C1E680E52001CE036 /* Frameworks */,
 				9D3A435D1E680E52001CE036 /* Resources */,
+				3D5D2142FF482E262878C611 /* [CP] Embed Pods Frameworks */,
+				315FE3E509879CF27342C5EE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -187,9 +239,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9D3A437F1E680E53001CE036 /* Build configuration list for PBXNativeTarget "WeaponsPerStageTests" */;
 			buildPhases = (
+				F530C8D8D8AFFC65647645FB /* [CP] Check Pods Manifest.lock */,
 				9D3A436F1E680E53001CE036 /* Sources */,
 				9D3A43701E680E53001CE036 /* Frameworks */,
 				9D3A43711E680E53001CE036 /* Resources */,
+				1D6E5DE2EE97F42A519F14E5 /* [CP] Embed Pods Frameworks */,
+				26D52BF2AD278E612938AD2D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -265,6 +320,99 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1D6E5DE2EE97F42A519F14E5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WeaponsPerStageTests/Pods-WeaponsPerStageTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		26D52BF2AD278E612938AD2D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WeaponsPerStageTests/Pods-WeaponsPerStageTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		315FE3E509879CF27342C5EE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WeaponsPerStage/Pods-WeaponsPerStage-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D5D2142FF482E262878C611 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WeaponsPerStage/Pods-WeaponsPerStage-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7EE83E8C1901149FA2D5EB71 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F530C8D8D8AFFC65647645FB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9D3A435B1E680E52001CE036 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -273,7 +421,10 @@
 				9D74A7501E692E2C00AC66A6 /* WaponsPerStageTableViewCell.swift in Sources */,
 				9D74A75E1E692E5E00AC66A6 /* WeaponsSelectionViewController.swift in Sources */,
 				9D74A75D1E692E5E00AC66A6 /* ViewController.swift in Sources */,
+				9D74A7651E69552500AC66A6 /* ConfigViewController.swift in Sources */,
 				9D74A75A1E692E5200AC66A6 /* DataSource.swift in Sources */,
+				9D74A7631E6945B300AC66A6 /* WeaponsPerStageStoreManager.swift in Sources */,
+				9D74A7611E6943D400AC66A6 /* WeaponsPerStageEntity.swift in Sources */,
 				9D74A7521E692E2C00AC66A6 /* WeaponsTableViewCell.swift in Sources */,
 				9D74A7571E692E3A00AC66A6 /* JsonManager.swift in Sources */,
 				9D74A7561E692E3A00AC66A6 /* IndexManager.swift in Sources */,
@@ -414,6 +565,7 @@
 		};
 		9D3A437D1E680E53001CE036 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28AB7E11C77E8FE21BD084AA /* Pods-WeaponsPerStage.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = KRPQ8E7V25;
@@ -427,6 +579,7 @@
 		};
 		9D3A437E1E680E53001CE036 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 897FE971890AF0FDAD81D7B1 /* Pods-WeaponsPerStage.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = KRPQ8E7V25;
@@ -440,6 +593,7 @@
 		};
 		9D3A43801E680E53001CE036 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 385A6CF511379D6343538F06 /* Pods-WeaponsPerStageTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -454,6 +608,7 @@
 		};
 		9D3A43811E680E53001CE036 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD6CE7A3601BD2049FCAA9A8 /* Pods-WeaponsPerStageTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

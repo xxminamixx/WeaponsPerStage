@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="P6c-4g-Y88">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="HKe-O8-pHR">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EDX-VK-q4T">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                         </subviews>
@@ -41,7 +41,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1904.8" y="135.38230884557723"/>
+            <point key="canvasLocation" x="2844" y="135.38230884557723"/>
         </scene>
         <!--Weapons Selection View Controller-->
         <scene sceneID="tiK-dR-adS">
@@ -74,7 +74,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bzh-kc-ggD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2645.5999999999999" y="135.38230884557723"/>
+            <point key="canvasLocation" x="3584.8000000000002" y="135.38230884557723"/>
         </scene>
         <!--Item-->
         <scene sceneID="PEP-rU-Y1W">
@@ -92,6 +92,75 @@
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="naA-qL-aS9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2119.1999999999998" y="136.28185907046478"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="g5e-jR-F9d">
+            <objects>
+                <viewController id="Ns5-nD-PAx" customClass="ConfigViewController" customModule="WeaponsPerStage" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wNW-gS-eE4"/>
+                        <viewControllerLayoutGuide type="bottom" id="O8q-A7-nTT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ote-Xa-Jjd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ITf-cR-QeQ">
+                                <rect key="frame" x="10" y="30" width="100" height="27"/>
+                                <color key="backgroundColor" red="1" green="0.10524743754000809" blue="0.19107645993146494" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="sHD-aO-GAW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="初期化">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="format:" destination="Ns5-nD-PAx" eventType="touchUpInside" id="Aa3-Ra-JBq"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="保存している武器設定を初期化します" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jw9-qC-snf">
+                                <rect key="frame" x="120" y="37.5" width="193" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="193" id="4QW-kk-x5K"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Jw9-qC-snf" firstAttribute="centerY" secondItem="ITf-cR-QeQ" secondAttribute="centerY" id="7To-Ne-djk"/>
+                            <constraint firstItem="Jw9-qC-snf" firstAttribute="leading" secondItem="ITf-cR-QeQ" secondAttribute="trailing" constant="10" id="Toe-pp-sUe"/>
+                            <constraint firstItem="ITf-cR-QeQ" firstAttribute="top" secondItem="wNW-gS-eE4" secondAttribute="bottom" constant="10" id="fbA-t1-ldq"/>
+                            <constraint firstItem="ITf-cR-QeQ" firstAttribute="leading" secondItem="ote-Xa-Jjd" secondAttribute="leading" constant="10" id="flI-Vb-wNV"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="j58-va-4cX"/>
+                    <navigationItem key="navigationItem" id="FKe-wI-01A"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7eB-Bw-Zaa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2117.5999999999999" y="921.58920539730138"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="hZN-wr-ou9">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="HKe-O8-pHR" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="gba-Ui-Xe1">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="P6c-4g-Y88" kind="relationship" relationship="viewControllers" id="EMT-Uq-Em4"/>
+                        <segue destination="Ns5-nD-PAx" kind="relationship" relationship="viewControllers" id="qja-IX-mzU"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u9E-GB-LEY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1180" y="136.28185907046478"/>
         </scene>

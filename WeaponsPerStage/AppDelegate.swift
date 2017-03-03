@@ -14,6 +14,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
+        let ud = UserDefaults.standard
+        
+        // デバッグ用
+                JsonManager.initUserData()
+//                WeaponsPerStageStoreManager.DeleteAll()
+        
+        if ud.bool(forKey: "firstLaunch") {
+            // 起動時にjsonマスタデータをRealmで永続化
+            JsonManager.initUserData()
+            ud.set(false, forKey: "firstLaunch")
+        }
+        
         return true
     }
 
