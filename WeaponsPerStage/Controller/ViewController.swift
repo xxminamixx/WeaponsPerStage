@@ -50,7 +50,8 @@ extension ViewController: UITableViewDataSource {
         // TODO: 強制アンラップしているが、nil判定が必要
         let weaponStage = WeaponsPerStageStoreManager.weaponsPerStageList()[indexPath.row]
         cell.setup(stage: weaponStage.stage!, weapon:
-            weaponStage.weapon!, subWeapon: weaponStage.subWeapon!, specialWeapon: weaponStage.specialWeapon!)
+            weaponStage.weapon!, subWeapon: weaponStage.subWeapon!, specialWeapon: weaponStage.specialWeapon!, winlose: weaponStage.winlose!, indexPath: indexPath)
+        cell.buttonColorSwitch()
         return cell
     }
 }
@@ -61,7 +62,7 @@ extension ViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         // TODO: カスタムセルの高さを固定にしているため定数にしているが、変更に対応できるように変数にしたい
-        return 50
+        return 100
     }
     
     func tableView(_ table: UITableView,didSelectRowAt indexPath: IndexPath) {

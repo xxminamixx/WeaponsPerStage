@@ -14,4 +14,5 @@ class WeaponsPerStageEntity: Object {
     dynamic var weapon: String?
     dynamic var subWeapon: String?
     dynamic var specialWeapon: String?
+    dynamic var winlose: String?
 }

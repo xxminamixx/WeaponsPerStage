@@ -11,6 +11,8 @@ import UIKit
 class ConfigViewController: UIViewController {
 
     override func viewDidLoad() {
+        navigationItem.title = ConstText.config
+        
         super.viewDidLoad()
     }
 
@@ -30,12 +32,15 @@ class ConfigViewController: UIViewController {
         let defaultAction = UIAlertAction(title: "とじる", style: UIAlertActionStyle.default, handler:{
             (action: UIAlertAction!) -> Void in
             // タブ切り替え処理
-            let viewController = self.tabBarController?.viewControllers?[0] as! UINavigationController
-            self.tabBarController?.selectedViewController = viewController
-            viewController.popToRootViewController(animated: true)
-            self.navigationController?.pushViewController(viewController, animated: true)
+            self.tabBarController?.selectedIndex = 0
         })
         alertController.addAction(defaultAction)
         present(alertController, animated: true, completion: nil)
+    }
+    
+    /// 勝敗ボタンの色を初期化
+    @IBAction func formatWinLose(_ sender: Any) {
+        WeaponsPerStageStoreManager.winloseInit()
+        self.tabBarController?.selectedIndex = 0
     }
 }

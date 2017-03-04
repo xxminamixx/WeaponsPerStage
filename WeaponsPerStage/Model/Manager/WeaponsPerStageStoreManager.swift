@@ -28,6 +28,12 @@ class WeaponsPerStageStoreManager: NSObject {
         return realm.objects(WeaponsPerStageEntity.self)
     }
     
+    static func winloseInit() {
+        let realm = try! Realm()
+        try! realm.write {
+            weaponsPerStageList().setValue("both", forKey: "winlose")
+        }
+    }
     
     /// 全データ削除
     static func DeleteAll() {
@@ -36,7 +42,6 @@ class WeaponsPerStageStoreManager: NSObject {
             realm.deleteAll()
         }
     }
-    
     
     /// クロージャに更新処理を渡す
     ///

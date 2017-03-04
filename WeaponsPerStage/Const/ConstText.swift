@@ -16,4 +16,5 @@ class ConstText {
     /* NavigationTitle */
     static let home = "イカウェポナー"
     static let weaponsSelection = "なにを持つ？"
+    static let config = "設定"
 }

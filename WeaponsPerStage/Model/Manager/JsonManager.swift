@@ -22,6 +22,7 @@ class JsonManager {
             entity.weapon = DataSource.weaponsList[index]
             entity.subWeapon = DataSource.subWeaponsList[index]
             entity.specialWeapon = DataSource.specialWeaponsList[index]
+            entity.winlose = "both"
             WeaponsPerStageStoreManager.add(object: entity)
         }
     }
