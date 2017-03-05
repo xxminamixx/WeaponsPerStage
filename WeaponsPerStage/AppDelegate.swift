@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let ud = UserDefaults.standard
         
         // デバッグ用
-//        JsonManager.initUserData()
+        JsonManager.initUserData()
 //                WeaponsPerStageStoreManager.DeleteAll()
         
         if ud.bool(forKey: "firstLaunch") {

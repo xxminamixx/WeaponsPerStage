@@ -11,19 +11,24 @@ import UIKit
 class JsonManager {
     
     static func initUserData() {
-        // ステージ配列の分だけ回し永続化する
-        /* TODO: 
+        
+        /* TODO:
             ステージ配列の長さとその他DataSourceの配列の長さが同じ前提で作っているが、
             配列の長さが異なる時クラッシュするため対応方法検討する必要あり
         */
-        for (index, element) in DataSource.stageList.enumerated() {
-           let entity = WeaponsPerStageEntity()
-            entity.stage = element
-            entity.weapon = DataSource.weaponsList[index]
-            entity.subWeapon = DataSource.subWeaponsList[index]
-            entity.specialWeapon = DataSource.specialWeaponsList[index]
-            entity.winlose = "both"
-            WeaponsPerStageStoreManager.add(object: entity)
+        // 永続化しているものが既にあるとき初期データの流し込みはしない
+        if WeaponsPerStageStoreManager.weaponsPerStageList().count == 0 {
+            // ステージ配列の分だけ回し永続化する
+            for (index, element) in DataSource.stageList.enumerated() {
+                let entity = WeaponsPerStageEntity()
+                entity.stage = element
+                entity.weapon = DataSource.weaponsList[index]
+                entity.subWeapon = DataSource.subWeaponsList[index]
+                entity.specialWeapon = DataSource.specialWeaponsList[index]
+                entity.winlose = "both"
+                WeaponsPerStageStoreManager.add(object: entity)
+            }
+
         }
     }
     
