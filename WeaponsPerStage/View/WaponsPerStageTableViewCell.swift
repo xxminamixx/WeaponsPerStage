@@ -54,17 +54,21 @@ class WaponsPerStageTableViewCell: UITableViewCell {
         self.specialWeapon.text = specialWeapon
         self.winloseStatus = winlose
         self.indexPath = indexPath
+        
+        buttonColorSwitch()
         // TODO: 画像表示
     }
     
     @IBAction func winButton(_ sender: Any) {
         // TODO: 自身のindexpathと対応したRealmのwinloseプロパティを変更する
+        WeaponsPerStageStoreManager.win(indexPath: indexPath)
         winloseStatus = "win"
         buttonColorSwitch()
     }
     
     @IBAction func loseButton(_ sender: Any) {
         // TODO: 自身のindexpathと対応したRealmのwinloseプロパティを変更する
+        WeaponsPerStageStoreManager.lose(indexPath: indexPath)
         winloseStatus = "lose"
         buttonColorSwitch()
     }

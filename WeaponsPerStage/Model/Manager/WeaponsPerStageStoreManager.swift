@@ -35,6 +35,21 @@ class WeaponsPerStageStoreManager: NSObject {
         }
     }
     
+    static func win(indexPath: IndexPath) {
+        let array = weaponsPerStageList()
+        save {
+            array[indexPath.row].winlose = "win"
+        }
+    }
+    
+    static func lose(indexPath: IndexPath) {
+        let array = weaponsPerStageList()
+        save {
+            array[indexPath.row].winlose = "lose"
+        }
+    }
+
+    
     /// 全データ削除
     static func DeleteAll() {
         let realm = try! Realm()
