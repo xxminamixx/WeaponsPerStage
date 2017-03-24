@@ -28,7 +28,7 @@
 		9D74A7561E692E3A00AC66A6 /* IndexManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D74A7541E692E3A00AC66A6 /* IndexManager.swift */; };
 		9D74A7571E692E3A00AC66A6 /* JsonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D74A7551E692E3A00AC66A6 /* JsonManager.swift */; };
 		9D74A75A1E692E5200AC66A6 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D74A7591E692E5200AC66A6 /* DataSource.swift */; };
-		9D74A75D1E692E5E00AC66A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D74A75B1E692E5E00AC66A6 /* ViewController.swift */; };
+		9D74A75D1E692E5E00AC66A6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D74A75B1E692E5E00AC66A6 /* HomeViewController.swift */; };
 		9D74A75E1E692E5E00AC66A6 /* WeaponsSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D74A75C1E692E5E00AC66A6 /* WeaponsSelectionViewController.swift */; };
 		9D74A7611E6943D400AC66A6 /* WeaponsPerStageEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D74A7601E6943D400AC66A6 /* WeaponsPerStageEntity.swift */; };
 		9D74A7631E6945B300AC66A6 /* WeaponsPerStageStoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D74A7621E6945B300AC66A6 /* WeaponsPerStageStoreManager.swift */; };
@@ -76,7 +76,7 @@
 		9D74A7541E692E3A00AC66A6 /* IndexManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IndexManager.swift; path = Model/Manager/IndexManager.swift; sourceTree = "<group>"; };
 		9D74A7551E692E3A00AC66A6 /* JsonManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JsonManager.swift; path = Model/Manager/JsonManager.swift; sourceTree = "<group>"; };
 		9D74A7591E692E5200AC66A6 /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataSource.swift; path = DataSources/DataSource.swift; sourceTree = "<group>"; };
-		9D74A75B1E692E5E00AC66A6 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Controller/ViewController.swift; sourceTree = "<group>"; };
+		9D74A75B1E692E5E00AC66A6 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = Controller/HomeViewController.swift; sourceTree = "<group>"; };
 		9D74A75C1E692E5E00AC66A6 /* WeaponsSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WeaponsSelectionViewController.swift; path = Controller/WeaponsSelectionViewController.swift; sourceTree = "<group>"; };
 		9D74A7601E6943D400AC66A6 /* WeaponsPerStageEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WeaponsPerStageEntity.swift; path = Model/Entity/WeaponsPerStageEntity.swift; sourceTree = "<group>"; };
 		9D74A7621E6945B300AC66A6 /* WeaponsPerStageStoreManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WeaponsPerStageStoreManager.swift; path = Model/Manager/WeaponsPerStageStoreManager.swift; sourceTree = "<group>"; };
@@ -183,7 +183,7 @@
 		9D3A438C1E681D74001CE036 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				9D74A75B1E692E5E00AC66A6 /* ViewController.swift */,
+				9D74A75B1E692E5E00AC66A6 /* HomeViewController.swift */,
 				9D74A75C1E692E5E00AC66A6 /* WeaponsSelectionViewController.swift */,
 				9D374BB31E811C0600571005 /* SortViewController.swift */,
 				9D74A7641E69552500AC66A6 /* ConfigViewController.swift */,
@@ -470,7 +470,7 @@
 			files = (
 				9D74A7501E692E2C00AC66A6 /* WaponsPerStageTableViewCell.swift in Sources */,
 				9D74A75E1E692E5E00AC66A6 /* WeaponsSelectionViewController.swift in Sources */,
-				9D74A75D1E692E5E00AC66A6 /* ViewController.swift in Sources */,
+				9D74A75D1E692E5E00AC66A6 /* HomeViewController.swift in Sources */,
 				9D374BAD1E810A2A00571005 /* TabBarController.swift in Sources */,
 				9D74A7651E69552500AC66A6 /* ConfigViewController.swift in Sources */,
 				9D74A75A1E692E5200AC66A6 /* DataSource.swift in Sources */,

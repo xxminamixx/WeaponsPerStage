@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  HomeViewController.swift
 //  WeaponsPerStage
 //
 //  Created by 南　京兵 on 2017/03/02.
@@ -9,7 +9,7 @@
 import UIKit
 import SlideMenuControllerSwift
 
-class ViewController: UIViewController {
+class HomeViewController: UIViewController {
 
     /// ステージと武器を表示するTableView
     @IBOutlet weak var weaponsPerStageTableView: UITableView!
@@ -51,7 +51,7 @@ class ViewController: UIViewController {
 
         
 // MARK: - TableViewDataSource
-extension ViewController: UITableViewDataSource {
+extension HomeViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // TODO: ステージの個数と武器の個数が同じなので今はステージの個数を参照他にいい方法あればそちらに変更したい
@@ -75,7 +75,7 @@ extension ViewController: UITableViewDataSource {
 
         
 // MARK: - TableViewDelegate
-extension ViewController: UITableViewDelegate {
+extension HomeViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         // TODO: カスタムセルの高さを固定にしているため定数にしているが、変更に対応できるように変数にしたい
