@@ -29,16 +29,6 @@ class ViewController: UIViewController {
         let nib = UINib.init(nibName: WaponsPerStageTableViewCell.nibName, bundle: nil)
         weaponsPerStageTableView.register(nib, forCellReuseIdentifier: WaponsPerStageTableViewCell.nibName)
         
-        //
-//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//        let selectionViewController = storyboard.instantiateViewController(withIdentifier: "WeaponsSelectionViewController") as! WeaponsSelectionViewController
-//        let sortViewController = storyboard.instantiateViewController(withIdentifier: "SortViewController") as! SortViewController
-//
-//        let nvc: UINavigationController = UINavigationController(rootViewController: selectionViewController)
-//
-//
-//        var slideMenuController = SlideMenuController(mainViewController:nvc, leftMenuViewController: sortViewController, rightMenuViewController: sortViewController)
-        
         super.viewDidLoad()
     }
     
@@ -97,6 +87,15 @@ extension ViewController: UITableViewDelegate {
         // どのセルをタップして遷移したかを保持
         // TODO: この方法は微妙なのであとでスマートな方法を考える
         IndexManager.indexPath = indexPath
+        
+//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//        let selectionViewController = storyboard.instantiateViewController(withIdentifier: "WeaponsSelectionViewController") as! WeaponsSelectionViewController
+//        let sortViewController = storyboard.instantiateViewController(withIdentifier: "SortViewController") as! SortViewController
+//        
+//        let nvc: UINavigationController = UINavigationController(rootViewController: selectionViewController)
+//        
+//        let slideMenuController = SlideMenuController(mainViewController:nvc, leftMenuViewController: sortViewController, rightMenuViewController: sortViewController)
+        
         self.navigationController?.pushViewController(viewController!, animated: true)
 //        self.navigationController?.pushViewController(slideMenuController, animated: true)
     }
