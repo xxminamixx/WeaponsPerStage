@@ -18,10 +18,6 @@ class WeaponsSelectionViewController: UIViewController {
         // NavigationBarのタイトル
         navigationItem.title = ConstText.weaponsSelection
         
-        // サーチボタンをNavigationBarの右に追加
-        let rightSearchBarButtonItem: UIBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.search, target: self, action: #selector(WeaponsSelectionViewController.searchButtonTapped))
-        self.navigationItem.setRightBarButtonItems([rightSearchBarButtonItem], animated: true)
-        
         // tableView初期設定
         weaponsTableView.dataSource = self
         weaponsTableView.delegate = self
@@ -33,11 +29,6 @@ class WeaponsSelectionViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-    }
-    
-    func searchButtonTapped(){
-        print("タップされました")
-        self.slideMenuController()?.openRight()
     }
     
 }

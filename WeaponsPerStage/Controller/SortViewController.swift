@@ -10,14 +10,47 @@ import UIKit
 
 class SortViewController: UIViewController {
     
+    @IBOutlet weak var tableView: UITableView!
 
     override func viewDidLoad() {
+        // TableViewの初期設定
+        tableView.delegate = self
+        tableView.dataSource = self
+        let nib = UINib.init(nibName: WeaponsTableViewCell.nibName, bundle: nil)
+        tableView.register(nib, forCellReuseIdentifier: WeaponsTableViewCell.nibName)
+        
         super.viewDidLoad()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        //  presentingViewController!.dismiss(animated: true, completion: nil)
     }
     
+}
+
+// MARK: - TableViewDataSource
+extension SortViewController: UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return DataSource.weaponType.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier:  WeaponsTableViewCell.nibName, for: indexPath) as! WeaponsTableViewCell
+        cell.setup(weapon: DataSource.weaponType[indexPath.row])
+        return cell
+    }
+}
+
+
+// MARK: - TableViewDelegate
+extension SortViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 50
+    }
+    
+    func tableView(_ table: UITableView,didSelectRowAt indexPath: IndexPath) {
+        self.slideMenuController()?.closeRight()
+    }
 }
