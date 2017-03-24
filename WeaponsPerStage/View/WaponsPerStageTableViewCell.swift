@@ -14,6 +14,7 @@ class WaponsPerStageTableViewCell: UITableViewCell {
     static let nibName = "WaponsPerStageTableViewCell"
     var winloseStatus = "both"
     var indexPath: IndexPath = [0, 0]
+    var completion: () -> Void = {}
     
     /// ステージ名ラベル
     @IBOutlet weak var stage: UILabel!
@@ -47,13 +48,14 @@ class WaponsPerStageTableViewCell: UITableViewCell {
     ///   - weapon: 武器名
     ///   - subWeapon: サブ名
     ///   - specialWeapon: スペシャル名
-    func setup(stage: String, weapon: String, subWeapon: String, specialWeapon: String, winlose: String, indexPath: IndexPath) {
+    func setup(stage: String, weapon: String, subWeapon: String, specialWeapon: String, winlose: String, indexPath: IndexPath, completion: @escaping () -> Void) {
         self.stage.text = stage
         self.weapon.text = weapon
         self.subWeapon.text = subWeapon
         self.specialWeapon.text = specialWeapon
         self.winloseStatus = winlose
         self.indexPath = indexPath
+        self.completion = completion
         
         buttonColorSwitch()
         // TODO: 画像表示
@@ -64,6 +66,7 @@ class WaponsPerStageTableViewCell: UITableViewCell {
         WeaponsPerStageStoreManager.win(indexPath: indexPath)
         winloseStatus = "win"
         buttonColorSwitch()
+        completion()
     }
     
     @IBAction func loseButton(_ sender: Any) {
@@ -71,6 +74,7 @@ class WaponsPerStageTableViewCell: UITableViewCell {
         WeaponsPerStageStoreManager.lose(indexPath: indexPath)
         winloseStatus = "lose"
         buttonColorSwitch()
+        completion()
     }
     
     /// 勝敗ボタンの色を切り替える
@@ -78,11 +82,11 @@ class WaponsPerStageTableViewCell: UITableViewCell {
     /// - Parameter win: winボタンを押した時true, loseボタンをおしたときfalse
     func buttonColorSwitch() {
         if winloseStatus == "win" {
-            winButton.backgroundColor = UIColor.red
+            winButton.backgroundColor = ConstColor.purple
             loseButton.backgroundColor = UIColor.gray
         } else if winloseStatus == "lose" {
             winButton.backgroundColor = UIColor.gray
-            loseButton.backgroundColor = UIColor.blue
+            loseButton.backgroundColor = ConstColor.skyBlue
         } else {
             winButton.backgroundColor = UIColor.gray
             loseButton.backgroundColor = UIColor.gray

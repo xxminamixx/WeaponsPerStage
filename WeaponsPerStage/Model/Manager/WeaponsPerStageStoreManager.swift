@@ -35,6 +35,7 @@ class WeaponsPerStageStoreManager: NSObject {
         }
     }
     
+    // 指定したindexにあるプロパティをwinに更新
     static func win(indexPath: IndexPath) {
         let array = weaponsPerStageList()
         save {
@@ -42,11 +43,22 @@ class WeaponsPerStageStoreManager: NSObject {
         }
     }
     
+    // 指定したindexにあるプロパティをloseに更新
     static func lose(indexPath: IndexPath) {
         let array = weaponsPerStageList()
         save {
             array[indexPath.row].winlose = "lose"
         }
+    }
+
+    static func winCount() -> Int {
+        let array = weaponsPerStageList()
+        return array.filter({ $0.winlose == "win" }).count
+    }
+    
+    static func loseCount() -> Int {
+        let array = weaponsPerStageList()
+        return array.filter({ $0.winlose == "lose" }).count
     }
 
     

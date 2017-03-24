@@ -12,6 +12,10 @@
 		9D1A033E1E6969C000EAFAFB /* ConstText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1A033D1E6969C000EAFAFB /* ConstText.swift */; };
 		9D1A03411E696EBA00EAFAFB /* ConstColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1A03401E696EBA00EAFAFB /* ConstColor.swift */; };
 		9D1A03431E69709A00EAFAFB /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1A03421E69709A00EAFAFB /* NavigationController.swift */; };
+		9D374BAD1E810A2A00571005 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D374BAC1E810A2A00571005 /* TabBarController.swift */; };
+		9D374BB11E81122100571005 /* config.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D374BAF1E81122100571005 /* config.png */; };
+		9D374BB21E81122100571005 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D374BB01E81122100571005 /* home.png */; };
+		9D374BB41E811C0600571005 /* SortViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D374BB31E811C0600571005 /* SortViewController.swift */; };
 		9D3A43631E680E52001CE036 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3A43621E680E52001CE036 /* AppDelegate.swift */; };
 		9D3A43681E680E52001CE036 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D3A43661E680E52001CE036 /* Main.storyboard */; };
 		9D3A436A1E680E52001CE036 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D3A43691E680E52001CE036 /* Assets.xcassets */; };
@@ -51,6 +55,10 @@
 		9D1A033D1E6969C000EAFAFB /* ConstText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConstText.swift; path = Const/ConstText.swift; sourceTree = "<group>"; };
 		9D1A03401E696EBA00EAFAFB /* ConstColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConstColor.swift; path = Const/ConstColor.swift; sourceTree = "<group>"; };
 		9D1A03421E69709A00EAFAFB /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NavigationController.swift; path = Controller/NavigationController.swift; sourceTree = "<group>"; };
+		9D374BAC1E810A2A00571005 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabBarController.swift; path = Controller/TabBarController.swift; sourceTree = "<group>"; };
+		9D374BAF1E81122100571005 /* config.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = config.png; path = Resources/config.png; sourceTree = "<group>"; };
+		9D374BB01E81122100571005 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home.png; path = Resources/home.png; sourceTree = "<group>"; };
+		9D374BB31E811C0600571005 /* SortViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SortViewController.swift; path = Controller/SortViewController.swift; sourceTree = "<group>"; };
 		9D3A435F1E680E52001CE036 /* WeaponsPerStage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeaponsPerStage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D3A43621E680E52001CE036 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D3A43671E680E52001CE036 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -115,6 +123,15 @@
 			name = Const;
 			sourceTree = "<group>";
 		};
+		9D374BAE1E8111E500571005 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				9D374BAF1E81122100571005 /* config.png */,
+				9D374BB01E81122100571005 /* home.png */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
 		9D3A43561E680E52001CE036 = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +155,7 @@
 		9D3A43611E680E52001CE036 /* WeaponsPerStage */ = {
 			isa = PBXGroup;
 			children = (
+				9D374BAE1E8111E500571005 /* Resource */,
 				9D3A43621E680E52001CE036 /* AppDelegate.swift */,
 				9D1A033F1E6969C700EAFAFB /* Const */,
 				9D74A7581E692E4300AC66A6 /* Model */,
@@ -165,8 +183,10 @@
 			children = (
 				9D74A75B1E692E5E00AC66A6 /* ViewController.swift */,
 				9D74A75C1E692E5E00AC66A6 /* WeaponsSelectionViewController.swift */,
+				9D374BB31E811C0600571005 /* SortViewController.swift */,
 				9D74A7641E69552500AC66A6 /* ConfigViewController.swift */,
 				9D1A03421E69709A00EAFAFB /* NavigationController.swift */,
+				9D374BAC1E810A2A00571005 /* TabBarController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -322,6 +342,8 @@
 				9D3A436D1E680E53001CE036 /* LaunchScreen.storyboard in Resources */,
 				6AA6030D1E6837E80098FAC1 /* Resources.bundle in Resources */,
 				9D3A436A1E680E52001CE036 /* Assets.xcassets in Resources */,
+				9D374BB11E81122100571005 /* config.png in Resources */,
+				9D374BB21E81122100571005 /* home.png in Resources */,
 				9D3A43681E680E52001CE036 /* Main.storyboard in Resources */,
 				9D74A7511E692E2C00AC66A6 /* WaponsPerStageTableViewCell.xib in Resources */,
 				9D74A7531E692E2C00AC66A6 /* WeaponsTableViewCell.xib in Resources */,
@@ -438,12 +460,14 @@
 				9D74A7501E692E2C00AC66A6 /* WaponsPerStageTableViewCell.swift in Sources */,
 				9D74A75E1E692E5E00AC66A6 /* WeaponsSelectionViewController.swift in Sources */,
 				9D74A75D1E692E5E00AC66A6 /* ViewController.swift in Sources */,
+				9D374BAD1E810A2A00571005 /* TabBarController.swift in Sources */,
 				9D74A7651E69552500AC66A6 /* ConfigViewController.swift in Sources */,
 				9D74A75A1E692E5200AC66A6 /* DataSource.swift in Sources */,
 				9D1A03431E69709A00EAFAFB /* NavigationController.swift in Sources */,
 				9D74A7631E6945B300AC66A6 /* WeaponsPerStageStoreManager.swift in Sources */,
 				9D74A7611E6943D400AC66A6 /* WeaponsPerStageEntity.swift in Sources */,
 				9D74A7521E692E2C00AC66A6 /* WeaponsTableViewCell.swift in Sources */,
+				9D374BB41E811C0600571005 /* SortViewController.swift in Sources */,
 				9D74A7571E692E3A00AC66A6 /* JsonManager.swift in Sources */,
 				9D74A7561E692E3A00AC66A6 /* IndexManager.swift in Sources */,
 				9D1A033E1E6969C000EAFAFB /* ConstText.swift in Sources */,

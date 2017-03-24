@@ -12,7 +12,7 @@ class NavigationController: UINavigationController {
 
     override func viewDidLoad() {
         // TODO: NavigationBarの色をUIColorで変えたい
-        navigationBar.barStyle = UIBarStyle.black
+        navigationBar.barTintColor = ConstColor.yellowGreen
         navigationBar.tintColor = UIColor.white
         
         // 戻るボタンの文言を設定
@@ -24,7 +24,6 @@ class NavigationController: UINavigationController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
 }

@@ -7,11 +7,17 @@
 //
 
 import UIKit
+import SlideMenuControllerSwift
 
 class ViewController: UIViewController {
 
     /// ステージと武器を表示するTableView
     @IBOutlet weak var weaponsPerStageTableView: UITableView!
+    
+    /// 勝利数をカウント
+    @IBOutlet weak var winCount: UILabel!
+    /// 敗北数をカウント
+    @IBOutlet weak var loseCount: UILabel!
     
     override func viewDidLoad() {
         // NavigationBarのタイトル
@@ -23,16 +29,33 @@ class ViewController: UIViewController {
         let nib = UINib.init(nibName: WaponsPerStageTableViewCell.nibName, bundle: nil)
         weaponsPerStageTableView.register(nib, forCellReuseIdentifier: WaponsPerStageTableViewCell.nibName)
         
+        //
+//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//        let selectionViewController = storyboard.instantiateViewController(withIdentifier: "WeaponsSelectionViewController") as! WeaponsSelectionViewController
+//        let sortViewController = storyboard.instantiateViewController(withIdentifier: "SortViewController") as! SortViewController
+//
+//        let nvc: UINavigationController = UINavigationController(rootViewController: selectionViewController)
+//
+//
+//        var slideMenuController = SlideMenuController(mainViewController:nvc, leftMenuViewController: sortViewController, rightMenuViewController: sortViewController)
+        
         super.viewDidLoad()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         // 武器選択画面から戻ってきたときにTableView更新
         weaponsPerStageTableView.reloadData()
+        // 勝敗ラベルを更新
+        winLoseCountLoad()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    func winLoseCountLoad() {
+        self.winCount.text = WeaponsPerStageStoreManager.winCount().description
+        self.loseCount.text = WeaponsPerStageStoreManager.loseCount().description
     }
 }
 
@@ -50,7 +73,11 @@ extension ViewController: UITableViewDataSource {
         // TODO: 強制アンラップしているが、nil判定が必要
         let weaponStage = WeaponsPerStageStoreManager.weaponsPerStageList()[indexPath.row]
         cell.setup(stage: weaponStage.stage!, weapon:
-            weaponStage.weapon!, subWeapon: weaponStage.subWeapon!, specialWeapon: weaponStage.specialWeapon!, winlose: weaponStage.winlose!, indexPath: indexPath)
+            weaponStage.weapon!, subWeapon: weaponStage.subWeapon!, specialWeapon: weaponStage.specialWeapon!, winlose: weaponStage.winlose!, indexPath: indexPath, completion: {
+            self.winCount.text = WeaponsPerStageStoreManager.winCount().description
+            self.loseCount.text = WeaponsPerStageStoreManager.loseCount().description
+        })
+        
         cell.buttonColorSwitch()
         return cell
     }
@@ -71,5 +98,6 @@ extension ViewController: UITableViewDelegate {
         // TODO: この方法は微妙なのであとでスマートな方法を考える
         IndexManager.indexPath = indexPath
         self.navigationController?.pushViewController(viewController!, animated: true)
+//        self.navigationController?.pushViewController(slideMenuController, animated: true)
     }
 }
