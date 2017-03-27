@@ -23,6 +23,7 @@ class JsonManager {
                 let entity = WeaponsPerStageEntity()
                 entity.stage = element
                 entity.weapon = DataSource.weaponsList[index]
+                entity.weaponIcon = DataSource.weaponsIcon[index]
                 entity.subWeapon = DataSource.subWeaponsList[index]
                 entity.specialWeapon = DataSource.specialWeaponsList[index]
                 entity.winlose = "both"
@@ -46,7 +47,7 @@ class JsonManager {
     
     // 武器個数を返す、パースに失敗している場合は0を返す
     static func CountAllWeapons() -> Int {
-        guard let weaponsList = weaponsList() else {
+        guard let weaponsList = DataSource.masterWeaponList else {
             return 0
         }
         return weaponsList.count
@@ -78,7 +79,7 @@ class JsonManager {
     /// - Parameter key: 武器辞書から欲しいkey
     /// - Returns: key配列 ex: 引数nameとするとname配列を返す
     static func weaponsElementList(key: String) -> Array<String> {
-        guard let weaponsList = JsonManager.weaponsList() else {
+        guard let weaponsList = DataSource.masterWeaponList else {
             return []
         }
         

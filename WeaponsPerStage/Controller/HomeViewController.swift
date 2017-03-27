@@ -63,7 +63,7 @@ extension HomeViewController: UITableViewDataSource {
         // TODO: 強制アンラップしているが、nil判定が必要
         let weaponStage = WeaponsPerStageStoreManager.weaponsPerStageList()[indexPath.row]
         cell.setup(stage: weaponStage.stage!, weapon:
-            weaponStage.weapon!, subWeapon: weaponStage.subWeapon!, specialWeapon: weaponStage.specialWeapon!, winlose: weaponStage.winlose!, indexPath: indexPath, completion: {
+            weaponStage.weapon!, weaponIcon: weaponStage.weaponIcon!, subWeapon: weaponStage.subWeapon!, specialWeapon: weaponStage.specialWeapon!, winlose: weaponStage.winlose!, indexPath: indexPath, completion: {
             self.winCount.text = WeaponsPerStageStoreManager.winCount().description
             self.loseCount.text = WeaponsPerStageStoreManager.loseCount().description
         })

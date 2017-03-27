@@ -26,7 +26,7 @@ class ContainViewController: SlideMenuController {
     override func viewDidLoad() {
 
         // NavigationBarにボタン追加
-        self.addRightBarButtonWithImage(UIImage(named: "home.png")!)
+        self.addRightBarButtonWithImage(UIImage(named: "Sort.png")!)
         
         super.viewDidLoad()
     }

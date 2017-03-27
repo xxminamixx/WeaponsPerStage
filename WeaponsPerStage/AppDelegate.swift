@@ -18,6 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // 初期データ流し込み
         JsonManager.initUserData()
         
+        // 武器マスタの初期化
+        DataSource.masterWeaponList = JsonManager.weaponsList()
+        
         return true
     }
 

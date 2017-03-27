@@ -48,15 +48,16 @@ class WaponsPerStageTableViewCell: UITableViewCell {
     ///   - weapon: 武器名
     ///   - subWeapon: サブ名
     ///   - specialWeapon: スペシャル名
-    func setup(stage: String, weapon: String, subWeapon: String, specialWeapon: String, winlose: String, indexPath: IndexPath, completion: @escaping () -> Void) {
+    func setup(stage: String, weapon: String, weaponIcon: String, subWeapon: String, specialWeapon: String, winlose: String, indexPath: IndexPath, completion: @escaping () -> Void) {
         self.stage.text = stage
         self.weapon.text = weapon
+        
         self.subWeapon.text = subWeapon
         self.specialWeapon.text = specialWeapon
         self.winloseStatus = winlose
         self.indexPath = indexPath
         self.completion = completion
-        
+        self.weaponImage.image = UIImage.init(named: weaponIcon)
         buttonColorSwitch()
         // TODO: 画像表示
     }

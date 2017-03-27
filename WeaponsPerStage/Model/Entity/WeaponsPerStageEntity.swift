@@ -12,6 +12,7 @@ import RealmSwift
 class WeaponsPerStageEntity: Object {
     dynamic var stage: String?
     dynamic var weapon: String?
+    dynamic var weaponIcon: String?
     dynamic var subWeapon: String?
     dynamic var specialWeapon: String?
     dynamic var winlose: String?

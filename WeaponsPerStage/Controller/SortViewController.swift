@@ -51,6 +51,8 @@ extension SortViewController: UITableViewDelegate {
     }
     
     func tableView(_ table: UITableView,didSelectRowAt indexPath: IndexPath) {
+        DataSource.masterWeaponList = DataSource.masterWeaponList?.filter({$0["type"] == DataSource.weaponType[indexPath.row] })
+        DataSource.weaponNameList = JsonManager.weaponsName()
         self.slideMenuController()?.closeRight()
     }
 }

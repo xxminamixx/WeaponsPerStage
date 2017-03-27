@@ -8,13 +8,105 @@
 
 /* Begin PBXBuildFile section */
 		6AA6030D1E6837E80098FAC1 /* Resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6AA6030C1E6837E80098FAC1 /* Resources.bundle */; };
+		6AA6036D1E863CDA0098FAC1 /* 3k-scope-custom.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA603121E863CDA0098FAC1 /* 3k-scope-custom.png */; };
+		6AA6036E1E863CDA0098FAC1 /* 52-gallon-deco.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA603131E863CDA0098FAC1 /* 52-gallon-deco.png */; };
+		6AA6036F1E863CDA0098FAC1 /* 52-gallon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA603141E863CDA0098FAC1 /* 52-gallon.png */; };
+		6AA603701E863CDA0098FAC1 /* 96-gallon-deco.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA603151E863CDA0098FAC1 /* 96-gallon-deco.png */; };
+		6AA603711E863CDA0098FAC1 /* 96-gallon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA603161E863CDA0098FAC1 /* 96-gallon.png */; };
+		6AA603721E863CDA0098FAC1 /* bamboozler-14-mk-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA603171E863CDA0098FAC1 /* bamboozler-14-mk-1.png */; };
+		6AA603731E863CDA0098FAC1 /* bamboozler-14-mk-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA603181E863CDA0098FAC1 /* bamboozler-14-mk-2.png */; };
+		6AA603741E863CDA0098FAC1 /* bamboozler-14-mk-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA603191E863CDA0098FAC1 /* bamboozler-14-mk-3.png */; };
+		6AA603751E863CDA0098FAC1 /* barrel-spinner-deco.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA6031A1E863CDA0098FAC1 /* barrel-spinner-deco.png */; };
+		6AA603761E863CDA0098FAC1 /* barrel-spinner-remix.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA6031B1E863CDA0098FAC1 /* barrel-spinner-remix.png */; };
+		6AA603771E863CDA0098FAC1 /* barrel-spinner.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA6031C1E863CDA0098FAC1 /* barrel-spinner.png */; };
+		6AA603781E863CDA0098FAC1 /* bold-marker-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA6031D1E863CDA0098FAC1 /* bold-marker-7.png */; };
+		6AA603791E863CDA0098FAC1 /* bold-marker-neo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA6031E1E863CDA0098FAC1 /* bold-marker-neo.png */; };
+		6AA6037A1E863CDA0098FAC1 /* bold-marker.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA6031F1E863CDA0098FAC1 /* bold-marker.png */; };
+		6AA6037B1E863CDA0098FAC1 /* bucket-slosher-deco.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA603201E863CDA0098FAC1 /* bucket-slosher-deco.png */; };
+		6AA6037C1E863CDA0098FAC1 /* bucket-slosher-soda.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA603211E863CDA0098FAC1 /* bucket-slosher-soda.png */; };
+		6AA6037D1E863CDA0098FAC1 /* bucket-slosher.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA603221E863CDA0098FAC1 /* bucket-slosher.png */; };
+		6AA6037E1E863CDA0098FAC1 /* carbon-roller-deco.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA603231E863CDA0098FAC1 /* carbon-roller-deco.png */; };
+		6AA6037F1E863CDA0098FAC1 /* carbon-roller.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA603241E863CDA0098FAC1 /* carbon-roller.png */; };
+		6AA603801E863CDA0098FAC1 /* dual-sweeper-custom.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA603251E863CDA0098FAC1 /* dual-sweeper-custom.png */; };
+		6AA603811E863CDA0098FAC1 /* dual-sweeper.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA603261E863CDA0098FAC1 /* dual-sweeper.png */; };
+		6AA603821E863CDA0098FAC1 /* dynamo-roller-burned.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA603271E863CDA0098FAC1 /* dynamo-roller-burned.png */; };
+		6AA603831E863CDA0098FAC1 /* dynamo-roller-tesla.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA603281E863CDA0098FAC1 /* dynamo-roller-tesla.png */; };
+		6AA603841E863CDA0098FAC1 /* dynamo-roller.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA603291E863CDA0098FAC1 /* dynamo-roller.png */; };
+		6AA603851E863CDA0098FAC1 /* h3-reelgun-cherry.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA6032A1E863CDA0098FAC1 /* h3-reelgun-cherry.png */; };
+		6AA603861E863CDA0098FAC1 /* h3-reelgun-d.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA6032B1E863CDA0098FAC1 /* h3-reelgun-d.png */; };
+		6AA603871E863CDA0098FAC1 /* h3-reelgun.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA6032C1E863CDA0098FAC1 /* h3-reelgun.png */; };
+		6AA603881E863CDA0098FAC1 /* hero-charger.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA6032D1E863CDA0098FAC1 /* hero-charger.png */; };
+		6AA603891E863CDA0098FAC1 /* hero-roller.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA6032E1E863CDA0098FAC1 /* hero-roller.png */; };
+		6AA6038A1E863CDA0098FAC1 /* hero-shooter.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA6032F1E863CDA0098FAC1 /* hero-shooter.png */; };
+		6AA6038B1E863CDA0098FAC1 /* hissen-hue.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA603301E863CDA0098FAC1 /* hissen-hue.png */; };
+		6AA6038C1E863CDA0098FAC1 /* hissen.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA603311E863CDA0098FAC1 /* hissen.png */; };
+		6AA6038D1E863CDA0098FAC1 /* hokusai-hue.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA603321E863CDA0098FAC1 /* hokusai-hue.png */; };
+		6AA6038E1E863CDA0098FAC1 /* hokusai.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA603331E863CDA0098FAC1 /* hokusai.png */; };
+		6AA6038F1E863CDA0098FAC1 /* hot-blaster-custom.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA603341E863CDA0098FAC1 /* hot-blaster-custom.png */; };
+		6AA603901E863CDA0098FAC1 /* hot-blaster.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA603351E863CDA0098FAC1 /* hot-blaster.png */; };
+		6AA603911E863CDA0098FAC1 /* hydrant-custom.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA603361E863CDA0098FAC1 /* hydrant-custom.png */; };
+		6AA603921E863CDA0098FAC1 /* hydrant.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA603371E863CDA0098FAC1 /* hydrant.png */; };
+		6AA603931E863CDA0098FAC1 /* jet-sweeper-custom.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA603381E863CDA0098FAC1 /* jet-sweeper-custom.png */; };
+		6AA603941E863CDA0098FAC1 /* jet-sweeper.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA603391E863CDA0098FAC1 /* jet-sweeper.png */; };
+		6AA603951E863CDA0098FAC1 /* l3-reelgun-d.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA6033A1E863CDA0098FAC1 /* l3-reelgun-d.png */; };
+		6AA603961E863CDA0098FAC1 /* l3-reelgun.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA6033B1E863CDA0098FAC1 /* l3-reelgun.png */; };
+		6AA603971E863CDA0098FAC1 /* liter-3k-custom.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA6033C1E863CDA0098FAC1 /* liter-3k-custom.png */; };
+		6AA603981E863CDA0098FAC1 /* liter-3k-scope.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA6033D1E863CDA0098FAC1 /* liter-3k-scope.png */; };
+		6AA603991E863CDA0098FAC1 /* liter-3k.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA6033E1E863CDA0098FAC1 /* liter-3k.png */; };
+		6AA6039A1E863CDA0098FAC1 /* long-blaster-custom.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA6033F1E863CDA0098FAC1 /* long-blaster-custom.png */; };
+		6AA6039B1E863CDA0098FAC1 /* long-blaster-necro.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA603401E863CDA0098FAC1 /* long-blaster-necro.png */; };
+		6AA6039C1E863CDA0098FAC1 /* long-blaster.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA603411E863CDA0098FAC1 /* long-blaster.png */; };
+		6AA6039D1E863CDA0098FAC1 /* momiji-shooter.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA603421E863CDA0098FAC1 /* momiji-shooter.png */; };
+		6AA6039E1E863CDA0098FAC1 /* n-zap-83.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA603431E863CDA0098FAC1 /* n-zap-83.png */; };
+		6AA6039F1E863CDA0098FAC1 /* n-zap-85.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA603441E863CDA0098FAC1 /* n-zap-85.png */; };
+		6AA603A01E863CDA0098FAC1 /* n-zap-89.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA603451E863CDA0098FAC1 /* n-zap-89.png */; };
+		6AA603A11E863CDA0098FAC1 /* nova-blaster-neo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA603461E863CDA0098FAC1 /* nova-blaster-neo.png */; };
+		6AA603A21E863CDA0098FAC1 /* nova-blaster.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA603471E863CDA0098FAC1 /* nova-blaster.png */; };
+		6AA603A31E863CDA0098FAC1 /* octa-shooter.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA603481E863CDA0098FAC1 /* octa-shooter.png */; };
+		6AA603A41E863CDA0098FAC1 /* pablo-hue.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA603491E863CDA0098FAC1 /* pablo-hue.png */; };
+		6AA603A51E863CDA0098FAC1 /* pablo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA6034A1E863CDA0098FAC1 /* pablo.png */; };
+		6AA603A61E863CDA0098FAC1 /* permanent-pablo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA6034B1E863CDA0098FAC1 /* permanent-pablo.png */; };
+		6AA603A71E863CDA0098FAC1 /* prime-shooter-berry.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA6034C1E863CDA0098FAC1 /* prime-shooter-berry.png */; };
+		6AA603A81E863CDA0098FAC1 /* prime-shooter-collab.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA6034D1E863CDA0098FAC1 /* prime-shooter-collab.png */; };
+		6AA603A91E863CDA0098FAC1 /* prime-shooter.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA6034E1E863CDA0098FAC1 /* prime-shooter.png */; };
+		6AA603AA1E863CDA0098FAC1 /* pro-modeler-mg.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA6034F1E863CDA0098FAC1 /* pro-modeler-mg.png */; };
+		6AA603AB1E863CDA0098FAC1 /* pro-modeler-pg.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA603501E863CDA0098FAC1 /* pro-modeler-pg.png */; };
+		6AA603AC1E863CDA0098FAC1 /* pro-modeler-rg.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA603511E863CDA0098FAC1 /* pro-modeler-rg.png */; };
+		6AA603AD1E863CDA0098FAC1 /* r-blaster-elite.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA603521E863CDA0098FAC1 /* r-blaster-elite.png */; };
+		6AA603AE1E863CDA0098FAC1 /* r-blaster-eliter-deco.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA603531E863CDA0098FAC1 /* r-blaster-eliter-deco.png */; };
+		6AA603AF1E863CDA0098FAC1 /* rapid-blaster-deco.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA603541E863CDA0098FAC1 /* rapid-blaster-deco.png */; };
+		6AA603B01E863CDA0098FAC1 /* rapid-blaster.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA603551E863CDA0098FAC1 /* rapid-blaster.png */; };
+		6AA603B11E863CDA0098FAC1 /* screw-slosher-neo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA603561E863CDA0098FAC1 /* screw-slosher-neo.png */; };
+		6AA603B21E863CDA0098FAC1 /* screw-slosher.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA603571E863CDA0098FAC1 /* screw-slosher.png */; };
+		6AA603B31E863CDA0098FAC1 /* sharp-marker-neo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA603581E863CDA0098FAC1 /* sharp-marker-neo.png */; };
+		6AA603B41E863CDA0098FAC1 /* sharp-marker.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA603591E863CDA0098FAC1 /* sharp-marker.png */; };
+		6AA603B51E863CDA0098FAC1 /* splat-charger-bento.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA6035A1E863CDA0098FAC1 /* splat-charger-bento.png */; };
+		6AA603B61E863CDA0098FAC1 /* splat-charger-scope.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA6035B1E863CDA0098FAC1 /* splat-charger-scope.png */; };
+		6AA603B71E863CDA0098FAC1 /* splat-charger-wakame.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA6035C1E863CDA0098FAC1 /* splat-charger-wakame.png */; };
+		6AA603B81E863CDA0098FAC1 /* splat-charger.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA6035D1E863CDA0098FAC1 /* splat-charger.png */; };
+		6AA603B91E863CDA0098FAC1 /* splat-roller-collab.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA6035E1E863CDA0098FAC1 /* splat-roller-collab.png */; };
+		6AA603BA1E863CDA0098FAC1 /* splat-roller-corocoro.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA6035F1E863CDA0098FAC1 /* splat-roller-corocoro.png */; };
+		6AA603BB1E863CDA0098FAC1 /* splat-roller.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA603601E863CDA0098FAC1 /* splat-roller.png */; };
+		6AA603BC1E863CDA0098FAC1 /* splat-scope-bento.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA603611E863CDA0098FAC1 /* splat-scope-bento.png */; };
+		6AA603BD1E863CDA0098FAC1 /* splat-shooter-collab.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA603621E863CDA0098FAC1 /* splat-shooter-collab.png */; };
+		6AA603BE1E863CDA0098FAC1 /* splat-shooter.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA603631E863CDA0098FAC1 /* splat-shooter.png */; };
+		6AA603BF1E863CDA0098FAC1 /* splat-wakame-scope.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA603641E863CDA0098FAC1 /* splat-wakame-scope.png */; };
+		6AA603C01E863CDA0098FAC1 /* sprat-shooter-wasabi.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA603651E863CDA0098FAC1 /* sprat-shooter-wasabi.png */; };
+		6AA603C11E863CDA0098FAC1 /* sprat-spinner-collab.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA603661E863CDA0098FAC1 /* sprat-spinner-collab.png */; };
+		6AA603C21E863CDA0098FAC1 /* sprat-spinner-repair.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA603671E863CDA0098FAC1 /* sprat-spinner-repair.png */; };
+		6AA603C31E863CDA0098FAC1 /* sprat-spinner.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA603681E863CDA0098FAC1 /* sprat-spinner.png */; };
+		6AA603C41E863CDA0098FAC1 /* squicklin-alpha.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA603691E863CDA0098FAC1 /* squicklin-alpha.png */; };
+		6AA603C51E863CDA0098FAC1 /* squicklin-beta.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA6036A1E863CDA0098FAC1 /* squicklin-beta.png */; };
+		6AA603C61E863CDA0098FAC1 /* squicklin-gamma.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA6036B1E863CDA0098FAC1 /* squicklin-gamma.png */; };
+		6AA603C71E863CDA0098FAC1 /* wakaba-shooter.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA6036C1E863CDA0098FAC1 /* wakaba-shooter.png */; };
+		6AA603C91E879CCA0098FAC1 /* Sort.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA603C81E879CCA0098FAC1 /* Sort.png */; };
+		6AA603CB1E879DC90098FAC1 /* Config.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA603CA1E879DC90098FAC1 /* Config.png */; };
+		6AA603CD1E879DE80098FAC1 /* Home.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA603CC1E879DE80098FAC1 /* Home.png */; };
 		8075CC350F6F097E44A26A31 /* Pods_WeaponsPerStageTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 761AFB948E228A3FD8E04F61 /* Pods_WeaponsPerStageTests.framework */; };
 		9D1A033E1E6969C000EAFAFB /* ConstText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1A033D1E6969C000EAFAFB /* ConstText.swift */; };
 		9D1A03411E696EBA00EAFAFB /* ConstColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1A03401E696EBA00EAFAFB /* ConstColor.swift */; };
 		9D1A03431E69709A00EAFAFB /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1A03421E69709A00EAFAFB /* NavigationController.swift */; };
 		9D374BAD1E810A2A00571005 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D374BAC1E810A2A00571005 /* TabBarController.swift */; };
-		9D374BB11E81122100571005 /* config.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D374BAF1E81122100571005 /* config.png */; };
-		9D374BB21E81122100571005 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D374BB01E81122100571005 /* home.png */; };
 		9D374BB41E811C0600571005 /* SortViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D374BB31E811C0600571005 /* SortViewController.swift */; };
 		9D3A43631E680E52001CE036 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3A43621E680E52001CE036 /* AppDelegate.swift */; };
 		9D3A43681E680E52001CE036 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D3A43661E680E52001CE036 /* Main.storyboard */; };
@@ -51,14 +143,106 @@
 		28AB7E11C77E8FE21BD084AA /* Pods-WeaponsPerStage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeaponsPerStage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeaponsPerStage/Pods-WeaponsPerStage.debug.xcconfig"; sourceTree = "<group>"; };
 		385A6CF511379D6343538F06 /* Pods-WeaponsPerStageTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeaponsPerStageTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeaponsPerStageTests/Pods-WeaponsPerStageTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6AA6030C1E6837E80098FAC1 /* Resources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Resources.bundle; sourceTree = SOURCE_ROOT; };
+		6AA603121E863CDA0098FAC1 /* 3k-scope-custom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "3k-scope-custom.png"; path = "Resources/3k-scope-custom.png"; sourceTree = "<group>"; };
+		6AA603131E863CDA0098FAC1 /* 52-gallon-deco.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "52-gallon-deco.png"; path = "Resources/52-gallon-deco.png"; sourceTree = "<group>"; };
+		6AA603141E863CDA0098FAC1 /* 52-gallon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "52-gallon.png"; path = "Resources/52-gallon.png"; sourceTree = "<group>"; };
+		6AA603151E863CDA0098FAC1 /* 96-gallon-deco.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "96-gallon-deco.png"; path = "Resources/96-gallon-deco.png"; sourceTree = "<group>"; };
+		6AA603161E863CDA0098FAC1 /* 96-gallon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "96-gallon.png"; path = "Resources/96-gallon.png"; sourceTree = "<group>"; };
+		6AA603171E863CDA0098FAC1 /* bamboozler-14-mk-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bamboozler-14-mk-1.png"; path = "Resources/bamboozler-14-mk-1.png"; sourceTree = "<group>"; };
+		6AA603181E863CDA0098FAC1 /* bamboozler-14-mk-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bamboozler-14-mk-2.png"; path = "Resources/bamboozler-14-mk-2.png"; sourceTree = "<group>"; };
+		6AA603191E863CDA0098FAC1 /* bamboozler-14-mk-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bamboozler-14-mk-3.png"; path = "Resources/bamboozler-14-mk-3.png"; sourceTree = "<group>"; };
+		6AA6031A1E863CDA0098FAC1 /* barrel-spinner-deco.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "barrel-spinner-deco.png"; path = "Resources/barrel-spinner-deco.png"; sourceTree = "<group>"; };
+		6AA6031B1E863CDA0098FAC1 /* barrel-spinner-remix.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "barrel-spinner-remix.png"; path = "Resources/barrel-spinner-remix.png"; sourceTree = "<group>"; };
+		6AA6031C1E863CDA0098FAC1 /* barrel-spinner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "barrel-spinner.png"; path = "Resources/barrel-spinner.png"; sourceTree = "<group>"; };
+		6AA6031D1E863CDA0098FAC1 /* bold-marker-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bold-marker-7.png"; path = "Resources/bold-marker-7.png"; sourceTree = "<group>"; };
+		6AA6031E1E863CDA0098FAC1 /* bold-marker-neo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bold-marker-neo.png"; path = "Resources/bold-marker-neo.png"; sourceTree = "<group>"; };
+		6AA6031F1E863CDA0098FAC1 /* bold-marker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bold-marker.png"; path = "Resources/bold-marker.png"; sourceTree = "<group>"; };
+		6AA603201E863CDA0098FAC1 /* bucket-slosher-deco.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bucket-slosher-deco.png"; path = "Resources/bucket-slosher-deco.png"; sourceTree = "<group>"; };
+		6AA603211E863CDA0098FAC1 /* bucket-slosher-soda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bucket-slosher-soda.png"; path = "Resources/bucket-slosher-soda.png"; sourceTree = "<group>"; };
+		6AA603221E863CDA0098FAC1 /* bucket-slosher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bucket-slosher.png"; path = "Resources/bucket-slosher.png"; sourceTree = "<group>"; };
+		6AA603231E863CDA0098FAC1 /* carbon-roller-deco.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "carbon-roller-deco.png"; path = "Resources/carbon-roller-deco.png"; sourceTree = "<group>"; };
+		6AA603241E863CDA0098FAC1 /* carbon-roller.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "carbon-roller.png"; path = "Resources/carbon-roller.png"; sourceTree = "<group>"; };
+		6AA603251E863CDA0098FAC1 /* dual-sweeper-custom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dual-sweeper-custom.png"; path = "Resources/dual-sweeper-custom.png"; sourceTree = "<group>"; };
+		6AA603261E863CDA0098FAC1 /* dual-sweeper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dual-sweeper.png"; path = "Resources/dual-sweeper.png"; sourceTree = "<group>"; };
+		6AA603271E863CDA0098FAC1 /* dynamo-roller-burned.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dynamo-roller-burned.png"; path = "Resources/dynamo-roller-burned.png"; sourceTree = "<group>"; };
+		6AA603281E863CDA0098FAC1 /* dynamo-roller-tesla.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dynamo-roller-tesla.png"; path = "Resources/dynamo-roller-tesla.png"; sourceTree = "<group>"; };
+		6AA603291E863CDA0098FAC1 /* dynamo-roller.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dynamo-roller.png"; path = "Resources/dynamo-roller.png"; sourceTree = "<group>"; };
+		6AA6032A1E863CDA0098FAC1 /* h3-reelgun-cherry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "h3-reelgun-cherry.png"; path = "Resources/h3-reelgun-cherry.png"; sourceTree = "<group>"; };
+		6AA6032B1E863CDA0098FAC1 /* h3-reelgun-d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "h3-reelgun-d.png"; path = "Resources/h3-reelgun-d.png"; sourceTree = "<group>"; };
+		6AA6032C1E863CDA0098FAC1 /* h3-reelgun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "h3-reelgun.png"; path = "Resources/h3-reelgun.png"; sourceTree = "<group>"; };
+		6AA6032D1E863CDA0098FAC1 /* hero-charger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hero-charger.png"; path = "Resources/hero-charger.png"; sourceTree = "<group>"; };
+		6AA6032E1E863CDA0098FAC1 /* hero-roller.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hero-roller.png"; path = "Resources/hero-roller.png"; sourceTree = "<group>"; };
+		6AA6032F1E863CDA0098FAC1 /* hero-shooter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hero-shooter.png"; path = "Resources/hero-shooter.png"; sourceTree = "<group>"; };
+		6AA603301E863CDA0098FAC1 /* hissen-hue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hissen-hue.png"; path = "Resources/hissen-hue.png"; sourceTree = "<group>"; };
+		6AA603311E863CDA0098FAC1 /* hissen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hissen.png; path = Resources/hissen.png; sourceTree = "<group>"; };
+		6AA603321E863CDA0098FAC1 /* hokusai-hue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hokusai-hue.png"; path = "Resources/hokusai-hue.png"; sourceTree = "<group>"; };
+		6AA603331E863CDA0098FAC1 /* hokusai.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hokusai.png; path = Resources/hokusai.png; sourceTree = "<group>"; };
+		6AA603341E863CDA0098FAC1 /* hot-blaster-custom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hot-blaster-custom.png"; path = "Resources/hot-blaster-custom.png"; sourceTree = "<group>"; };
+		6AA603351E863CDA0098FAC1 /* hot-blaster.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hot-blaster.png"; path = "Resources/hot-blaster.png"; sourceTree = "<group>"; };
+		6AA603361E863CDA0098FAC1 /* hydrant-custom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hydrant-custom.png"; path = "Resources/hydrant-custom.png"; sourceTree = "<group>"; };
+		6AA603371E863CDA0098FAC1 /* hydrant.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hydrant.png; path = Resources/hydrant.png; sourceTree = "<group>"; };
+		6AA603381E863CDA0098FAC1 /* jet-sweeper-custom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "jet-sweeper-custom.png"; path = "Resources/jet-sweeper-custom.png"; sourceTree = "<group>"; };
+		6AA603391E863CDA0098FAC1 /* jet-sweeper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "jet-sweeper.png"; path = "Resources/jet-sweeper.png"; sourceTree = "<group>"; };
+		6AA6033A1E863CDA0098FAC1 /* l3-reelgun-d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "l3-reelgun-d.png"; path = "Resources/l3-reelgun-d.png"; sourceTree = "<group>"; };
+		6AA6033B1E863CDA0098FAC1 /* l3-reelgun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "l3-reelgun.png"; path = "Resources/l3-reelgun.png"; sourceTree = "<group>"; };
+		6AA6033C1E863CDA0098FAC1 /* liter-3k-custom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "liter-3k-custom.png"; path = "Resources/liter-3k-custom.png"; sourceTree = "<group>"; };
+		6AA6033D1E863CDA0098FAC1 /* liter-3k-scope.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "liter-3k-scope.png"; path = "Resources/liter-3k-scope.png"; sourceTree = "<group>"; };
+		6AA6033E1E863CDA0098FAC1 /* liter-3k.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "liter-3k.png"; path = "Resources/liter-3k.png"; sourceTree = "<group>"; };
+		6AA6033F1E863CDA0098FAC1 /* long-blaster-custom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "long-blaster-custom.png"; path = "Resources/long-blaster-custom.png"; sourceTree = "<group>"; };
+		6AA603401E863CDA0098FAC1 /* long-blaster-necro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "long-blaster-necro.png"; path = "Resources/long-blaster-necro.png"; sourceTree = "<group>"; };
+		6AA603411E863CDA0098FAC1 /* long-blaster.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "long-blaster.png"; path = "Resources/long-blaster.png"; sourceTree = "<group>"; };
+		6AA603421E863CDA0098FAC1 /* momiji-shooter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "momiji-shooter.png"; path = "Resources/momiji-shooter.png"; sourceTree = "<group>"; };
+		6AA603431E863CDA0098FAC1 /* n-zap-83.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "n-zap-83.png"; path = "Resources/n-zap-83.png"; sourceTree = "<group>"; };
+		6AA603441E863CDA0098FAC1 /* n-zap-85.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "n-zap-85.png"; path = "Resources/n-zap-85.png"; sourceTree = "<group>"; };
+		6AA603451E863CDA0098FAC1 /* n-zap-89.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "n-zap-89.png"; path = "Resources/n-zap-89.png"; sourceTree = "<group>"; };
+		6AA603461E863CDA0098FAC1 /* nova-blaster-neo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "nova-blaster-neo.png"; path = "Resources/nova-blaster-neo.png"; sourceTree = "<group>"; };
+		6AA603471E863CDA0098FAC1 /* nova-blaster.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "nova-blaster.png"; path = "Resources/nova-blaster.png"; sourceTree = "<group>"; };
+		6AA603481E863CDA0098FAC1 /* octa-shooter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "octa-shooter.png"; path = "Resources/octa-shooter.png"; sourceTree = "<group>"; };
+		6AA603491E863CDA0098FAC1 /* pablo-hue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pablo-hue.png"; path = "Resources/pablo-hue.png"; sourceTree = "<group>"; };
+		6AA6034A1E863CDA0098FAC1 /* pablo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pablo.png; path = Resources/pablo.png; sourceTree = "<group>"; };
+		6AA6034B1E863CDA0098FAC1 /* permanent-pablo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "permanent-pablo.png"; path = "Resources/permanent-pablo.png"; sourceTree = "<group>"; };
+		6AA6034C1E863CDA0098FAC1 /* prime-shooter-berry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "prime-shooter-berry.png"; path = "Resources/prime-shooter-berry.png"; sourceTree = "<group>"; };
+		6AA6034D1E863CDA0098FAC1 /* prime-shooter-collab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "prime-shooter-collab.png"; path = "Resources/prime-shooter-collab.png"; sourceTree = "<group>"; };
+		6AA6034E1E863CDA0098FAC1 /* prime-shooter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "prime-shooter.png"; path = "Resources/prime-shooter.png"; sourceTree = "<group>"; };
+		6AA6034F1E863CDA0098FAC1 /* pro-modeler-mg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pro-modeler-mg.png"; path = "Resources/pro-modeler-mg.png"; sourceTree = "<group>"; };
+		6AA603501E863CDA0098FAC1 /* pro-modeler-pg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pro-modeler-pg.png"; path = "Resources/pro-modeler-pg.png"; sourceTree = "<group>"; };
+		6AA603511E863CDA0098FAC1 /* pro-modeler-rg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pro-modeler-rg.png"; path = "Resources/pro-modeler-rg.png"; sourceTree = "<group>"; };
+		6AA603521E863CDA0098FAC1 /* r-blaster-elite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "r-blaster-elite.png"; path = "Resources/r-blaster-elite.png"; sourceTree = "<group>"; };
+		6AA603531E863CDA0098FAC1 /* r-blaster-eliter-deco.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "r-blaster-eliter-deco.png"; path = "Resources/r-blaster-eliter-deco.png"; sourceTree = "<group>"; };
+		6AA603541E863CDA0098FAC1 /* rapid-blaster-deco.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "rapid-blaster-deco.png"; path = "Resources/rapid-blaster-deco.png"; sourceTree = "<group>"; };
+		6AA603551E863CDA0098FAC1 /* rapid-blaster.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "rapid-blaster.png"; path = "Resources/rapid-blaster.png"; sourceTree = "<group>"; };
+		6AA603561E863CDA0098FAC1 /* screw-slosher-neo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "screw-slosher-neo.png"; path = "Resources/screw-slosher-neo.png"; sourceTree = "<group>"; };
+		6AA603571E863CDA0098FAC1 /* screw-slosher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "screw-slosher.png"; path = "Resources/screw-slosher.png"; sourceTree = "<group>"; };
+		6AA603581E863CDA0098FAC1 /* sharp-marker-neo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "sharp-marker-neo.png"; path = "Resources/sharp-marker-neo.png"; sourceTree = "<group>"; };
+		6AA603591E863CDA0098FAC1 /* sharp-marker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "sharp-marker.png"; path = "Resources/sharp-marker.png"; sourceTree = "<group>"; };
+		6AA6035A1E863CDA0098FAC1 /* splat-charger-bento.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "splat-charger-bento.png"; path = "Resources/splat-charger-bento.png"; sourceTree = "<group>"; };
+		6AA6035B1E863CDA0098FAC1 /* splat-charger-scope.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "splat-charger-scope.png"; path = "Resources/splat-charger-scope.png"; sourceTree = "<group>"; };
+		6AA6035C1E863CDA0098FAC1 /* splat-charger-wakame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "splat-charger-wakame.png"; path = "Resources/splat-charger-wakame.png"; sourceTree = "<group>"; };
+		6AA6035D1E863CDA0098FAC1 /* splat-charger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "splat-charger.png"; path = "Resources/splat-charger.png"; sourceTree = "<group>"; };
+		6AA6035E1E863CDA0098FAC1 /* splat-roller-collab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "splat-roller-collab.png"; path = "Resources/splat-roller-collab.png"; sourceTree = "<group>"; };
+		6AA6035F1E863CDA0098FAC1 /* splat-roller-corocoro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "splat-roller-corocoro.png"; path = "Resources/splat-roller-corocoro.png"; sourceTree = "<group>"; };
+		6AA603601E863CDA0098FAC1 /* splat-roller.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "splat-roller.png"; path = "Resources/splat-roller.png"; sourceTree = "<group>"; };
+		6AA603611E863CDA0098FAC1 /* splat-scope-bento.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "splat-scope-bento.png"; path = "Resources/splat-scope-bento.png"; sourceTree = "<group>"; };
+		6AA603621E863CDA0098FAC1 /* splat-shooter-collab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "splat-shooter-collab.png"; path = "Resources/splat-shooter-collab.png"; sourceTree = "<group>"; };
+		6AA603631E863CDA0098FAC1 /* splat-shooter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "splat-shooter.png"; path = "Resources/splat-shooter.png"; sourceTree = "<group>"; };
+		6AA603641E863CDA0098FAC1 /* splat-wakame-scope.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "splat-wakame-scope.png"; path = "Resources/splat-wakame-scope.png"; sourceTree = "<group>"; };
+		6AA603651E863CDA0098FAC1 /* sprat-shooter-wasabi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "sprat-shooter-wasabi.png"; path = "Resources/sprat-shooter-wasabi.png"; sourceTree = "<group>"; };
+		6AA603661E863CDA0098FAC1 /* sprat-spinner-collab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "sprat-spinner-collab.png"; path = "Resources/sprat-spinner-collab.png"; sourceTree = "<group>"; };
+		6AA603671E863CDA0098FAC1 /* sprat-spinner-repair.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "sprat-spinner-repair.png"; path = "Resources/sprat-spinner-repair.png"; sourceTree = "<group>"; };
+		6AA603681E863CDA0098FAC1 /* sprat-spinner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "sprat-spinner.png"; path = "Resources/sprat-spinner.png"; sourceTree = "<group>"; };
+		6AA603691E863CDA0098FAC1 /* squicklin-alpha.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "squicklin-alpha.png"; path = "Resources/squicklin-alpha.png"; sourceTree = "<group>"; };
+		6AA6036A1E863CDA0098FAC1 /* squicklin-beta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "squicklin-beta.png"; path = "Resources/squicklin-beta.png"; sourceTree = "<group>"; };
+		6AA6036B1E863CDA0098FAC1 /* squicklin-gamma.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "squicklin-gamma.png"; path = "Resources/squicklin-gamma.png"; sourceTree = "<group>"; };
+		6AA6036C1E863CDA0098FAC1 /* wakaba-shooter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "wakaba-shooter.png"; path = "Resources/wakaba-shooter.png"; sourceTree = "<group>"; };
+		6AA603C81E879CCA0098FAC1 /* Sort.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Sort.png; path = Resources/Sort.png; sourceTree = "<group>"; };
+		6AA603CA1E879DC90098FAC1 /* Config.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Config.png; path = Resources/Config.png; sourceTree = "<group>"; };
+		6AA603CC1E879DE80098FAC1 /* Home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Home.png; path = Resources/Home.png; sourceTree = "<group>"; };
 		761AFB948E228A3FD8E04F61 /* Pods_WeaponsPerStageTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeaponsPerStageTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		897FE971890AF0FDAD81D7B1 /* Pods-WeaponsPerStage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeaponsPerStage.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeaponsPerStage/Pods-WeaponsPerStage.release.xcconfig"; sourceTree = "<group>"; };
 		9D1A033D1E6969C000EAFAFB /* ConstText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConstText.swift; path = Const/ConstText.swift; sourceTree = "<group>"; };
 		9D1A03401E696EBA00EAFAFB /* ConstColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConstColor.swift; path = Const/ConstColor.swift; sourceTree = "<group>"; };
 		9D1A03421E69709A00EAFAFB /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NavigationController.swift; path = Controller/NavigationController.swift; sourceTree = "<group>"; };
 		9D374BAC1E810A2A00571005 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabBarController.swift; path = Controller/TabBarController.swift; sourceTree = "<group>"; };
-		9D374BAF1E81122100571005 /* config.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = config.png; path = Resources/config.png; sourceTree = "<group>"; };
-		9D374BB01E81122100571005 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home.png; path = Resources/home.png; sourceTree = "<group>"; };
 		9D374BB31E811C0600571005 /* SortViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SortViewController.swift; path = Controller/SortViewController.swift; sourceTree = "<group>"; };
 		9D3A435F1E680E52001CE036 /* WeaponsPerStage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeaponsPerStage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D3A43621E680E52001CE036 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -116,6 +300,104 @@
 			name = Manager;
 			sourceTree = "<group>";
 		};
+		6AA603111E863CC40098FAC1 /* WeaponsIcon */ = {
+			isa = PBXGroup;
+			children = (
+				6AA603121E863CDA0098FAC1 /* 3k-scope-custom.png */,
+				6AA603131E863CDA0098FAC1 /* 52-gallon-deco.png */,
+				6AA603141E863CDA0098FAC1 /* 52-gallon.png */,
+				6AA603151E863CDA0098FAC1 /* 96-gallon-deco.png */,
+				6AA603161E863CDA0098FAC1 /* 96-gallon.png */,
+				6AA603171E863CDA0098FAC1 /* bamboozler-14-mk-1.png */,
+				6AA603181E863CDA0098FAC1 /* bamboozler-14-mk-2.png */,
+				6AA603191E863CDA0098FAC1 /* bamboozler-14-mk-3.png */,
+				6AA6031A1E863CDA0098FAC1 /* barrel-spinner-deco.png */,
+				6AA6031B1E863CDA0098FAC1 /* barrel-spinner-remix.png */,
+				6AA6031C1E863CDA0098FAC1 /* barrel-spinner.png */,
+				6AA6031D1E863CDA0098FAC1 /* bold-marker-7.png */,
+				6AA6031E1E863CDA0098FAC1 /* bold-marker-neo.png */,
+				6AA6031F1E863CDA0098FAC1 /* bold-marker.png */,
+				6AA603201E863CDA0098FAC1 /* bucket-slosher-deco.png */,
+				6AA603211E863CDA0098FAC1 /* bucket-slosher-soda.png */,
+				6AA603221E863CDA0098FAC1 /* bucket-slosher.png */,
+				6AA603231E863CDA0098FAC1 /* carbon-roller-deco.png */,
+				6AA603241E863CDA0098FAC1 /* carbon-roller.png */,
+				6AA603251E863CDA0098FAC1 /* dual-sweeper-custom.png */,
+				6AA603261E863CDA0098FAC1 /* dual-sweeper.png */,
+				6AA603271E863CDA0098FAC1 /* dynamo-roller-burned.png */,
+				6AA603281E863CDA0098FAC1 /* dynamo-roller-tesla.png */,
+				6AA603291E863CDA0098FAC1 /* dynamo-roller.png */,
+				6AA6032A1E863CDA0098FAC1 /* h3-reelgun-cherry.png */,
+				6AA6032B1E863CDA0098FAC1 /* h3-reelgun-d.png */,
+				6AA6032C1E863CDA0098FAC1 /* h3-reelgun.png */,
+				6AA6032D1E863CDA0098FAC1 /* hero-charger.png */,
+				6AA6032E1E863CDA0098FAC1 /* hero-roller.png */,
+				6AA6032F1E863CDA0098FAC1 /* hero-shooter.png */,
+				6AA603301E863CDA0098FAC1 /* hissen-hue.png */,
+				6AA603311E863CDA0098FAC1 /* hissen.png */,
+				6AA603321E863CDA0098FAC1 /* hokusai-hue.png */,
+				6AA603331E863CDA0098FAC1 /* hokusai.png */,
+				6AA603341E863CDA0098FAC1 /* hot-blaster-custom.png */,
+				6AA603351E863CDA0098FAC1 /* hot-blaster.png */,
+				6AA603361E863CDA0098FAC1 /* hydrant-custom.png */,
+				6AA603371E863CDA0098FAC1 /* hydrant.png */,
+				6AA603381E863CDA0098FAC1 /* jet-sweeper-custom.png */,
+				6AA603391E863CDA0098FAC1 /* jet-sweeper.png */,
+				6AA6033A1E863CDA0098FAC1 /* l3-reelgun-d.png */,
+				6AA6033B1E863CDA0098FAC1 /* l3-reelgun.png */,
+				6AA6033C1E863CDA0098FAC1 /* liter-3k-custom.png */,
+				6AA6033D1E863CDA0098FAC1 /* liter-3k-scope.png */,
+				6AA6033E1E863CDA0098FAC1 /* liter-3k.png */,
+				6AA6033F1E863CDA0098FAC1 /* long-blaster-custom.png */,
+				6AA603401E863CDA0098FAC1 /* long-blaster-necro.png */,
+				6AA603411E863CDA0098FAC1 /* long-blaster.png */,
+				6AA603421E863CDA0098FAC1 /* momiji-shooter.png */,
+				6AA603431E863CDA0098FAC1 /* n-zap-83.png */,
+				6AA603441E863CDA0098FAC1 /* n-zap-85.png */,
+				6AA603451E863CDA0098FAC1 /* n-zap-89.png */,
+				6AA603461E863CDA0098FAC1 /* nova-blaster-neo.png */,
+				6AA603471E863CDA0098FAC1 /* nova-blaster.png */,
+				6AA603481E863CDA0098FAC1 /* octa-shooter.png */,
+				6AA603491E863CDA0098FAC1 /* pablo-hue.png */,
+				6AA6034A1E863CDA0098FAC1 /* pablo.png */,
+				6AA6034B1E863CDA0098FAC1 /* permanent-pablo.png */,
+				6AA6034C1E863CDA0098FAC1 /* prime-shooter-berry.png */,
+				6AA6034D1E863CDA0098FAC1 /* prime-shooter-collab.png */,
+				6AA6034E1E863CDA0098FAC1 /* prime-shooter.png */,
+				6AA6034F1E863CDA0098FAC1 /* pro-modeler-mg.png */,
+				6AA603501E863CDA0098FAC1 /* pro-modeler-pg.png */,
+				6AA603511E863CDA0098FAC1 /* pro-modeler-rg.png */,
+				6AA603521E863CDA0098FAC1 /* r-blaster-elite.png */,
+				6AA603531E863CDA0098FAC1 /* r-blaster-eliter-deco.png */,
+				6AA603541E863CDA0098FAC1 /* rapid-blaster-deco.png */,
+				6AA603551E863CDA0098FAC1 /* rapid-blaster.png */,
+				6AA603561E863CDA0098FAC1 /* screw-slosher-neo.png */,
+				6AA603571E863CDA0098FAC1 /* screw-slosher.png */,
+				6AA603581E863CDA0098FAC1 /* sharp-marker-neo.png */,
+				6AA603591E863CDA0098FAC1 /* sharp-marker.png */,
+				6AA6035A1E863CDA0098FAC1 /* splat-charger-bento.png */,
+				6AA6035B1E863CDA0098FAC1 /* splat-charger-scope.png */,
+				6AA6035C1E863CDA0098FAC1 /* splat-charger-wakame.png */,
+				6AA6035D1E863CDA0098FAC1 /* splat-charger.png */,
+				6AA6035E1E863CDA0098FAC1 /* splat-roller-collab.png */,
+				6AA6035F1E863CDA0098FAC1 /* splat-roller-corocoro.png */,
+				6AA603601E863CDA0098FAC1 /* splat-roller.png */,
+				6AA603611E863CDA0098FAC1 /* splat-scope-bento.png */,
+				6AA603621E863CDA0098FAC1 /* splat-shooter-collab.png */,
+				6AA603631E863CDA0098FAC1 /* splat-shooter.png */,
+				6AA603641E863CDA0098FAC1 /* splat-wakame-scope.png */,
+				6AA603651E863CDA0098FAC1 /* sprat-shooter-wasabi.png */,
+				6AA603661E863CDA0098FAC1 /* sprat-spinner-collab.png */,
+				6AA603671E863CDA0098FAC1 /* sprat-spinner-repair.png */,
+				6AA603681E863CDA0098FAC1 /* sprat-spinner.png */,
+				6AA603691E863CDA0098FAC1 /* squicklin-alpha.png */,
+				6AA6036A1E863CDA0098FAC1 /* squicklin-beta.png */,
+				6AA6036B1E863CDA0098FAC1 /* squicklin-gamma.png */,
+				6AA6036C1E863CDA0098FAC1 /* wakaba-shooter.png */,
+			);
+			name = WeaponsIcon;
+			sourceTree = "<group>";
+		};
 		9D1A033F1E6969C700EAFAFB /* Const */ = {
 			isa = PBXGroup;
 			children = (
@@ -128,8 +410,10 @@
 		9D374BAE1E8111E500571005 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				9D374BAF1E81122100571005 /* config.png */,
-				9D374BB01E81122100571005 /* home.png */,
+				6AA603111E863CC40098FAC1 /* WeaponsIcon */,
+				6AA603CA1E879DC90098FAC1 /* Config.png */,
+				6AA603CC1E879DE80098FAC1 /* Home.png */,
+				6AA603C81E879CCA0098FAC1 /* Sort.png */,
 			);
 			name = Resource;
 			sourceTree = "<group>";
@@ -351,13 +635,105 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D3A436D1E680E53001CE036 /* LaunchScreen.storyboard in Resources */,
+				6AA6038B1E863CDA0098FAC1 /* hissen-hue.png in Resources */,
+				6AA603A31E863CDA0098FAC1 /* octa-shooter.png in Resources */,
 				6AA6030D1E6837E80098FAC1 /* Resources.bundle in Resources */,
+				6AA6038F1E863CDA0098FAC1 /* hot-blaster-custom.png in Resources */,
+				6AA6039B1E863CDA0098FAC1 /* long-blaster-necro.png in Resources */,
+				6AA6038A1E863CDA0098FAC1 /* hero-shooter.png in Resources */,
+				6AA603881E863CDA0098FAC1 /* hero-charger.png in Resources */,
+				6AA603BC1E863CDA0098FAC1 /* splat-scope-bento.png in Resources */,
+				6AA6037D1E863CDA0098FAC1 /* bucket-slosher.png in Resources */,
+				6AA603A11E863CDA0098FAC1 /* nova-blaster-neo.png in Resources */,
+				6AA603871E863CDA0098FAC1 /* h3-reelgun.png in Resources */,
+				6AA603C41E863CDA0098FAC1 /* squicklin-alpha.png in Resources */,
 				9D3A436A1E680E52001CE036 /* Assets.xcassets in Resources */,
-				9D374BB11E81122100571005 /* config.png in Resources */,
-				9D374BB21E81122100571005 /* home.png in Resources */,
+				6AA603911E863CDA0098FAC1 /* hydrant-custom.png in Resources */,
+				6AA603891E863CDA0098FAC1 /* hero-roller.png in Resources */,
+				6AA6039C1E863CDA0098FAC1 /* long-blaster.png in Resources */,
+				6AA6036F1E863CDA0098FAC1 /* 52-gallon.png in Resources */,
+				6AA603B31E863CDA0098FAC1 /* sharp-marker-neo.png in Resources */,
+				6AA603A51E863CDA0098FAC1 /* pablo.png in Resources */,
+				6AA603C31E863CDA0098FAC1 /* sprat-spinner.png in Resources */,
+				6AA603831E863CDA0098FAC1 /* dynamo-roller-tesla.png in Resources */,
+				6AA603BA1E863CDA0098FAC1 /* splat-roller-corocoro.png in Resources */,
+				6AA603A61E863CDA0098FAC1 /* permanent-pablo.png in Resources */,
+				6AA603811E863CDA0098FAC1 /* dual-sweeper.png in Resources */,
+				6AA603981E863CDA0098FAC1 /* liter-3k-scope.png in Resources */,
+				6AA603C91E879CCA0098FAC1 /* Sort.png in Resources */,
+				6AA603A91E863CDA0098FAC1 /* prime-shooter.png in Resources */,
+				6AA603841E863CDA0098FAC1 /* dynamo-roller.png in Resources */,
+				6AA603961E863CDA0098FAC1 /* l3-reelgun.png in Resources */,
+				6AA603B01E863CDA0098FAC1 /* rapid-blaster.png in Resources */,
+				6AA603991E863CDA0098FAC1 /* liter-3k.png in Resources */,
+				6AA603AD1E863CDA0098FAC1 /* r-blaster-elite.png in Resources */,
+				6AA6037E1E863CDA0098FAC1 /* carbon-roller-deco.png in Resources */,
+				6AA603A01E863CDA0098FAC1 /* n-zap-89.png in Resources */,
+				6AA6039E1E863CDA0098FAC1 /* n-zap-83.png in Resources */,
+				6AA603821E863CDA0098FAC1 /* dynamo-roller-burned.png in Resources */,
+				6AA603771E863CDA0098FAC1 /* barrel-spinner.png in Resources */,
+				6AA6036D1E863CDA0098FAC1 /* 3k-scope-custom.png in Resources */,
+				6AA603B51E863CDA0098FAC1 /* splat-charger-bento.png in Resources */,
+				6AA6039F1E863CDA0098FAC1 /* n-zap-85.png in Resources */,
 				9D3A43681E680E52001CE036 /* Main.storyboard in Resources */,
 				9D74A7511E692E2C00AC66A6 /* WaponsPerStageTableViewCell.xib in Resources */,
+				6AA603C11E863CDA0098FAC1 /* sprat-spinner-collab.png in Resources */,
+				6AA603971E863CDA0098FAC1 /* liter-3k-custom.png in Resources */,
+				6AA603861E863CDA0098FAC1 /* h3-reelgun-d.png in Resources */,
+				6AA603901E863CDA0098FAC1 /* hot-blaster.png in Resources */,
+				6AA603A21E863CDA0098FAC1 /* nova-blaster.png in Resources */,
+				6AA603851E863CDA0098FAC1 /* h3-reelgun-cherry.png in Resources */,
+				6AA6038D1E863CDA0098FAC1 /* hokusai-hue.png in Resources */,
+				6AA603931E863CDA0098FAC1 /* jet-sweeper-custom.png in Resources */,
+				6AA603AF1E863CDA0098FAC1 /* rapid-blaster-deco.png in Resources */,
+				6AA6037A1E863CDA0098FAC1 /* bold-marker.png in Resources */,
+				6AA603B41E863CDA0098FAC1 /* sharp-marker.png in Resources */,
+				6AA603BF1E863CDA0098FAC1 /* splat-wakame-scope.png in Resources */,
+				6AA603A81E863CDA0098FAC1 /* prime-shooter-collab.png in Resources */,
+				6AA603A71E863CDA0098FAC1 /* prime-shooter-berry.png in Resources */,
+				6AA603921E863CDA0098FAC1 /* hydrant.png in Resources */,
+				6AA603C21E863CDA0098FAC1 /* sprat-spinner-repair.png in Resources */,
+				6AA603951E863CDA0098FAC1 /* l3-reelgun-d.png in Resources */,
+				6AA603B11E863CDA0098FAC1 /* screw-slosher-neo.png in Resources */,
+				6AA603AA1E863CDA0098FAC1 /* pro-modeler-mg.png in Resources */,
+				6AA603AC1E863CDA0098FAC1 /* pro-modeler-rg.png in Resources */,
+				6AA603CB1E879DC90098FAC1 /* Config.png in Resources */,
+				6AA603761E863CDA0098FAC1 /* barrel-spinner-remix.png in Resources */,
+				6AA603AE1E863CDA0098FAC1 /* r-blaster-eliter-deco.png in Resources */,
+				6AA603C51E863CDA0098FAC1 /* squicklin-beta.png in Resources */,
+				6AA6037F1E863CDA0098FAC1 /* carbon-roller.png in Resources */,
+				6AA603BB1E863CDA0098FAC1 /* splat-roller.png in Resources */,
+				6AA603B91E863CDA0098FAC1 /* splat-roller-collab.png in Resources */,
+				6AA603B71E863CDA0098FAC1 /* splat-charger-wakame.png in Resources */,
+				6AA603C01E863CDA0098FAC1 /* sprat-shooter-wasabi.png in Resources */,
+				6AA603CD1E879DE80098FAC1 /* Home.png in Resources */,
+				6AA603AB1E863CDA0098FAC1 /* pro-modeler-pg.png in Resources */,
+				6AA603731E863CDA0098FAC1 /* bamboozler-14-mk-2.png in Resources */,
+				6AA603B61E863CDA0098FAC1 /* splat-charger-scope.png in Resources */,
+				6AA6039A1E863CDA0098FAC1 /* long-blaster-custom.png in Resources */,
+				6AA603B81E863CDA0098FAC1 /* splat-charger.png in Resources */,
+				6AA6039D1E863CDA0098FAC1 /* momiji-shooter.png in Resources */,
+				6AA603801E863CDA0098FAC1 /* dual-sweeper-custom.png in Resources */,
+				6AA603791E863CDA0098FAC1 /* bold-marker-neo.png in Resources */,
+				6AA603781E863CDA0098FAC1 /* bold-marker-7.png in Resources */,
+				6AA603721E863CDA0098FAC1 /* bamboozler-14-mk-1.png in Resources */,
+				6AA603C71E863CDA0098FAC1 /* wakaba-shooter.png in Resources */,
+				6AA603BE1E863CDA0098FAC1 /* splat-shooter.png in Resources */,
+				6AA6038C1E863CDA0098FAC1 /* hissen.png in Resources */,
+				6AA603751E863CDA0098FAC1 /* barrel-spinner-deco.png in Resources */,
+				6AA603C61E863CDA0098FAC1 /* squicklin-gamma.png in Resources */,
+				6AA603B21E863CDA0098FAC1 /* screw-slosher.png in Resources */,
+				6AA6037C1E863CDA0098FAC1 /* bucket-slosher-soda.png in Resources */,
+				6AA6036E1E863CDA0098FAC1 /* 52-gallon-deco.png in Resources */,
+				6AA603701E863CDA0098FAC1 /* 96-gallon-deco.png in Resources */,
+				6AA603741E863CDA0098FAC1 /* bamboozler-14-mk-3.png in Resources */,
 				9D74A7531E692E2C00AC66A6 /* WeaponsTableViewCell.xib in Resources */,
+				6AA603BD1E863CDA0098FAC1 /* splat-shooter-collab.png in Resources */,
+				6AA603711E863CDA0098FAC1 /* 96-gallon.png in Resources */,
+				6AA603941E863CDA0098FAC1 /* jet-sweeper.png in Resources */,
+				6AA603A41E863CDA0098FAC1 /* pablo-hue.png in Resources */,
+				6AA6038E1E863CDA0098FAC1 /* hokusai.png in Resources */,
+				6AA6037B1E863CDA0098FAC1 /* bucket-slosher-deco.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

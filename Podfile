@@ -4,7 +4,7 @@
 target 'WeaponsPerStage' do
 
 	pod 'RealmSwift’
-	pod 'SlideMenuControllerSwift'
+	pod 'SlideMenuControllerSwift’, ‘3.0.0’
 
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
