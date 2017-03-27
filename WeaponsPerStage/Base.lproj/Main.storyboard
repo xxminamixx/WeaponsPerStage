@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="HKe-O8-pHR">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="HKe-O8-pHR">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -54,10 +54,6 @@
                                     <constraint firstItem="Vs5-9b-T97" firstAttribute="top" secondItem="Ols-an-w0q" secondAttribute="top" id="Tjb-qu-ZE7"/>
                                 </constraints>
                             </stackView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JLd-d2-O2B">
-                                <rect key="frame" x="0.0" y="125" width="375" height="542"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iVK-qn-qbl">
                                 <rect key="frame" x="10" y="124.5" width="355" height="1"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -65,6 +61,10 @@
                                     <constraint firstAttribute="height" constant="1" id="bSI-Pu-srQ"/>
                                 </constraints>
                             </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JLd-d2-O2B">
+                                <rect key="frame" x="0.0" y="124.5" width="375" height="493.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -73,12 +73,12 @@
                             <constraint firstAttribute="trailing" secondItem="iVK-qn-qbl" secondAttribute="trailing" constant="10" id="HGA-kU-272"/>
                             <constraint firstItem="Ols-an-w0q" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="74" id="I92-yc-Gan"/>
                             <constraint firstItem="iVK-qn-qbl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="L5t-8y-SkZ"/>
-                            <constraint firstAttribute="bottom" secondItem="JLd-d2-O2B" secondAttribute="bottom" id="LGY-8l-27r"/>
                             <constraint firstItem="wKJ-Fh-q3p" firstAttribute="centerX" secondItem="Vs5-9b-T97" secondAttribute="centerX" id="PTG-Gj-0km"/>
                             <constraint firstItem="wKJ-Fh-q3p" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="QA9-zj-oyY"/>
                             <constraint firstItem="iVK-qn-qbl" firstAttribute="top" secondItem="uPs-ut-Oj5" secondAttribute="bottom" constant="10" id="Toq-Wm-Nzc"/>
                             <constraint firstItem="Ols-an-w0q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VOa-cQ-wMd"/>
                             <constraint firstItem="uPs-ut-Oj5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="ZYC-Lu-ab1"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="JLd-d2-O2B" secondAttribute="bottom" id="ZkQ-aV-5SN"/>
                             <constraint firstItem="JLd-d2-O2B" firstAttribute="top" secondItem="uPs-ut-Oj5" secondAttribute="bottom" constant="10" id="lvp-5O-4IS"/>
                             <constraint firstItem="JLd-d2-O2B" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="u0T-fh-9md"/>
                         </constraints>

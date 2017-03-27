@@ -23,6 +23,10 @@ class HomeViewController: UIViewController {
         // NavigationBarのタイトル
         navigationItem.title = ConstText.home
         
+        // キャプチャボタンをNavigationBarの右に追加
+        let rightCaptureButtonItem: UIBarButtonItem = UIBarButtonItem.init(image: UIImage.init(named: "Sort.png"), style: .plain, target: self, action: #selector(capture))
+        self.navigationItem.setRightBarButtonItems([rightCaptureButtonItem], animated: true)
+        
         // ステージと武器一覧のTableViewの初期設定
         weaponsPerStageTableView.dataSource = self
         weaponsPerStageTableView.delegate = self
@@ -47,6 +51,21 @@ class HomeViewController: UIViewController {
         self.winCount.text = WeaponsPerStageStoreManager.winCount().description
         self.loseCount.text = WeaponsPerStageStoreManager.loseCount().description
     }
+    
+    
+    /// キャプチャボタンを押したときに呼び出され、TableViewをキャプチャする
+    func capture() {
+        if let image = self.weaponsPerStageTableView.captureImage() {
+            UIImageWriteToSavedPhotosAlbum(image, self, #selector(didFinishWriteImage(_:error:contextInfo:)), nil)
+        }
+    }
+    
+    func didFinishWriteImage(_ image: UIImage, error: NSError?, contextInfo: UnsafeMutableRawPointer) {
+        if let error = error {
+            print("Image write error: \(error)")
+        }
+    }
+    
 }
 
         

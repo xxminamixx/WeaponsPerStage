@@ -126,6 +126,9 @@
 		9D74A7631E6945B300AC66A6 /* WeaponsPerStageStoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D74A7621E6945B300AC66A6 /* WeaponsPerStageStoreManager.swift */; };
 		9D74A7651E69552500AC66A6 /* ConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D74A7641E69552500AC66A6 /* ConfigViewController.swift */; };
 		9DF691FE1E85008400E5A063 /* ContainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF691FD1E85008400E5A063 /* ContainViewController.swift */; };
+		9DF692021E88F31100E5A063 /* UITableView+Capture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF692011E88F31100E5A063 /* UITableView+Capture.swift */; };
+		9DF692041E88F38A00E5A063 /* UIView+Capture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF692031E88F38A00E5A063 /* UIView+Capture.swift */; };
+		9DF7B4461E89137C00C6DE57 /* UIImage+Cropping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF7B4451E89137C00C6DE57 /* UIImage+Cropping.swift */; };
 		A2AE6346D067B046F0C386A1 /* Pods_WeaponsPerStage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F90DC3D630E966152D55EAEC /* Pods_WeaponsPerStage.framework */; };
 /* End PBXBuildFile section */
 
@@ -266,6 +269,9 @@
 		9D74A7621E6945B300AC66A6 /* WeaponsPerStageStoreManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WeaponsPerStageStoreManager.swift; path = Model/Manager/WeaponsPerStageStoreManager.swift; sourceTree = "<group>"; };
 		9D74A7641E69552500AC66A6 /* ConfigViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConfigViewController.swift; path = Controller/ConfigViewController.swift; sourceTree = "<group>"; };
 		9DF691FD1E85008400E5A063 /* ContainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContainViewController.swift; path = Controller/ContainViewController.swift; sourceTree = "<group>"; };
+		9DF692011E88F31100E5A063 /* UITableView+Capture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UITableView+Capture.swift"; path = "Extention/UITableView+Capture.swift"; sourceTree = "<group>"; };
+		9DF692031E88F38A00E5A063 /* UIView+Capture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+Capture.swift"; path = "Extention/UIView+Capture.swift"; sourceTree = "<group>"; };
+		9DF7B4451E89137C00C6DE57 /* UIImage+Cropping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImage+Cropping.swift"; path = "Extention/UIImage+Cropping.swift"; sourceTree = "<group>"; };
 		F90DC3D630E966152D55EAEC /* Pods_WeaponsPerStage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeaponsPerStage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD6CE7A3601BD2049FCAA9A8 /* Pods-WeaponsPerStageTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeaponsPerStageTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeaponsPerStageTests/Pods-WeaponsPerStageTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -441,6 +447,7 @@
 		9D3A43611E680E52001CE036 /* WeaponsPerStage */ = {
 			isa = PBXGroup;
 			children = (
+				9DF692001E88F2B700E5A063 /* Extention */,
 				9D374BAE1E8111E500571005 /* Resource */,
 				9D3A43621E680E52001CE036 /* AppDelegate.swift */,
 				9D1A033F1E6969C700EAFAFB /* Const */,
@@ -522,6 +529,16 @@
 				9D374BAC1E810A2A00571005 /* TabBarController.swift */,
 			);
 			name = Container;
+			sourceTree = "<group>";
+		};
+		9DF692001E88F2B700E5A063 /* Extention */ = {
+			isa = PBXGroup;
+			children = (
+				9DF692011E88F31100E5A063 /* UITableView+Capture.swift */,
+				9DF692031E88F38A00E5A063 /* UIView+Capture.swift */,
+				9DF7B4451E89137C00C6DE57 /* UIImage+Cropping.swift */,
+			);
+			name = Extention;
 			sourceTree = "<group>";
 		};
 		D7C9BD3031CE7BA9DA5C9F64 /* Frameworks */ = {
@@ -848,15 +865,18 @@
 				9D74A75E1E692E5E00AC66A6 /* WeaponsSelectionViewController.swift in Sources */,
 				9D74A75D1E692E5E00AC66A6 /* HomeViewController.swift in Sources */,
 				9D374BAD1E810A2A00571005 /* TabBarController.swift in Sources */,
+				9DF692041E88F38A00E5A063 /* UIView+Capture.swift in Sources */,
 				9D74A7651E69552500AC66A6 /* ConfigViewController.swift in Sources */,
 				9D74A75A1E692E5200AC66A6 /* DataSource.swift in Sources */,
 				9D1A03431E69709A00EAFAFB /* NavigationController.swift in Sources */,
 				9D74A7631E6945B300AC66A6 /* WeaponsPerStageStoreManager.swift in Sources */,
+				9DF692021E88F31100E5A063 /* UITableView+Capture.swift in Sources */,
 				9D74A7611E6943D400AC66A6 /* WeaponsPerStageEntity.swift in Sources */,
 				9D74A7521E692E2C00AC66A6 /* WeaponsTableViewCell.swift in Sources */,
 				9D374BB41E811C0600571005 /* SortViewController.swift in Sources */,
 				9D74A7571E692E3A00AC66A6 /* JsonManager.swift in Sources */,
 				9D74A7561E692E3A00AC66A6 /* IndexManager.swift in Sources */,
+				9DF7B4461E89137C00C6DE57 /* UIImage+Cropping.swift in Sources */,
 				9DF691FE1E85008400E5A063 /* ContainViewController.swift in Sources */,
 				9D1A033E1E6969C000EAFAFB /* ConstText.swift in Sources */,
 				9D3A43631E680E52001CE036 /* AppDelegate.swift in Sources */,
