@@ -24,7 +24,7 @@ class HomeViewController: UIViewController {
         navigationItem.title = ConstText.home
         
         // キャプチャボタンをNavigationBarの右に追加
-        let rightCaptureButtonItem: UIBarButtonItem = UIBarButtonItem.init(image: UIImage.init(named: "Sort.png"), style: .plain, target: self, action: #selector(capture))
+        let rightCaptureButtonItem: UIBarButtonItem = UIBarButtonItem.init(image: UIImage.init(named: "Capture.png"), style: .plain, target: self, action: #selector(capture))
         self.navigationItem.setRightBarButtonItems([rightCaptureButtonItem], animated: true)
         
         // ステージと武器一覧のTableViewの初期設定

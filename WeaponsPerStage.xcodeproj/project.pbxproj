@@ -102,6 +102,7 @@
 		6AA603C91E879CCA0098FAC1 /* Sort.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA603C81E879CCA0098FAC1 /* Sort.png */; };
 		6AA603CB1E879DC90098FAC1 /* Config.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA603CA1E879DC90098FAC1 /* Config.png */; };
 		6AA603CD1E879DE80098FAC1 /* Home.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA603CC1E879DE80098FAC1 /* Home.png */; };
+		6AA603CF1E89EA350098FAC1 /* Capture.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA603CE1E89EA350098FAC1 /* Capture.png */; };
 		8075CC350F6F097E44A26A31 /* Pods_WeaponsPerStageTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 761AFB948E228A3FD8E04F61 /* Pods_WeaponsPerStageTests.framework */; };
 		9D1A033E1E6969C000EAFAFB /* ConstText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1A033D1E6969C000EAFAFB /* ConstText.swift */; };
 		9D1A03411E696EBA00EAFAFB /* ConstColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1A03401E696EBA00EAFAFB /* ConstColor.swift */; };
@@ -240,6 +241,7 @@
 		6AA603C81E879CCA0098FAC1 /* Sort.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Sort.png; path = Resources/Sort.png; sourceTree = "<group>"; };
 		6AA603CA1E879DC90098FAC1 /* Config.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Config.png; path = Resources/Config.png; sourceTree = "<group>"; };
 		6AA603CC1E879DE80098FAC1 /* Home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Home.png; path = Resources/Home.png; sourceTree = "<group>"; };
+		6AA603CE1E89EA350098FAC1 /* Capture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Capture.png; path = Resources/Capture.png; sourceTree = "<group>"; };
 		761AFB948E228A3FD8E04F61 /* Pods_WeaponsPerStageTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeaponsPerStageTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		897FE971890AF0FDAD81D7B1 /* Pods-WeaponsPerStage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeaponsPerStage.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeaponsPerStage/Pods-WeaponsPerStage.release.xcconfig"; sourceTree = "<group>"; };
 		9D1A033D1E6969C000EAFAFB /* ConstText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConstText.swift; path = Const/ConstText.swift; sourceTree = "<group>"; };
@@ -418,6 +420,7 @@
 			children = (
 				6AA603111E863CC40098FAC1 /* WeaponsIcon */,
 				6AA603CA1E879DC90098FAC1 /* Config.png */,
+				6AA603CE1E89EA350098FAC1 /* Capture.png */,
 				6AA603CC1E879DE80098FAC1 /* Home.png */,
 				6AA603C81E879CCA0098FAC1 /* Sort.png */,
 			);
@@ -710,6 +713,7 @@
 				6AA603A71E863CDA0098FAC1 /* prime-shooter-berry.png in Resources */,
 				6AA603921E863CDA0098FAC1 /* hydrant.png in Resources */,
 				6AA603C21E863CDA0098FAC1 /* sprat-spinner-repair.png in Resources */,
+				6AA603CF1E89EA350098FAC1 /* Capture.png in Resources */,
 				6AA603951E863CDA0098FAC1 /* l3-reelgun-d.png in Resources */,
 				6AA603B11E863CDA0098FAC1 /* screw-slosher-neo.png in Resources */,
 				6AA603AA1E863CDA0098FAC1 /* pro-modeler-mg.png in Resources */,
