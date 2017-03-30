@@ -71,9 +71,10 @@ class HomeViewController: UIViewController {
     
     /// キャプチャボタンを押したときに呼び出され、TableViewをキャプチャする
     func capture() {
+        // TableViewのスクロールを最上に戻す
+        weaponsPerStageTableView.contentOffset = CGPoint(x: 0, y: -weaponsPerStageTableView.contentInset.top)
+        
         if let image = self.weaponsPerStageTableView.captureImage() {
-//            let naviHeight = self.navigationController?.navigationBar.frame.size.height
-//            let statusHeight = UIApplication.shared.statusBarFrame.height
             UIImageWriteToSavedPhotosAlbum(image, self, #selector(didFinishWriteImage(_:error:contextInfo:)), nil)
         }
     }
