@@ -82,6 +82,14 @@ class HomeViewController: UIViewController {
     func didFinishWriteImage(_ image: UIImage, error: NSError?, contextInfo: UnsafeMutableRawPointer) {
         if let error = error {
             print("Image write error: \(error)")
+        } else {
+            // アラート表示
+            let alertController = UIAlertController(title: nil, message: "キャプチャに成功しました", preferredStyle: .alert)
+            let defaultAction = UIAlertAction(title: "とじる", style: UIAlertActionStyle.default, handler:{
+                (action: UIAlertAction!) -> Void in
+            })
+            alertController.addAction(defaultAction)
+            present(alertController, animated: true, completion: nil)
         }
     }
     
