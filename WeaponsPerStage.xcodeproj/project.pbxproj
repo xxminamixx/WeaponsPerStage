@@ -107,6 +107,7 @@
 		9D1A033E1E6969C000EAFAFB /* ConstText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1A033D1E6969C000EAFAFB /* ConstText.swift */; };
 		9D1A03411E696EBA00EAFAFB /* ConstColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1A03401E696EBA00EAFAFB /* ConstColor.swift */; };
 		9D1A03431E69709A00EAFAFB /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1A03421E69709A00EAFAFB /* NavigationController.swift */; };
+		9D2E6A1C1E8CF03C005F4D7E /* DeviceSizeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2E6A1B1E8CF03C005F4D7E /* DeviceSizeManager.swift */; };
 		9D374BAD1E810A2A00571005 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D374BAC1E810A2A00571005 /* TabBarController.swift */; };
 		9D374BB41E811C0600571005 /* SortViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D374BB31E811C0600571005 /* SortViewController.swift */; };
 		9D3A43631E680E52001CE036 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3A43621E680E52001CE036 /* AppDelegate.swift */; };
@@ -247,6 +248,7 @@
 		9D1A033D1E6969C000EAFAFB /* ConstText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConstText.swift; path = Const/ConstText.swift; sourceTree = "<group>"; };
 		9D1A03401E696EBA00EAFAFB /* ConstColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConstColor.swift; path = Const/ConstColor.swift; sourceTree = "<group>"; };
 		9D1A03421E69709A00EAFAFB /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NavigationController.swift; path = Controller/NavigationController.swift; sourceTree = "<group>"; };
+		9D2E6A1B1E8CF03C005F4D7E /* DeviceSizeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeviceSizeManager.swift; path = Model/Manager/DeviceSizeManager.swift; sourceTree = "<group>"; };
 		9D374BAC1E810A2A00571005 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabBarController.swift; path = Controller/TabBarController.swift; sourceTree = "<group>"; };
 		9D374BB31E811C0600571005 /* SortViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SortViewController.swift; path = Controller/SortViewController.swift; sourceTree = "<group>"; };
 		9D3A435F1E680E52001CE036 /* WeaponsPerStage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeaponsPerStage.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -304,6 +306,7 @@
 				9D74A7541E692E3A00AC66A6 /* IndexManager.swift */,
 				9D74A7551E692E3A00AC66A6 /* JsonManager.swift */,
 				9D74A7621E6945B300AC66A6 /* WeaponsPerStageStoreManager.swift */,
+				9D2E6A1B1E8CF03C005F4D7E /* DeviceSizeManager.swift */,
 			);
 			name = Manager;
 			sourceTree = "<group>";
@@ -885,6 +888,7 @@
 				9D1A033E1E6969C000EAFAFB /* ConstText.swift in Sources */,
 				9D3A43631E680E52001CE036 /* AppDelegate.swift in Sources */,
 				9D1A03411E696EBA00EAFAFB /* ConstColor.swift in Sources */,
+				9D2E6A1C1E8CF03C005F4D7E /* DeviceSizeManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

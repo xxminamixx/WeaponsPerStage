@@ -22,7 +22,13 @@ extension UITableView {
         
         var y: CGFloat = 0
         for image in images {
-            let cropImage = image.cropping(to: CGRect(x: 0, y: CGFloat(124), width: bounds.width, height: CGFloat(493) ))
+            // TableViewより上の高さを計算
+            let deviceTopHeight = DeviceSizeManager.sharedInstance.naviBarHeight + DeviceSizeManager.sharedInstance.statusBarHeight + DeviceSizeManager.sharedInstance.winLoseViewHeight
+            // TabBarの高さ
+            let deviceButtomHeight = DeviceSizeManager.sharedInstance.tabBarHeight
+            // キャプチャする高さを計算
+            let captureHeight = (UIScreen.main.bounds.size.height) - (deviceTopHeight + deviceButtomHeight)
+            let cropImage = image.cropping(to: CGRect(x: 0, y: deviceTopHeight, width: bounds.width, height: captureHeight ))
             cropImage?.draw(at: CGPoint(x: 0, y: y))
             y = min(y + bounds.height, contentBottom)
         }

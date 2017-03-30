@@ -14,6 +14,9 @@ class HomeViewController: UIViewController {
     /// ステージと武器を表示するTableView
     @IBOutlet weak var weaponsPerStageTableView: UITableView!
     
+    /// 勝敗数を表示するView
+    @IBOutlet weak var winLoseView: UIView!
+    
     /// 勝利数をカウント
     @IBOutlet weak var winCount: UILabel!
     /// 敗北数をカウント
@@ -22,6 +25,19 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         // NavigationBarのタイトル
         navigationItem.title = ConstText.home
+        
+        // NavigationBarの高さをセット
+        if let height = navigationController?.navigationBar.frame.size.height {
+            DeviceSizeManager.sharedInstance.naviBarHeight = height
+        }
+        
+        // TabBarの高さをセット
+        if let height = tabBarController?.tabBar.frame.size.height {
+             DeviceSizeManager.sharedInstance.tabBarHeight = height
+        }
+        
+        // 勝敗Viewの高さをセット
+        DeviceSizeManager.sharedInstance.winLoseViewHeight = winLoseView.frame.size.height
         
         // キャプチャボタンをNavigationBarの右に追加
         let rightCaptureButtonItem: UIBarButtonItem = UIBarButtonItem.init(image: UIImage.init(named: "Capture.png"), style: .plain, target: self, action: #selector(capture))
@@ -56,6 +72,8 @@ class HomeViewController: UIViewController {
     /// キャプチャボタンを押したときに呼び出され、TableViewをキャプチャする
     func capture() {
         if let image = self.weaponsPerStageTableView.captureImage() {
+//            let naviHeight = self.navigationController?.navigationBar.frame.size.height
+//            let statusHeight = UIApplication.shared.statusBarFrame.height
             UIImageWriteToSavedPhotosAlbum(image, self, #selector(didFinishWriteImage(_:error:contextInfo:)), nil)
         }
     }
