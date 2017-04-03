@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -15,27 +16,34 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="weapon" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NTj-k4-dnN">
-                        <rect key="frame" x="8" y="11.5" width="304" height="21"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="304" id="Hfx-IK-d8R"/>
-                            <constraint firstAttribute="height" constant="21" id="WA3-ze-8nz"/>
-                        </constraints>
+                        <rect key="frame" x="56" y="15.5" width="266" height="14.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Eso-JU-8Ke">
+                        <rect key="frame" x="10" y="3" width="36" height="36"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="36" id="P8M-aZ-Vb4"/>
+                            <constraint firstAttribute="width" constant="36" id="kPV-2E-NWo"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="NTj-k4-dnN" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ZjC-fr-Q2p"/>
-                    <constraint firstItem="NTj-k4-dnN" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="x3t-aT-cPE"/>
+                    <constraint firstItem="Eso-JU-8Ke" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="8ue-VV-FVw"/>
+                    <constraint firstItem="NTj-k4-dnN" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="bCa-FH-NXk"/>
+                    <constraint firstItem="NTj-k4-dnN" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="10" id="cbz-xL-2wi"/>
+                    <constraint firstItem="NTj-k4-dnN" firstAttribute="leading" secondItem="Eso-JU-8Ke" secondAttribute="trailing" constant="10" id="xFl-ZJ-ddC"/>
+                    <constraint firstItem="Eso-JU-8Ke" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="xgX-1M-Q09"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="weapon" destination="NTj-k4-dnN" id="WGk-3o-HSj"/>
+                <outlet property="weaponIcon" destination="Eso-JU-8Ke" id="nQw-gU-IFf"/>
             </connections>
         </tableViewCell>
     </objects>

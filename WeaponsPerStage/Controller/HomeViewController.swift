@@ -16,6 +16,8 @@ class HomeViewController: UIViewController {
     
     /// 勝敗数を表示するView
     @IBOutlet weak var winLoseView: UIView!
+    /// 勝敗ViewとTableViewとの仕切りView
+    @IBOutlet weak var separatorView: UIView!
     
     /// 勝利数をカウント
     @IBOutlet weak var winCount: UILabel!
@@ -38,6 +40,9 @@ class HomeViewController: UIViewController {
         
         // 勝敗Viewの高さをセット
         DeviceSizeManager.sharedInstance.winLoseViewHeight = winLoseView.frame.size.height
+        
+        // 仕切りViewの色設定
+        separatorView.backgroundColor = ConstColor.yellowGreen
         
         // キャプチャボタンをNavigationBarの右に追加
         let rightCaptureButtonItem: UIBarButtonItem = UIBarButtonItem.init(image: UIImage.init(named: "Capture.png"), style: .plain, target: self, action: #selector(capture))

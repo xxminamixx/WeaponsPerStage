@@ -13,8 +13,10 @@ class WeaponsTableViewCell: UITableViewCell {
     /// セルID
     static let nibName = "WeaponsTableViewCell"
     
-    ///武器名ラベル
+    /// 武器名ラベル
     @IBOutlet weak var weapon: UILabel!
+    /// 武器アイコン
+    @IBOutlet weak var weaponIcon: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -29,6 +31,9 @@ class WeaponsTableViewCell: UITableViewCell {
     /// - Parameter weapon: 武器名
     func setup(weapon: String) {
         self.weapon.text = weapon
+        if let weaponIcon = DataSource.weaponsIconRelation[weapon] {
+            self.weaponIcon.image = UIImage.init(named: weaponIcon)
+        }
     }
     
 }
