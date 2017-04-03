@@ -251,7 +251,7 @@
 		9D2E6A1B1E8CF03C005F4D7E /* DeviceSizeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeviceSizeManager.swift; path = Model/Manager/DeviceSizeManager.swift; sourceTree = "<group>"; };
 		9D374BAC1E810A2A00571005 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabBarController.swift; path = Controller/TabBarController.swift; sourceTree = "<group>"; };
 		9D374BB31E811C0600571005 /* SortViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SortViewController.swift; path = Controller/SortViewController.swift; sourceTree = "<group>"; };
-		9D3A435F1E680E52001CE036 /* WeaponsPerStage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeaponsPerStage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D3A435F1E680E52001CE036 /* イカウェポナー.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "イカウェポナー.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D3A43621E680E52001CE036 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D3A43671E680E52001CE036 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9D3A43691E680E52001CE036 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -444,7 +444,7 @@
 		9D3A43601E680E52001CE036 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9D3A435F1E680E52001CE036 /* WeaponsPerStage.app */,
+				9D3A435F1E680E52001CE036 /* イカウェポナー.app */,
 				9D3A43731E680E53001CE036 /* WeaponsPerStageTests.xctest */,
 			);
 			name = Products;
@@ -587,7 +587,7 @@
 			);
 			name = WeaponsPerStage;
 			productName = WeaponsPerStage;
-			productReference = 9D3A435F1E680E52001CE036 /* WeaponsPerStage.app */;
+			productReference = 9D3A435F1E680E52001CE036 /* イカウェポナー.app */;
 			productType = "com.apple.product-type.application";
 		};
 		9D3A43721E680E53001CE036 /* WeaponsPerStageTests */ = {
@@ -1033,7 +1033,7 @@
 				INFOPLIST_FILE = WeaponsPerStage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.spl.taitai;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "イカウェポナー";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -1049,7 +1049,7 @@
 				INFOPLIST_FILE = WeaponsPerStage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.spl.taitai;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "イカウェポナー";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
