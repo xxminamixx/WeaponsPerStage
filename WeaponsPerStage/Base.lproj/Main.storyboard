@@ -13,7 +13,7 @@
         <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="HomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="HomeViewController" customModule="WeaponsPerStage" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="HomeViewController" customModule="イカウェポナー" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -102,9 +102,11 @@
                     <navigationItem key="navigationItem" id="MKi-sS-qAZ"/>
                     <connections>
                         <outlet property="loseCount" destination="uPs-ut-Oj5" id="TWa-cR-MDV"/>
+                        <outlet property="loseLabel" destination="pNZ-5t-gVV" id="byt-wL-48s"/>
                         <outlet property="separatorView" destination="fzR-lB-nMG" id="Yo9-Jl-ovQ"/>
                         <outlet property="weaponsPerStageTableView" destination="JLd-d2-O2B" id="Zfr-Gx-QwP"/>
                         <outlet property="winCount" destination="wKJ-Fh-q3p" id="PeY-oW-Ibm"/>
+                        <outlet property="winLabel" destination="Vs5-9b-T97" id="Iz3-4H-Sod"/>
                         <outlet property="winLoseView" destination="9hP-WY-bdR" id="is7-jD-a49"/>
                     </connections>
                 </viewController>
@@ -115,7 +117,7 @@
         <!--Contain View Controller-->
         <scene sceneID="Vsw-kv-Ina">
             <objects>
-                <viewController storyboardIdentifier="ContainViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="a6e-mR-gmW" customClass="ContainViewController" customModule="WeaponsPerStage" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ContainViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="a6e-mR-gmW" customClass="ContainViewController" customModule="イカウェポナー" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Nm4-1I-4tB"/>
                         <viewControllerLayoutGuide type="bottom" id="FOx-Vh-sty"/>
@@ -133,7 +135,7 @@
         <!--Weapons Selection View Controller-->
         <scene sceneID="tiK-dR-adS">
             <objects>
-                <viewController storyboardIdentifier="WeaponsSelectionViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vHA-OL-RdZ" customClass="WeaponsSelectionViewController" customModule="WeaponsPerStage" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WeaponsSelectionViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vHA-OL-RdZ" customClass="WeaponsSelectionViewController" customModule="イカウェポナー" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RSB-XM-L7G"/>
                         <viewControllerLayoutGuide type="bottom" id="ndU-eP-gIw"/>
@@ -166,7 +168,7 @@
         <!--Sort View Controller-->
         <scene sceneID="KNZ-Sa-nwa">
             <objects>
-                <viewController storyboardIdentifier="SortViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hMN-zC-sVp" customClass="SortViewController" customModule="WeaponsPerStage" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SortViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hMN-zC-sVp" customClass="SortViewController" customModule="イカウェポナー" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AB5-2V-94J"/>
                         <viewControllerLayoutGuide type="bottom" id="DUY-aU-6Ap"/>
@@ -194,7 +196,7 @@
         <!--Item-->
         <scene sceneID="PEP-rU-Y1W">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="P6c-4g-Y88" customClass="NavigationController" customModule="WeaponsPerStage" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="P6c-4g-Y88" customClass="NavigationController" customModule="イカウェポナー" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="SFg-3v-adV"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="R1K-X8-VAl">
@@ -216,7 +218,7 @@
         <!--Config View Controller-->
         <scene sceneID="g5e-jR-F9d">
             <objects>
-                <viewController id="Ns5-nD-PAx" customClass="ConfigViewController" customModule="WeaponsPerStage" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Ns5-nD-PAx" customClass="ConfigViewController" customModule="イカウェポナー" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wNW-gS-eE4"/>
                         <viewControllerLayoutGuide type="bottom" id="O8q-A7-nTT"/>
@@ -291,7 +293,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="hZN-wr-ou9">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="HKe-O8-pHR" customClass="TabBarController" customModule="WeaponsPerStage" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="HKe-O8-pHR" customClass="TabBarController" customModule="イカウェポナー" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="gba-Ui-Xe1">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
@@ -310,7 +312,7 @@
         <!--Item-->
         <scene sceneID="3oG-eM-HEt">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HC7-bX-eiy" customClass="NavigationController" customModule="WeaponsPerStage" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HC7-bX-eiy" customClass="NavigationController" customModule="イカウェポナー" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="j58-va-4cX"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="uec-lj-xUV">

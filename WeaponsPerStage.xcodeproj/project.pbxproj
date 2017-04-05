@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A43BAC01E95342600A9AA02 /* 120 - iPhone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A43BABF1E95342600A9AA02 /* 120 - iPhone@2x.png */; };
 		6AA6030D1E6837E80098FAC1 /* Resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6AA6030C1E6837E80098FAC1 /* Resources.bundle */; };
 		6AA6036D1E863CDA0098FAC1 /* 3k-scope-custom.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA603121E863CDA0098FAC1 /* 3k-scope-custom.png */; };
 		6AA6036E1E863CDA0098FAC1 /* 52-gallon-deco.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA603131E863CDA0098FAC1 /* 52-gallon-deco.png */; };
@@ -147,6 +148,7 @@
 /* Begin PBXFileReference section */
 		28AB7E11C77E8FE21BD084AA /* Pods-WeaponsPerStage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeaponsPerStage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeaponsPerStage/Pods-WeaponsPerStage.debug.xcconfig"; sourceTree = "<group>"; };
 		385A6CF511379D6343538F06 /* Pods-WeaponsPerStageTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeaponsPerStageTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeaponsPerStageTests/Pods-WeaponsPerStageTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6A43BABF1E95342600A9AA02 /* 120 - iPhone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "120 - iPhone@2x.png"; path = "Resources/120 - iPhone@2x.png"; sourceTree = "<group>"; };
 		6AA6030C1E6837E80098FAC1 /* Resources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Resources.bundle; sourceTree = SOURCE_ROOT; };
 		6AA603121E863CDA0098FAC1 /* 3k-scope-custom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "3k-scope-custom.png"; path = "Resources/3k-scope-custom.png"; sourceTree = "<group>"; };
 		6AA603131E863CDA0098FAC1 /* 52-gallon-deco.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "52-gallon-deco.png"; path = "Resources/52-gallon-deco.png"; sourceTree = "<group>"; };
@@ -421,6 +423,7 @@
 		9D374BAE1E8111E500571005 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				6A43BABF1E95342600A9AA02 /* 120 - iPhone@2x.png */,
 				6AA603111E863CC40098FAC1 /* WeaponsIcon */,
 				6AA603CA1E879DC90098FAC1 /* Config.png */,
 				6AA603CE1E89EA350098FAC1 /* Capture.png */,
@@ -686,6 +689,7 @@
 				6AA603C91E879CCA0098FAC1 /* Sort.png in Resources */,
 				6AA603A91E863CDA0098FAC1 /* prime-shooter.png in Resources */,
 				6AA603841E863CDA0098FAC1 /* dynamo-roller.png in Resources */,
+				6A43BAC01E95342600A9AA02 /* 120 - iPhone@2x.png in Resources */,
 				6AA603961E863CDA0098FAC1 /* l3-reelgun.png in Resources */,
 				6AA603B01E863CDA0098FAC1 /* rapid-blaster.png in Resources */,
 				6AA603991E863CDA0098FAC1 /* liter-3k.png in Resources */,

@@ -19,6 +19,10 @@ class HomeViewController: UIViewController {
     /// 勝敗ViewとTableViewとの仕切りView
     @IBOutlet weak var separatorView: UIView!
     
+    /// winラベル
+    @IBOutlet weak var winLabel: UILabel!
+    /// loseラベル
+    @IBOutlet weak var loseLabel: UILabel!
     /// 勝利数をカウント
     @IBOutlet weak var winCount: UILabel!
     /// 敗北数をカウント
@@ -40,6 +44,12 @@ class HomeViewController: UIViewController {
         
         // 勝敗Viewの高さをセット
         DeviceSizeManager.sharedInstance.winLoseViewHeight = winLoseView.frame.size.height
+        
+        // ラベルの色設定
+        winLabel.textColor = ConstColor.purple
+        winCount.textColor = ConstColor.purple
+        loseLabel.textColor = ConstColor.skyBlue
+        loseCount.textColor = ConstColor.skyBlue
         
         // 仕切りViewの色設定
         separatorView.backgroundColor = ConstColor.yellowGreen
