@@ -83,7 +83,6 @@ class HomeViewController: UIViewController {
         self.loseCount.text = WeaponsPerStageStoreManager.loseCount().description
     }
     
-    
     /// キャプチャボタンを押したときに呼び出され、TableViewをキャプチャする
     func capture() {
         // TableViewのスクロールを最上に戻す
@@ -110,7 +109,17 @@ class HomeViewController: UIViewController {
     
 }
 
-        
+// MARK: WaponsPerStageTableViewCellDelegate
+extension HomeViewController: WaponsPerStageTableViewCellDelegate {
+    
+    func toWeaponSelect(indexPath: IndexPath) {
+        let viewController = storyboard?.instantiateViewController(withIdentifier: "ContainViewController")
+        IndexManager.indexPath = indexPath
+        self.navigationController?.pushViewController(viewController!, animated: true)
+    }
+    
+}
+
 // MARK: - TableViewDataSource
 extension HomeViewController: UITableViewDataSource {
     
@@ -121,6 +130,10 @@ extension HomeViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: WaponsPerStageTableViewCell.nibName, for: indexPath) as! WaponsPerStageTableViewCell
+        
+        // セルのデリゲート設定
+        cell.delegate = self
+        
         // TODO: 強制アンラップしているが、nil判定が必要
         let weaponStage = WeaponsPerStageStoreManager.weaponsPerStageList()[indexPath.row]
         cell.setup(stage: weaponStage.stage!, weapon:
@@ -132,6 +145,7 @@ extension HomeViewController: UITableViewDataSource {
         cell.buttonColorSwitch()
         return cell
     }
+    
 }
 
         
@@ -143,11 +157,4 @@ extension HomeViewController: UITableViewDelegate {
         return 100
     }
     
-    func tableView(_ table: UITableView,didSelectRowAt indexPath: IndexPath) {
-        let viewController = storyboard?.instantiateViewController(withIdentifier: "ContainViewController")
-        // どのセルをタップして遷移したかを保持
-        // TODO: この方法は微妙なのであとでスマートな方法を考える
-        IndexManager.indexPath = indexPath
-        self.navigationController?.pushViewController(viewController!, animated: true)
-    }
 }

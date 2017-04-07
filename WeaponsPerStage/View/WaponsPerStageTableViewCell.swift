@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol WaponsPerStageTableViewCellDelegate {
+    func toWeaponSelect(indexPath: IndexPath)
+}
+
 class WaponsPerStageTableViewCell: UITableViewCell {
 
     /// セルID
@@ -15,6 +19,7 @@ class WaponsPerStageTableViewCell: UITableViewCell {
     var winloseStatus = "both"
     var indexPath: IndexPath = [0, 0]
     var completion: () -> Void = {}
+    var delegate : WaponsPerStageTableViewCellDelegate?
     
     /// ステージ名ラベル
     @IBOutlet weak var stage: UILabel!
@@ -92,6 +97,10 @@ class WaponsPerStageTableViewCell: UITableViewCell {
             winButton.backgroundColor = UIColor.gray
             loseButton.backgroundColor = UIColor.gray
         }
+    }
+    
+    @IBAction func toWeaponSelect(_ sender: Any) {
+        delegate?.toWeaponSelect(indexPath: indexPath)
     }
     
     /// 勝敗ボタンの色を初期化する

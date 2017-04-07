@@ -17,8 +17,12 @@ class TabBarController: UITabBarController {
         tabBar.barTintColor = UIColor.white
         // 選択時の色を設定
         UITabBar.appearance().tintColor = ConstColor.yellowGreen
+        
         // 非選択時の色を設定
-        UITabBar.appearance().unselectedItemTintColor = UIColor.gray
+        // iOS10以上の設定
+        if #available(iOS 10.0, *) {
+            UITabBar.appearance().unselectedItemTintColor = UIColor.gray
+        }
         
         // TabBarのアイコン設定
         tabBar.items?[0].image = UIImage.init(named: "Home.png")
