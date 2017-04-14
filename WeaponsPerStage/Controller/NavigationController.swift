@@ -11,8 +11,7 @@ import UIKit
 class NavigationController: UINavigationController {
 
     override func viewDidLoad() {
-        // TODO: NavigationBarの色をUIColorで変えたい
-        navigationBar.barTintColor = ConstColor.yellowGreen
+        navigationBar.barTintColor = ConstColor.iconGreen
         navigationBar.tintColor = UIColor.white
         
         // 戻るボタンの文言を設定

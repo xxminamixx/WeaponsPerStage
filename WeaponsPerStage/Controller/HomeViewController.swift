@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Social
+import Photos
 import SlideMenuControllerSwift
 
 class HomeViewController: UIViewController {
@@ -52,11 +54,27 @@ class HomeViewController: UIViewController {
         loseCount.textColor = ConstColor.skyBlue
         
         // 仕切りViewの色設定
-        separatorView.backgroundColor = ConstColor.yellowGreen
+        separatorView.backgroundColor = ConstColor.iconGreen
         
         // キャプチャボタンをNavigationBarの右に追加
-        let rightCaptureButtonItem: UIBarButtonItem = UIBarButtonItem.init(image: UIImage.init(named: "Capture.png"), style: .plain, target: self, action: #selector(capture))
-        self.navigationItem.setRightBarButtonItems([rightCaptureButtonItem], animated: true)
+        let rightCaptureButton = UIButton.init()
+        rightCaptureButton.setImage(UIImage.init(named: "Capture.png"), for: .normal)
+        rightCaptureButton.sizeToFit()
+        rightCaptureButton.addTarget(self, action: #selector(capture), for: UIControlEvents.touchUpInside)
+        
+         let rightSpaceButton = UIButton.init()
+        rightSpaceButton.contentRect(forBounds: CGRect.init(x: 0, y: 0, width: 20, height: 20))
+        
+        let rightTweetButton = UIButton.init()
+        rightTweetButton.setImage(UIImage.init(named: "TwitterIcon.png"), for: .normal)
+        rightTweetButton.sizeToFit()
+        rightTweetButton.addTarget(self, action: #selector(tweetImage), for: UIControlEvents.touchUpInside)
+        
+        let rightCaptureButtonItem = UIBarButtonItem.init(customView: rightCaptureButton)
+        let rightSpaceButtonItem = UIBarButtonItem.init(customView: rightSpaceButton)
+        let rightTweetButtonItem = UIBarButtonItem.init(customView: rightTweetButton)
+
+        self.navigationItem.setRightBarButtonItems([rightCaptureButtonItem, rightSpaceButtonItem,rightTweetButtonItem], animated: true)
         
         // ステージと武器一覧のTableViewの初期設定
         weaponsPerStageTableView.dataSource = self
@@ -83,27 +101,64 @@ class HomeViewController: UIViewController {
         self.loseCount.text = WeaponsPerStageStoreManager.loseCount().description
     }
     
+    
+    /// テーブルビューをキャプチャする
+    ///
+    /// - Returns: キャプチャ画像を返す
+    func captureTableView() -> UIImage? {
+        // TableViewのスクロールを最上に戻す
+        let currentOffset = weaponsPerStageTableView.contentOffset
+        weaponsPerStageTableView.contentOffset = CGPoint(x: 0, y: -weaponsPerStageTableView.contentInset.top)
+        let image = self.weaponsPerStageTableView.captureImage()
+        weaponsPerStageTableView.contentOffset = currentOffset
+        return image
+    }
+    
     /// キャプチャボタンを押したときに呼び出され、TableViewをキャプチャする
     func capture() {
-        // TableViewのスクロールを最上に戻す
-        weaponsPerStageTableView.contentOffset = CGPoint(x: 0, y: -weaponsPerStageTableView.contentInset.top)
-        
-        if let image = self.weaponsPerStageTableView.captureImage() {
-            UIImageWriteToSavedPhotosAlbum(image, self, #selector(didFinishWriteImage(_:error:contextInfo:)), nil)
+        if let image = captureTableView() {
+            
+            let result = PHAssetCollection.fetchAssetCollections(with: PHAssetCollectionType.album, subtype: PHAssetCollectionSubtype.smartAlbumUserLibrary, options: nil)
+
+            if let anAlbum = result.firstObject {
+                PHPhotoLibrary.shared().performChanges({
+                    let createAssetRequest = PHAssetChangeRequest.creationRequestForAsset(from: image)
+                    let albumChangeRequest = PHAssetCollectionChangeRequest(for: anAlbum)
+                    albumChangeRequest!.addAssets([createAssetRequest.placeholderForCreatedAsset!] as NSArray)
+                }, completionHandler: { (success, error) in
+                    if success {
+                        // アラート表示
+                        self.alertController(title: nil, message: "キャプチャに成功しました。", completion: {})
+                    } else {
+                        self.alertController(title: nil, message: "キャプチャに失敗しました。", completion: {})
+                    }
+                })
+            } else {
+                alertController(title: nil, message: "キャプチャに失敗しました。", completion: {})
+            }
         }
     }
     
-    func didFinishWriteImage(_ image: UIImage, error: NSError?, contextInfo: UnsafeMutableRawPointer) {
-        if let error = error {
-            print("Image write error: \(error)")
-        } else {
-            // アラート表示
-            let alertController = UIAlertController(title: nil, message: "キャプチャに成功しました", preferredStyle: .alert)
-            let defaultAction = UIAlertAction(title: "とじる", style: UIAlertActionStyle.default, handler:{
-                (action: UIAlertAction!) -> Void in
-            })
-            alertController.addAction(defaultAction)
-            present(alertController, animated: true, completion: nil)
+    // AlertControllerラッピングメソッド
+    func alertController(title: String?, message: String?, completion: @escaping () -> Void) {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let defaultAction = UIAlertAction(title: "とじる", style: UIAlertActionStyle.default, handler:{
+            (action: UIAlertAction!) -> Void in
+            // ボタン押下時の処理
+            completion()
+        })
+        alertController.addAction(defaultAction)
+        self.present(alertController, animated: true, completion: nil)
+    }
+    
+    /// ツイートボタンを押した時に呼び出され、キャプチャ画像のツイート画面が開く
+    func tweetImage() {
+        if let image = captureTableView() {
+            // ツイッター投稿画面を表示
+            let twitterPostView = SLComposeViewController(forServiceType: SLServiceTypeTwitter)!
+            twitterPostView.add(image)
+            twitterPostView.setInitialText(ConstText.twitterInitialText)
+            self.present(twitterPostView, animated: true, completion: nil)
         }
     }
     

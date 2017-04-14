@@ -17,4 +17,7 @@ class ConstText {
     static let home = "イカウェポナー"
     static let weaponsSelection = "なにを持つ？"
     static let config = "設定"
+    
+    /* Twitter関連 */
+    static let twitterInitialText = "対抗戦の結果です。\n#イカウェポナー\n#対抗戦\n#スプラトゥーン"
 }

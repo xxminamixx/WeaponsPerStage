@@ -233,7 +233,7 @@
                                     <constraint firstAttribute="height" constant="30" id="Zww-Hb-AVX"/>
                                     <constraint firstAttribute="width" constant="100" id="sHD-aO-GAW"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                 <state key="normal" title="武器初期化">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -254,7 +254,7 @@
                                     <constraint firstAttribute="width" constant="100" id="7xE-xs-tdc"/>
                                     <constraint firstAttribute="height" constant="30" id="b2t-Wh-5vL"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                 <state key="normal" title="勝敗初期化">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>

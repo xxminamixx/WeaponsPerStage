@@ -8,6 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		6A43BAC01E95342600A9AA02 /* 120 - iPhone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A43BABF1E95342600A9AA02 /* 120 - iPhone@2x.png */; };
+		6A43BAC21EA04BD500A9AA02 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A43BAC11EA04BD500A9AA02 /* Social.framework */; };
+		6A43BAC91EA05B9F00A9AA02 /* TwitterIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A43BAC61EA05B9F00A9AA02 /* TwitterIcon.png */; };
+		6A43BACA1EA05B9F00A9AA02 /* TwitterIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A43BAC71EA05B9F00A9AA02 /* TwitterIcon@2x.png */; };
+		6A43BACB1EA05B9F00A9AA02 /* TwitterIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A43BAC81EA05B9F00A9AA02 /* TwitterIcon@3x.png */; };
+		6A43BACF1EA065AA00A9AA02 /* Capture.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A43BACC1EA065AA00A9AA02 /* Capture.png */; };
+		6A43BAD01EA065AA00A9AA02 /* Capture@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A43BACD1EA065AA00A9AA02 /* Capture@2x.png */; };
+		6A43BAD11EA065AA00A9AA02 /* Capture@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A43BACE1EA065AA00A9AA02 /* Capture@3x.png */; };
+		6A43BAD41EA0693900A9AA02 /* Home@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A43BAD21EA0693900A9AA02 /* Home@2x.png */; };
+		6A43BAD51EA0693900A9AA02 /* Home@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A43BAD31EA0693900A9AA02 /* Home@3x.png */; };
+		6A43BAD81EA06B4400A9AA02 /* Config@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A43BAD61EA06B4400A9AA02 /* Config@2x.png */; };
+		6A43BAD91EA06B4400A9AA02 /* Config@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A43BAD71EA06B4400A9AA02 /* Config@3x.png */; };
 		6AA6030D1E6837E80098FAC1 /* Resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6AA6030C1E6837E80098FAC1 /* Resources.bundle */; };
 		6AA6036D1E863CDA0098FAC1 /* 3k-scope-custom.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA603121E863CDA0098FAC1 /* 3k-scope-custom.png */; };
 		6AA6036E1E863CDA0098FAC1 /* 52-gallon-deco.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA603131E863CDA0098FAC1 /* 52-gallon-deco.png */; };
@@ -103,7 +114,6 @@
 		6AA603C91E879CCA0098FAC1 /* Sort.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA603C81E879CCA0098FAC1 /* Sort.png */; };
 		6AA603CB1E879DC90098FAC1 /* Config.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA603CA1E879DC90098FAC1 /* Config.png */; };
 		6AA603CD1E879DE80098FAC1 /* Home.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA603CC1E879DE80098FAC1 /* Home.png */; };
-		6AA603CF1E89EA350098FAC1 /* Capture.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AA603CE1E89EA350098FAC1 /* Capture.png */; };
 		8075CC350F6F097E44A26A31 /* Pods_WeaponsPerStageTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 761AFB948E228A3FD8E04F61 /* Pods_WeaponsPerStageTests.framework */; };
 		9D1A033E1E6969C000EAFAFB /* ConstText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1A033D1E6969C000EAFAFB /* ConstText.swift */; };
 		9D1A03411E696EBA00EAFAFB /* ConstColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1A03401E696EBA00EAFAFB /* ConstColor.swift */; };
@@ -149,6 +159,17 @@
 		28AB7E11C77E8FE21BD084AA /* Pods-WeaponsPerStage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeaponsPerStage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeaponsPerStage/Pods-WeaponsPerStage.debug.xcconfig"; sourceTree = "<group>"; };
 		385A6CF511379D6343538F06 /* Pods-WeaponsPerStageTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeaponsPerStageTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeaponsPerStageTests/Pods-WeaponsPerStageTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6A43BABF1E95342600A9AA02 /* 120 - iPhone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "120 - iPhone@2x.png"; path = "Resources/120 - iPhone@2x.png"; sourceTree = "<group>"; };
+		6A43BAC11EA04BD500A9AA02 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		6A43BAC61EA05B9F00A9AA02 /* TwitterIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TwitterIcon.png; path = Resources/TwitterIcon.png; sourceTree = "<group>"; };
+		6A43BAC71EA05B9F00A9AA02 /* TwitterIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "TwitterIcon@2x.png"; path = "Resources/TwitterIcon@2x.png"; sourceTree = "<group>"; };
+		6A43BAC81EA05B9F00A9AA02 /* TwitterIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "TwitterIcon@3x.png"; path = "Resources/TwitterIcon@3x.png"; sourceTree = "<group>"; };
+		6A43BACC1EA065AA00A9AA02 /* Capture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Capture.png; path = Resources/Capture.png; sourceTree = "<group>"; };
+		6A43BACD1EA065AA00A9AA02 /* Capture@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Capture@2x.png"; path = "Resources/Capture@2x.png"; sourceTree = "<group>"; };
+		6A43BACE1EA065AA00A9AA02 /* Capture@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Capture@3x.png"; path = "Resources/Capture@3x.png"; sourceTree = "<group>"; };
+		6A43BAD21EA0693900A9AA02 /* Home@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Home@2x.png"; path = "Resources/Home@2x.png"; sourceTree = "<group>"; };
+		6A43BAD31EA0693900A9AA02 /* Home@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Home@3x.png"; path = "Resources/Home@3x.png"; sourceTree = "<group>"; };
+		6A43BAD61EA06B4400A9AA02 /* Config@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Config@2x.png"; path = "Resources/Config@2x.png"; sourceTree = "<group>"; };
+		6A43BAD71EA06B4400A9AA02 /* Config@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Config@3x.png"; path = "Resources/Config@3x.png"; sourceTree = "<group>"; };
 		6AA6030C1E6837E80098FAC1 /* Resources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Resources.bundle; sourceTree = SOURCE_ROOT; };
 		6AA603121E863CDA0098FAC1 /* 3k-scope-custom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "3k-scope-custom.png"; path = "Resources/3k-scope-custom.png"; sourceTree = "<group>"; };
 		6AA603131E863CDA0098FAC1 /* 52-gallon-deco.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "52-gallon-deco.png"; path = "Resources/52-gallon-deco.png"; sourceTree = "<group>"; };
@@ -244,7 +265,6 @@
 		6AA603C81E879CCA0098FAC1 /* Sort.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Sort.png; path = Resources/Sort.png; sourceTree = "<group>"; };
 		6AA603CA1E879DC90098FAC1 /* Config.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Config.png; path = Resources/Config.png; sourceTree = "<group>"; };
 		6AA603CC1E879DE80098FAC1 /* Home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Home.png; path = Resources/Home.png; sourceTree = "<group>"; };
-		6AA603CE1E89EA350098FAC1 /* Capture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Capture.png; path = Resources/Capture.png; sourceTree = "<group>"; };
 		761AFB948E228A3FD8E04F61 /* Pods_WeaponsPerStageTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeaponsPerStageTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		897FE971890AF0FDAD81D7B1 /* Pods-WeaponsPerStage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeaponsPerStage.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeaponsPerStage/Pods-WeaponsPerStage.release.xcconfig"; sourceTree = "<group>"; };
 		9D1A033D1E6969C000EAFAFB /* ConstText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConstText.swift; path = Const/ConstText.swift; sourceTree = "<group>"; };
@@ -287,6 +307,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A43BAC21EA04BD500A9AA02 /* Social.framework in Frameworks */,
 				A2AE6346D067B046F0C386A1 /* Pods_WeaponsPerStage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,6 +323,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6A43BAC31EA05B0800A9AA02 /* NavigationIcon */ = {
+			isa = PBXGroup;
+			children = (
+				6A43BACC1EA065AA00A9AA02 /* Capture.png */,
+				6A43BACD1EA065AA00A9AA02 /* Capture@2x.png */,
+				6A43BACE1EA065AA00A9AA02 /* Capture@3x.png */,
+				6A43BAC61EA05B9F00A9AA02 /* TwitterIcon.png */,
+				6A43BAC71EA05B9F00A9AA02 /* TwitterIcon@2x.png */,
+				6A43BAC81EA05B9F00A9AA02 /* TwitterIcon@3x.png */,
+				6AA603C81E879CCA0098FAC1 /* Sort.png */,
+			);
+			name = NavigationIcon;
+			sourceTree = "<group>";
+		};
+		6A43BAC41EA05B3A00A9AA02 /* TabBarIcon */ = {
+			isa = PBXGroup;
+			children = (
+				6AA603CA1E879DC90098FAC1 /* Config.png */,
+				6A43BAD61EA06B4400A9AA02 /* Config@2x.png */,
+				6A43BAD71EA06B4400A9AA02 /* Config@3x.png */,
+				6A43BAD21EA0693900A9AA02 /* Home@2x.png */,
+				6A43BAD31EA0693900A9AA02 /* Home@3x.png */,
+				6AA603CC1E879DE80098FAC1 /* Home.png */,
+			);
+			name = TabBarIcon;
+			sourceTree = "<group>";
+		};
+		6A43BAC51EA05B5A00A9AA02 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				6A43BABF1E95342600A9AA02 /* 120 - iPhone@2x.png */,
+			);
+			name = Splash;
+			sourceTree = "<group>";
+		};
 		6AA6030E1E6840450098FAC1 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
@@ -423,12 +479,10 @@
 		9D374BAE1E8111E500571005 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				6A43BABF1E95342600A9AA02 /* 120 - iPhone@2x.png */,
+				6A43BAC51EA05B5A00A9AA02 /* Splash */,
+				6A43BAC41EA05B3A00A9AA02 /* TabBarIcon */,
+				6A43BAC31EA05B0800A9AA02 /* NavigationIcon */,
 				6AA603111E863CC40098FAC1 /* WeaponsIcon */,
-				6AA603CA1E879DC90098FAC1 /* Config.png */,
-				6AA603CE1E89EA350098FAC1 /* Capture.png */,
-				6AA603CC1E879DE80098FAC1 /* Home.png */,
-				6AA603C81E879CCA0098FAC1 /* Sort.png */,
 			);
 			name = Resource;
 			sourceTree = "<group>";
@@ -553,6 +607,7 @@
 		D7C9BD3031CE7BA9DA5C9F64 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6A43BAC11EA04BD500A9AA02 /* Social.framework */,
 				F90DC3D630E966152D55EAEC /* Pods_WeaponsPerStage.framework */,
 				761AFB948E228A3FD8E04F61 /* Pods_WeaponsPerStageTests.framework */,
 			);
@@ -662,6 +717,7 @@
 			files = (
 				9D3A436D1E680E53001CE036 /* LaunchScreen.storyboard in Resources */,
 				6AA6038B1E863CDA0098FAC1 /* hissen-hue.png in Resources */,
+				6A43BACF1EA065AA00A9AA02 /* Capture.png in Resources */,
 				6AA603A31E863CDA0098FAC1 /* octa-shooter.png in Resources */,
 				6AA6030D1E6837E80098FAC1 /* Resources.bundle in Resources */,
 				6AA6038F1E863CDA0098FAC1 /* hot-blaster-custom.png in Resources */,
@@ -678,14 +734,17 @@
 				6AA603891E863CDA0098FAC1 /* hero-roller.png in Resources */,
 				6AA6039C1E863CDA0098FAC1 /* long-blaster.png in Resources */,
 				6AA6036F1E863CDA0098FAC1 /* 52-gallon.png in Resources */,
+				6A43BACB1EA05B9F00A9AA02 /* TwitterIcon@3x.png in Resources */,
 				6AA603B31E863CDA0098FAC1 /* sharp-marker-neo.png in Resources */,
 				6AA603A51E863CDA0098FAC1 /* pablo.png in Resources */,
 				6AA603C31E863CDA0098FAC1 /* sprat-spinner.png in Resources */,
 				6AA603831E863CDA0098FAC1 /* dynamo-roller-tesla.png in Resources */,
 				6AA603BA1E863CDA0098FAC1 /* splat-roller-corocoro.png in Resources */,
 				6AA603A61E863CDA0098FAC1 /* permanent-pablo.png in Resources */,
+				6A43BAD81EA06B4400A9AA02 /* Config@2x.png in Resources */,
 				6AA603811E863CDA0098FAC1 /* dual-sweeper.png in Resources */,
 				6AA603981E863CDA0098FAC1 /* liter-3k-scope.png in Resources */,
+				6A43BAD91EA06B4400A9AA02 /* Config@3x.png in Resources */,
 				6AA603C91E879CCA0098FAC1 /* Sort.png in Resources */,
 				6AA603A91E863CDA0098FAC1 /* prime-shooter.png in Resources */,
 				6AA603841E863CDA0098FAC1 /* dynamo-roller.png in Resources */,
@@ -693,17 +752,21 @@
 				6AA603961E863CDA0098FAC1 /* l3-reelgun.png in Resources */,
 				6AA603B01E863CDA0098FAC1 /* rapid-blaster.png in Resources */,
 				6AA603991E863CDA0098FAC1 /* liter-3k.png in Resources */,
+				6A43BAD01EA065AA00A9AA02 /* Capture@2x.png in Resources */,
 				6AA603AD1E863CDA0098FAC1 /* r-blaster-elite.png in Resources */,
 				6AA6037E1E863CDA0098FAC1 /* carbon-roller-deco.png in Resources */,
+				6A43BACA1EA05B9F00A9AA02 /* TwitterIcon@2x.png in Resources */,
 				6AA603A01E863CDA0098FAC1 /* n-zap-89.png in Resources */,
 				6AA6039E1E863CDA0098FAC1 /* n-zap-83.png in Resources */,
 				6AA603821E863CDA0098FAC1 /* dynamo-roller-burned.png in Resources */,
 				6AA603771E863CDA0098FAC1 /* barrel-spinner.png in Resources */,
 				6AA6036D1E863CDA0098FAC1 /* 3k-scope-custom.png in Resources */,
+				6A43BAD11EA065AA00A9AA02 /* Capture@3x.png in Resources */,
 				6AA603B51E863CDA0098FAC1 /* splat-charger-bento.png in Resources */,
 				6AA6039F1E863CDA0098FAC1 /* n-zap-85.png in Resources */,
 				9D3A43681E680E52001CE036 /* Main.storyboard in Resources */,
 				9D74A7511E692E2C00AC66A6 /* WaponsPerStageTableViewCell.xib in Resources */,
+				6A43BAC91EA05B9F00A9AA02 /* TwitterIcon.png in Resources */,
 				6AA603C11E863CDA0098FAC1 /* sprat-spinner-collab.png in Resources */,
 				6AA603971E863CDA0098FAC1 /* liter-3k-custom.png in Resources */,
 				6AA603861E863CDA0098FAC1 /* h3-reelgun-d.png in Resources */,
@@ -720,7 +783,6 @@
 				6AA603A71E863CDA0098FAC1 /* prime-shooter-berry.png in Resources */,
 				6AA603921E863CDA0098FAC1 /* hydrant.png in Resources */,
 				6AA603C21E863CDA0098FAC1 /* sprat-spinner-repair.png in Resources */,
-				6AA603CF1E89EA350098FAC1 /* Capture.png in Resources */,
 				6AA603951E863CDA0098FAC1 /* l3-reelgun-d.png in Resources */,
 				6AA603B11E863CDA0098FAC1 /* screw-slosher-neo.png in Resources */,
 				6AA603AA1E863CDA0098FAC1 /* pro-modeler-mg.png in Resources */,
@@ -744,6 +806,7 @@
 				6AA603801E863CDA0098FAC1 /* dual-sweeper-custom.png in Resources */,
 				6AA603791E863CDA0098FAC1 /* bold-marker-neo.png in Resources */,
 				6AA603781E863CDA0098FAC1 /* bold-marker-7.png in Resources */,
+				6A43BAD41EA0693900A9AA02 /* Home@2x.png in Resources */,
 				6AA603721E863CDA0098FAC1 /* bamboozler-14-mk-1.png in Resources */,
 				6AA603C71E863CDA0098FAC1 /* wakaba-shooter.png in Resources */,
 				6AA603BE1E863CDA0098FAC1 /* splat-shooter.png in Resources */,
@@ -751,6 +814,7 @@
 				6AA603751E863CDA0098FAC1 /* barrel-spinner-deco.png in Resources */,
 				6AA603C61E863CDA0098FAC1 /* squicklin-gamma.png in Resources */,
 				6AA603B21E863CDA0098FAC1 /* screw-slosher.png in Resources */,
+				6A43BAD51EA0693900A9AA02 /* Home@3x.png in Resources */,
 				6AA6037C1E863CDA0098FAC1 /* bucket-slosher-soda.png in Resources */,
 				6AA6036E1E863CDA0098FAC1 /* 52-gallon-deco.png in Resources */,
 				6AA603701E863CDA0098FAC1 /* 96-gallon-deco.png in Resources */,
