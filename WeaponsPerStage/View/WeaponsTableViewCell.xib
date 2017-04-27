@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -20,21 +19,37 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="weapon" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NTj-k4-dnN">
-                        <rect key="frame" x="56" y="13.5" width="266" height="17"/>
+                        <rect key="frame" x="76" y="13.5" width="246" height="17"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Eso-JU-8Ke">
-                        <rect key="frame" x="10" y="3" width="36" height="36"/>
+                        <rect key="frame" x="30" y="3" width="36" height="36"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="36" id="P8M-aZ-Vb4"/>
                             <constraint firstAttribute="width" constant="36" id="kPV-2E-NWo"/>
                         </constraints>
                     </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M5a-Jm-mPH">
+                        <rect key="frame" x="5" y="12" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="Sua-sE-rEX"/>
+                            <constraint firstAttribute="height" constant="20" id="bQI-on-d2F"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                        <state key="normal" title="★">
+                            <color key="titleColor" red="1" green="0.89771997354130151" blue="0.19288729243254554" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="favoriteButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="iXP-db-fk1"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="Eso-JU-8Ke" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="8ue-VV-FVw"/>
+                    <constraint firstItem="M5a-Jm-mPH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="6zx-4J-CQr"/>
+                    <constraint firstItem="M5a-Jm-mPH" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="AXP-cw-5f7"/>
+                    <constraint firstItem="Eso-JU-8Ke" firstAttribute="leading" secondItem="M5a-Jm-mPH" secondAttribute="trailing" constant="5" id="Ta1-xg-lGv"/>
                     <constraint firstItem="NTj-k4-dnN" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="bCa-FH-NXk"/>
                     <constraint firstItem="NTj-k4-dnN" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="10" id="cbz-xL-2wi"/>
                     <constraint firstItem="NTj-k4-dnN" firstAttribute="leading" secondItem="Eso-JU-8Ke" secondAttribute="trailing" constant="10" id="xFl-ZJ-ddC"/>
@@ -42,6 +57,7 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="favoriteButton" destination="M5a-Jm-mPH" id="1C0-jI-Mqt"/>
                 <outlet property="weapon" destination="NTj-k4-dnN" id="WGk-3o-HSj"/>
                 <outlet property="weaponIcon" destination="Eso-JU-8Ke" id="nQw-gU-IFf"/>
             </connections>

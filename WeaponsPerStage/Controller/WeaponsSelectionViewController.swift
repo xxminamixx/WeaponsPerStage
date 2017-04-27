@@ -52,12 +52,26 @@ extension WeaponsSelectionViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // 武器個数
-        return JsonManager.CountAllWeapons()
+        if WeaponsPerStageStoreManager.isFavoriteWeapon() {
+            return WeaponsPerStageStoreManager.favoriteWeaponsCount()
+        } else {
+            return JsonManager.CountAllWeapons()
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier:  WeaponsTableViewCell.nibName, for: indexPath) as! WeaponsTableViewCell
-        cell.setup(weapon: (DataSource.weaponNameList?[indexPath.row])!)
+        
+        if WeaponsPerStageStoreManager.isFavoriteWeapon() && !WeaponsSelectHandlingManager.isSort {
+            // お気に入り武器が永続化されている且つソートが実行されていない
+            
+            if let weapon = WeaponsPerStageStoreManager.favoriteWeaponsList()[indexPath.row].weapon {
+                cell.setup(weapon: weapon)
+            }
+        } else {
+            // filterされた武器表示
+            cell.setup(weapon: (DataSource.weaponNameList?[indexPath.row])!)
+        }
         return cell
     }
 }

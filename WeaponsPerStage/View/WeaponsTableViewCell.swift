@@ -17,6 +17,8 @@ class WeaponsTableViewCell: UITableViewCell {
     @IBOutlet weak var weapon: UILabel!
     /// 武器アイコン
     @IBOutlet weak var weaponIcon: UIImageView!
+    /// お気に入りボタン
+    @IBOutlet weak var favoriteButton: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -33,6 +35,24 @@ class WeaponsTableViewCell: UITableViewCell {
         self.weapon.text = weapon
         if let weaponIcon = DataSource.weaponsIconRelation[weapon] {
             self.weaponIcon.image = UIImage.init(named: weaponIcon)
+        }
+    }
+    
+    @IBAction func favoriteButton(_ sender: Any) {
+        if let name = self.weapon.text {
+            if WeaponsPerStageStoreManager.isSameWeapon(weapon: name) {
+                // 同じ名前の武器がすでに永続化されている場合
+
+                self.favoriteButton.alpha = 0.5
+                WeaponsPerStageStoreManager.favoriteDelete(weapon: name)
+            } else {
+                // 同じ名前の武器が登録されていない場合
+
+                self.favoriteButton.alpha = 1.0
+                let entity = FavoriteWeaponsEntity()
+                entity.weapon = name
+                WeaponsPerStageStoreManager.addFavoriteWeapon(object: entity)
+            }
         }
     }
     

@@ -10,10 +10,12 @@ import RealmSwift
 
 class WeaponsPerStageStoreManager: NSObject {
     
+    // MARK: WeaponsPerStageEntity
+    
     /// エンティティを永続化
     ///
     /// - Parameter object:
-    static func add(object: WeaponsPerStageEntity) {
+    static func addWeaponsPerStage(object: WeaponsPerStageEntity) {
         let realm = try! Realm()
         try! realm.write {
             realm.add(object)
@@ -61,7 +63,7 @@ class WeaponsPerStageStoreManager: NSObject {
         return array.filter({ $0.winlose == "lose" }).count
     }
 
-    
+    // お気に入りも消える可能性あり
     /// 全データ削除
     static func DeleteAll() {
         let realm = try! Realm()
@@ -69,6 +71,66 @@ class WeaponsPerStageStoreManager: NSObject {
             realm.deleteAll()
         }
     }
+    
+    // MARK:  FavoriteWeaponsEntity
+    
+    /// エンティティを永続化
+    ///
+    /// - Parameter object:
+    static func addFavoriteWeapon(object: FavoriteWeaponsEntity) {
+        let realm = try! Realm()
+        try! realm.write {
+            realm.add(object)
+        }
+    }
+    
+    /// お気に入り武器のリストを返す
+    ///
+    /// - Returns: FavoriteWeaponsEntity
+    static func favoriteWeaponsList() -> Results<FavoriteWeaponsEntity> {
+        let realm = try! Realm()
+        return realm.objects(FavoriteWeaponsEntity.self)
+    }
+    
+    
+    /// お気に入り武器の個数を返す
+    ///
+    /// - Returns: お気に入り武器個数
+    static func favoriteWeaponsCount() -> Int {
+        return favoriteWeaponsList().count
+    }
+    
+    /// お気に入りの有無を返す
+    ///
+    /// - Returns: 
+    ///   - true : お気に入り登録武器あり
+    ///   - false: お気に入り登録武器なし
+    static func isFavoriteWeapon() -> Bool {
+        return  favoriteWeaponsList().count > 0
+    }
+    
+    /// 同じ武器名が永続されていないかチェック
+    ///
+    /// - Parameter weapon: 武器名
+    /// - Returns: 
+    ///   - true : 同じ武器がある
+    ///   - false: 同じ武器がない
+    static func isSameWeapon(weapon: String) -> Bool {
+        return favoriteWeaponsList().filter("weapon == \(weapon)").count > 0
+    }
+    
+    
+    /// 同じ武器名を削除
+    ///
+    /// - Parameter weapon: 武器名
+    static func favoriteDelete(weapon: String) {
+        let realm = try! Realm()
+        try! realm.write {
+            realm.delete(favoriteWeaponsList().filter("weapon == \(weapon)"))
+        }
+    }
+    
+    // MARK: Utility
     
     /// クロージャに更新処理を渡す
     ///

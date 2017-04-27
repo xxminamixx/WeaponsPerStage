@@ -65,6 +65,7 @@ extension SortViewController: UITableViewDelegate {
             DataSource.weaponNameList = JsonManager.weaponsName()
         }
 
+        WeaponsSelectHandlingManager.isSort = true
         self.slideMenuController()?.closeRight()
     }
 }
