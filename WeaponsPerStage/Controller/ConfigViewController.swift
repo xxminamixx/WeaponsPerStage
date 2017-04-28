@@ -28,19 +28,22 @@ class ConfigViewController: UIViewController {
         JsonManager.initUserData()
         
         // アラート表示
-        let alertController = UIAlertController(title: nil, message: "初期化に成功しました", preferredStyle: .alert)
-        let defaultAction = UIAlertAction(title: "とじる", style: UIAlertActionStyle.default, handler:{
-            (action: UIAlertAction!) -> Void in
+        present(AlertControllerManager.customActionAlert(title: nil, message: "初期化に成功しました", defaultAction: {_ in
             // タブ切り替え処理
             self.tabBarController?.selectedIndex = 0
-        })
-        alertController.addAction(defaultAction)
-        present(alertController, animated: true, completion: nil)
+        }), animated: true, completion: nil)
     }
     
     /// 勝敗ボタンの色を初期化
     @IBAction func formatWinLose(_ sender: Any) {
         WeaponsPerStageStoreManager.winloseInit()
         self.tabBarController?.selectedIndex = 0
+        
+        // アラート表示
+        present(AlertControllerManager.customActionAlert(title: nil, message: "勝敗の初期化に成功しました", defaultAction: {_ in
+            // タブ切り替え処理
+            self.tabBarController?.selectedIndex = 0
+        }), animated: true, completion: nil)
+
     }
 }

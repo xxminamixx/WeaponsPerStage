@@ -65,11 +65,11 @@ extension WeaponsSelectionViewController: UITableViewDataSource {
             // お気に入り武器が永続化されている且つソートが実行されていない
             
             if let weapon = WeaponsPerStageStoreManager.favoriteWeaponsList()[indexPath.row].weapon {
-                cell.setup(weapon: weapon)
+                cell.setup(weapon: weapon, indexPath: indexPath)
             }
         } else {
             // filterされた武器表示
-            cell.setup(weapon: (DataSource.weaponNameList?[indexPath.row])!)
+            cell.setup(weapon: (DataSource.weaponNameList?[indexPath.row])!, indexPath: indexPath)
         }
         return cell
     }

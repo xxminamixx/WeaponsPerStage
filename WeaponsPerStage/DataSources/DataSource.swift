@@ -29,7 +29,7 @@ class DataSource: NSObject {
     static var specialWeaponsList = ["バリア", "バリア", "バリア", "バリア", "バリア", "バリア", "バリア", "バリア", "バリア", "バリア", "バリア", "バリア", "バリア", "バリア", "バリア", "バリア"]
     
     /// 武器種データ
-    static let weaponType = ["すべて表示", "シューター", "リールガン",  "ブラスター", "スロッシャー", "ローラー", "筆", "スピナー", "チャージャー"]
+    static let weaponType = ["すべて", "お気に入り", "シューター", "リールガン",  "ブラスター", "スロッシャー", "ローラー", "筆", "スピナー", "チャージャー"]
     
     /// filterした武器種データ格納配列
     static var weaponNameList: Array<String>? = []

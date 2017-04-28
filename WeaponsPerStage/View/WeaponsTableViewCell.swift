@@ -31,24 +31,31 @@ class WeaponsTableViewCell: UITableViewCell {
     /// 武器名を自身のラベルにセットする
     ///
     /// - Parameter weapon: 武器名
-    func setup(weapon: String) {
+    func setup(weapon: String, indexPath: IndexPath) {
         self.weapon.text = weapon
         if let weaponIcon = DataSource.weaponsIconRelation[weapon] {
             self.weaponIcon.image = UIImage.init(named: weaponIcon)
         }
+        
+        // お気に入りされている武器はお気に入りボタンの色を変える
+        if WeaponsPerStageStoreManager.isSameWeapon(weapon: weapon) {
+            favoriteButton.setTitleColor(ConstColor.purple, for: .normal)
+        } else {
+            favoriteButton.setTitleColor(UIColor.gray, for: .normal)
+        }
     }
     
     @IBAction func favoriteButton(_ sender: Any) {
-        if let name = self.weapon.text {
+        if let name = weapon.text {
             if WeaponsPerStageStoreManager.isSameWeapon(weapon: name) {
                 // 同じ名前の武器がすでに永続化されている場合
 
-                self.favoriteButton.alpha = 0.5
+                favoriteButton.setTitleColor(UIColor.gray, for: .normal)
                 WeaponsPerStageStoreManager.favoriteDelete(weapon: name)
             } else {
                 // 同じ名前の武器が登録されていない場合
 
-                self.favoriteButton.alpha = 1.0
+                favoriteButton.setTitleColor(ConstColor.purple, for: .normal)
                 let entity = FavoriteWeaponsEntity()
                 entity.weapon = name
                 WeaponsPerStageStoreManager.addFavoriteWeapon(object: entity)

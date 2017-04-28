@@ -16,8 +16,9 @@ class SortViewController: UIViewController {
         // TableViewの初期設定
         tableView.delegate = self
         tableView.dataSource = self
-        let nib = UINib.init(nibName: WeaponsTableViewCell.nibName, bundle: nil)
-        tableView.register(nib, forCellReuseIdentifier: WeaponsTableViewCell.nibName)
+        
+        let nib = UINib.init(nibName: SortTableViewCell.nibName, bundle: nil)
+        tableView.register(nib, forCellReuseIdentifier: SortTableViewCell.nibName)
         
         super.viewDidLoad()
     }
@@ -36,9 +37,11 @@ extension SortViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier:  WeaponsTableViewCell.nibName, for: indexPath) as! WeaponsTableViewCell
-        cell.setup(weapon: DataSource.weaponType[indexPath.row])
+        let cell = tableView.dequeueReusableCell(withIdentifier:  SortTableViewCell.nibName, for: indexPath) as! SortTableViewCell
         
+        cell.weaponsType.text = (weapon: DataSource.weaponType[indexPath.row])
+        
+        // 全武器表示セルのみ色を変更
         if indexPath.row == 0 {
             cell.backgroundColor = ConstColor.gray_e8e8e8
         }
@@ -56,16 +59,28 @@ extension SortViewController: UITableViewDelegate {
     }
     
     func tableView(_ table: UITableView,didSelectRowAt indexPath: IndexPath) {
-        if DataSource.weaponType[indexPath.row] == "すべて表示" {
+        if DataSource.weaponType[indexPath.row] == "すべて" {
             // 武器名DataSourceのfilterを外し全武器格納
             DataSource.weaponNameList = JsonManager.weaponsName()
+            WeaponsSelectHandlingManager.isSort = true
+        } else if DataSource.weaponType[indexPath.row] == "お気に入り" {
+            // お気に入り武器を表示
+            if WeaponsPerStageStoreManager.isFavoriteWeapon() {
+                // お気に入り武器が存在するとき
+                // お気に入り表示を表示する
+                WeaponsSelectHandlingManager.isSort = false
+            } else {
+                // お気に入り武器が存在しないとき
+                // お気に入りを表示させない
+                WeaponsSelectHandlingManager.isSort = true
+            }
         } else {
             // 選択した武器種でfilter
             DataSource.masterWeaponList = DataSource.masterWeaponList?.filter({$0["type"] == DataSource.weaponType[indexPath.row] })
             DataSource.weaponNameList = JsonManager.weaponsName()
+            WeaponsSelectHandlingManager.isSort = true
         }
 
-        WeaponsSelectHandlingManager.isSort = true
         self.slideMenuController()?.closeRight()
     }
 }

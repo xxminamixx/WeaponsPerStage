@@ -143,6 +143,9 @@
 		9DF692041E88F38A00E5A063 /* UIView+Capture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF692031E88F38A00E5A063 /* UIView+Capture.swift */; };
 		9DF714131EB1B5B900E9F41A /* FavoriteWeaponsEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF714121EB1B5B900E9F41A /* FavoriteWeaponsEntity.swift */; };
 		9DF714151EB1F5BC00E9F41A /* WeaponsSelectHandlingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF714141EB1F5BC00E9F41A /* WeaponsSelectHandlingManager.swift */; };
+		9DF714181EB2DF1000E9F41A /* SortTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF714161EB2DF1000E9F41A /* SortTableViewCell.swift */; };
+		9DF714191EB2DF1000E9F41A /* SortTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DF714171EB2DF1000E9F41A /* SortTableViewCell.xib */; };
+		9DF7141B1EB2ED7D00E9F41A /* AlertControllerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF7141A1EB2ED7D00E9F41A /* AlertControllerManager.swift */; };
 		9DF7B4461E89137C00C6DE57 /* UIImage+Cropping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF7B4451E89137C00C6DE57 /* UIImage+Cropping.swift */; };
 		A2AE6346D067B046F0C386A1 /* Pods_WeaponsPerStage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F90DC3D630E966152D55EAEC /* Pods_WeaponsPerStage.framework */; };
 /* End PBXBuildFile section */
@@ -301,6 +304,9 @@
 		9DF692031E88F38A00E5A063 /* UIView+Capture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+Capture.swift"; path = "Extention/UIView+Capture.swift"; sourceTree = "<group>"; };
 		9DF714121EB1B5B900E9F41A /* FavoriteWeaponsEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FavoriteWeaponsEntity.swift; path = Model/Entity/FavoriteWeaponsEntity.swift; sourceTree = "<group>"; };
 		9DF714141EB1F5BC00E9F41A /* WeaponsSelectHandlingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WeaponsSelectHandlingManager.swift; path = Model/Manager/WeaponsSelectHandlingManager.swift; sourceTree = "<group>"; };
+		9DF714161EB2DF1000E9F41A /* SortTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SortTableViewCell.swift; path = View/SortTableViewCell.swift; sourceTree = "<group>"; };
+		9DF714171EB2DF1000E9F41A /* SortTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SortTableViewCell.xib; path = View/SortTableViewCell.xib; sourceTree = "<group>"; };
+		9DF7141A1EB2ED7D00E9F41A /* AlertControllerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlertControllerManager.swift; path = Model/Manager/AlertControllerManager.swift; sourceTree = "<group>"; };
 		9DF7B4451E89137C00C6DE57 /* UIImage+Cropping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImage+Cropping.swift"; path = "Extention/UIImage+Cropping.swift"; sourceTree = "<group>"; };
 		F90DC3D630E966152D55EAEC /* Pods_WeaponsPerStage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeaponsPerStage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD6CE7A3601BD2049FCAA9A8 /* Pods-WeaponsPerStageTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeaponsPerStageTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeaponsPerStageTests/Pods-WeaponsPerStageTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -370,6 +376,7 @@
 				9D74A7621E6945B300AC66A6 /* WeaponsPerStageStoreManager.swift */,
 				9D2E6A1B1E8CF03C005F4D7E /* DeviceSizeManager.swift */,
 				9DF714141EB1F5BC00E9F41A /* WeaponsSelectHandlingManager.swift */,
+				9DF7141A1EB2ED7D00E9F41A /* AlertControllerManager.swift */,
 			);
 			name = Manager;
 			sourceTree = "<group>";
@@ -560,6 +567,8 @@
 				9D74A74D1E692E2C00AC66A6 /* WaponsPerStageTableViewCell.xib */,
 				9D74A74E1E692E2C00AC66A6 /* WeaponsTableViewCell.swift */,
 				9D74A74F1E692E2C00AC66A6 /* WeaponsTableViewCell.xib */,
+				9DF714161EB2DF1000E9F41A /* SortTableViewCell.swift */,
+				9DF714171EB2DF1000E9F41A /* SortTableViewCell.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -818,6 +827,7 @@
 				6AA603BE1E863CDA0098FAC1 /* splat-shooter.png in Resources */,
 				6AA6038C1E863CDA0098FAC1 /* hissen.png in Resources */,
 				6AA603751E863CDA0098FAC1 /* barrel-spinner-deco.png in Resources */,
+				9DF714191EB2DF1000E9F41A /* SortTableViewCell.xib in Resources */,
 				6AA603C61E863CDA0098FAC1 /* squicklin-gamma.png in Resources */,
 				6AA603B21E863CDA0098FAC1 /* screw-slosher.png in Resources */,
 				6A43BAD51EA0693900A9AA02 /* Home@3x.png in Resources */,
@@ -952,6 +962,7 @@
 				9DF714151EB1F5BC00E9F41A /* WeaponsSelectHandlingManager.swift in Sources */,
 				9D74A75A1E692E5200AC66A6 /* DataSource.swift in Sources */,
 				9D1A03431E69709A00EAFAFB /* NavigationController.swift in Sources */,
+				9DF7141B1EB2ED7D00E9F41A /* AlertControllerManager.swift in Sources */,
 				9D74A7631E6945B300AC66A6 /* WeaponsPerStageStoreManager.swift in Sources */,
 				9DF692021E88F31100E5A063 /* UITableView+Capture.swift in Sources */,
 				9D74A7611E6943D400AC66A6 /* WeaponsPerStageEntity.swift in Sources */,
@@ -963,6 +974,7 @@
 				9DF691FE1E85008400E5A063 /* ContainViewController.swift in Sources */,
 				9D1A033E1E6969C000EAFAFB /* ConstText.swift in Sources */,
 				9D3A43631E680E52001CE036 /* AppDelegate.swift in Sources */,
+				9DF714181EB2DF1000E9F41A /* SortTableViewCell.swift in Sources */,
 				9D1A03411E696EBA00EAFAFB /* ConstColor.swift in Sources */,
 				9D2E6A1C1E8CF03C005F4D7E /* DeviceSizeManager.swift in Sources */,
 			);
