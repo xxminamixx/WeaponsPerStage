@@ -46,13 +46,12 @@ class WeaponsSelectionViewController: UIViewController {
     
 }
 
-
 // MARK: - TableViewDataSource
 extension WeaponsSelectionViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // 武器個数
-        if WeaponsPerStageStoreManager.isFavoriteWeapon() {
+        if WeaponsPerStageStoreManager.isFavoriteWeapon() && !WeaponsSelectHandlingManager.isSort {
             return WeaponsPerStageStoreManager.favoriteWeaponsCount()
         } else {
             return JsonManager.CountAllWeapons()

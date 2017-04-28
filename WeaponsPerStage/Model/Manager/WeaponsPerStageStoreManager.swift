@@ -116,7 +116,7 @@ class WeaponsPerStageStoreManager: NSObject {
     ///   - true : 同じ武器がある
     ///   - false: 同じ武器がない
     static func isSameWeapon(weapon: String) -> Bool {
-        return favoriteWeaponsList().filter("weapon == \(weapon)").count > 0
+        return favoriteWeaponsList().filter("weapon == %@", weapon).count > 0
     }
     
     
@@ -126,7 +126,7 @@ class WeaponsPerStageStoreManager: NSObject {
     static func favoriteDelete(weapon: String) {
         let realm = try! Realm()
         try! realm.write {
-            realm.delete(favoriteWeaponsList().filter("weapon == \(weapon)"))
+            realm.delete(favoriteWeaponsList().filter("weapon == %@", weapon))
         }
     }
     

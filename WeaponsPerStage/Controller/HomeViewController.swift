@@ -170,6 +170,8 @@ extension HomeViewController: WaponsPerStageTableViewCellDelegate {
     func toWeaponSelect(indexPath: IndexPath) {
         let viewController = storyboard?.instantiateViewController(withIdentifier: "ContainViewController")
         IndexManager.indexPath = indexPath
+        // 武器ソートフラグを降ろし、お気に入り一覧を表示させる
+        WeaponsSelectHandlingManager.isSort = false
         self.navigationController?.pushViewController(viewController!, animated: true)
     }
     
