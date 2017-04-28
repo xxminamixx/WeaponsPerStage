@@ -171,7 +171,7 @@ extension HomeViewController: WaponsPerStageTableViewCellDelegate {
         let viewController = storyboard?.instantiateViewController(withIdentifier: "ContainViewController")
         IndexManager.indexPath = indexPath
         // 武器ソートフラグを降ろし、お気に入り一覧を表示させる
-        WeaponsSelectHandlingManager.isSort = false
+        WeaponsSelectHandlingManager.isShowFavorite = true
         self.navigationController?.pushViewController(viewController!, animated: true)
     }
     

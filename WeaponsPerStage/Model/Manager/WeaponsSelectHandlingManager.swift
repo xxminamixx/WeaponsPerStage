@@ -9,6 +9,6 @@
 import UIKit
 
 class WeaponsSelectHandlingManager {
-    // 武器をソートしたかのフラグ
-    static var isSort = false
+    // お気に入りを表示するかのフラグ
+    static var isShowFavorite = false
 }

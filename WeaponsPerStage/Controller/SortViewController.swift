@@ -62,23 +62,34 @@ extension SortViewController: UITableViewDelegate {
         if DataSource.weaponType[indexPath.row] == "すべて" {
             // 武器名DataSourceのfilterを外し全武器格納
             DataSource.weaponNameList = JsonManager.weaponsName()
-            WeaponsSelectHandlingManager.isSort = true
+            WeaponsSelectHandlingManager.isShowFavorite = false
         } else if DataSource.weaponType[indexPath.row] == "お気に入り" {
             // お気に入り武器を表示
             if WeaponsPerStageStoreManager.isFavoriteWeapon() {
                 // お気に入り武器が存在するとき
                 // お気に入り表示を表示する
-                WeaponsSelectHandlingManager.isSort = false
+                
+                // お気に入りボタンを押した時にマスタをお気に入りで更新する
+//                var master: Array<[String:String]> = [:]
+//                for favoriteEntity in WeaponsPerStageStoreManager.favoriteWeaponsList() {
+//                    var weapon = DataSource.masterWeaponList?.filter({$0["name"] == favoriteEntity.weapon})
+//                    master.insert(weapon, at: indexPath.row)
+//                }
+              
+//                DataSource.masterWeaponList = 
+                WeaponsSelectHandlingManager.isShowFavorite = true
             } else {
                 // お気に入り武器が存在しないとき
                 // お気に入りを表示させない
-                WeaponsSelectHandlingManager.isSort = true
+                WeaponsSelectHandlingManager.isShowFavorite = false
             }
         } else {
+            // MARK: マスタを更新
+            
             // 選択した武器種でfilter
             DataSource.masterWeaponList = DataSource.masterWeaponList?.filter({$0["type"] == DataSource.weaponType[indexPath.row] })
             DataSource.weaponNameList = JsonManager.weaponsName()
-            WeaponsSelectHandlingManager.isSort = true
+            WeaponsSelectHandlingManager.isShowFavorite = false
         }
 
         self.slideMenuController()?.closeRight()

@@ -51,7 +51,7 @@ extension WeaponsSelectionViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // 武器個数
-        if WeaponsPerStageStoreManager.isFavoriteWeapon() && !WeaponsSelectHandlingManager.isSort {
+        if WeaponsPerStageStoreManager.isFavoriteWeapon() && WeaponsSelectHandlingManager.isShowFavorite {
             return WeaponsPerStageStoreManager.favoriteWeaponsCount()
         } else {
             return JsonManager.CountAllWeapons()
@@ -61,9 +61,8 @@ extension WeaponsSelectionViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier:  WeaponsTableViewCell.nibName, for: indexPath) as! WeaponsTableViewCell
         
-        if WeaponsPerStageStoreManager.isFavoriteWeapon() && !WeaponsSelectHandlingManager.isSort {
-            // お気に入り武器が永続化されている且つソートが実行されていない
-            
+        if WeaponsPerStageStoreManager.isFavoriteWeapon() && WeaponsSelectHandlingManager.isShowFavorite {
+            // お気に入り武器表示
             if let weapon = WeaponsPerStageStoreManager.favoriteWeaponsList()[indexPath.row].weapon {
                 cell.setup(weapon: weapon, indexPath: indexPath)
             }
@@ -86,6 +85,7 @@ extension WeaponsSelectionViewController: UITableViewDelegate {
     
     func tableView(_ table: UITableView,didSelectRowAt indexPath: IndexPath) {
         // タップした武器名をからDataSourceの武器名、サブ名、スペシャル名を、武器アイコンを変更
+        
         let weaponStage = WeaponsPerStageStoreManager.weaponsPerStageList()[IndexManager.indexPath.row]
         WeaponsPerStageStoreManager.save(closure: {
             weaponStage.weapon = JsonManager.weaponsName()[indexPath.row]
