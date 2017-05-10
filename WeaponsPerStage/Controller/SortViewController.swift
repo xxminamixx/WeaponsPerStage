@@ -70,13 +70,14 @@ extension SortViewController: UITableViewDelegate {
                 // お気に入り表示を表示する
                 
                 // お気に入りボタンを押した時にマスタをお気に入りで更新する
-//                var master: Array<[String:String]> = [:]
-//                for favoriteEntity in WeaponsPerStageStoreManager.favoriteWeaponsList() {
-//                    var weapon = DataSource.masterWeaponList?.filter({$0["name"] == favoriteEntity.weapon})
-//                    master.insert(weapon, at: indexPath.row)
-//                }
-              
-//                DataSource.masterWeaponList = 
+                var master: [[String:String]] = [[:]]
+                for favoriteEntity in WeaponsPerStageStoreManager.favoriteWeaponsList() {
+                    let weapon = DataSource.masterWeaponList?.filter({$0["name"] == favoriteEntity.weapon})
+                    master.append((weapon?[0])!)
+                }
+                // 初期化時の空データを削除
+                master.removeFirst()
+                DataSource.masterWeaponList = master
                 WeaponsSelectHandlingManager.isShowFavorite = true
             } else {
                 // お気に入り武器が存在しないとき

@@ -171,6 +171,17 @@ extension HomeViewController: WaponsPerStageTableViewCellDelegate {
         let viewController = storyboard?.instantiateViewController(withIdentifier: "ContainViewController")
         IndexManager.indexPath = indexPath
         // 武器ソートフラグを降ろし、お気に入り一覧を表示させる
+        var master: [[String:String]] = [[:]]
+        for favoriteEntity in WeaponsPerStageStoreManager.favoriteWeaponsList() {
+            let weapon = DataSource.masterWeaponList?.filter({$0["name"] == favoriteEntity.weapon})
+            master.append((weapon?.first)!)
+            print(master.count)
+            print(master)
+        }
+        // 初期化時の空データを削除
+        master.removeFirst()
+        DataSource.masterWeaponList = master
+        
         WeaponsSelectHandlingManager.isShowFavorite = true
         self.navigationController?.pushViewController(viewController!, animated: true)
     }
