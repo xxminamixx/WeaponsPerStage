@@ -90,6 +90,8 @@ class HomeViewController: UIViewController {
         weaponsPerStageTableView.reloadData()
         // 勝敗ラベルを更新
         winLoseCountLoad()
+        // 武器マスタの初期化
+        DataSource.masterWeaponList = JsonManager.weaponsList()
     }
 
     override func didReceiveMemoryWarning() {
@@ -170,19 +172,22 @@ extension HomeViewController: WaponsPerStageTableViewCellDelegate {
     func toWeaponSelect(indexPath: IndexPath) {
         let viewController = storyboard?.instantiateViewController(withIdentifier: "ContainViewController")
         IndexManager.indexPath = indexPath
-        // 武器ソートフラグを降ろし、お気に入り一覧を表示させる
-        var master: [[String:String]] = [[:]]
-        for favoriteEntity in WeaponsPerStageStoreManager.favoriteWeaponsList() {
-            let weapon = DataSource.masterWeaponList?.filter({$0["name"] == favoriteEntity.weapon})
-            master.append((weapon?.first)!)
-            print(master.count)
-            print(master)
-        }
-        // 初期化時の空データを削除
-        master.removeFirst()
-        DataSource.masterWeaponList = master
         
-        WeaponsSelectHandlingManager.isShowFavorite = true
+        // お気に入りがあったら
+        if WeaponsPerStageStoreManager.isFavoriteWeapon() {
+            // 武器ソートフラグを降ろし、お気に入り一覧を表示させる
+            var master: [[String:String]] = [[:]]
+            for favoriteEntity in WeaponsPerStageStoreManager.favoriteWeaponsList() {
+                let weapon = DataSource.masterWeaponList?.filter({$0["name"] == favoriteEntity.weapon})
+                master.append((weapon?.first)!)
+            }
+            // 初期化時の空データを削除
+            master.removeFirst()
+            DataSource.masterWeaponList = master
+            
+            WeaponsSelectHandlingManager.isShowFavorite = true
+        }
+        
         self.navigationController?.pushViewController(viewController!, animated: true)
     }
     
