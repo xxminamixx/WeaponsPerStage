@@ -30,6 +30,41 @@ class WeaponsPerStageStoreManager: NSObject {
         return realm.objects(WeaponsPerStageEntity.self)
     }
     
+    // MARK: HistoryEntity
+    
+    /// WeaponsPerStageEntityを取得しHistoryEntityに格納し永続化
+    static func addHistory() {
+        var array: [WeaponsPerStageEntity]?
+            
+        // 永続化されているweaponsPerStageを取得
+        for weaponsPerStage in weaponsPerStageList() {
+            array?.append(weaponsPerStage)
+        }
+        let entity = HistoryEntity()
+        entity.weaponsPerStageEntityList = array
+        
+        let realm = try! Realm()
+        try! realm.write {
+            realm.add(entity)
+        }
+    }
+    
+    
+    /// 永続化されているHistoryEntityを返す
+    ///
+    /// - Returns: HistoryEntity
+    static func historyList() -> Results<HistoryEntity> {
+        let realm = try! Realm()
+        return realm.objects(HistoryEntity.self)
+    }
+    
+    /// 永続化HistoryEntityの長さを返す
+    static func historyCount() -> Int {
+        return WeaponsPerStageStoreManager.historyList().count
+    }
+    
+    // MARK: winlose
+    
     static func winloseInit() {
         let realm = try! Realm()
         try! realm.write {
