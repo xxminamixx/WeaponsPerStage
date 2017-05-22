@@ -65,36 +65,36 @@ class WaponsPerStageTableViewCell: UITableViewCell {
     }
     
     @IBAction func winButton(_ sender: Any) {
-        
-        if let winloseValue = WeaponsPerStageStoreManager.winloseValue(indexPath: indexPath) {
-            // winloseプロパティがnilではない場合
-            if winloseValue == "win" {
-                // winボタンを押したとき既にwinが選択済みだった場合
-                WeaponsPerStageStoreManager.both(indexPath: indexPath)
-                winloseStatus = "both"
-            } else {
-                // win以外だった場合
-                WeaponsPerStageStoreManager.win(indexPath: indexPath)
-                winloseStatus = "win"
-            }
-        }
-        
-        buttonColorSwitch()
-        completion()
+        winloseStatusChange(pushButton: "win")
     }
     
     @IBAction func loseButton(_ sender: Any) {
-        
+        winloseStatusChange(pushButton: "lose")
+    }
+    
+    func winloseStatusChange(pushButton: String) {
         if let winloseValue = WeaponsPerStageStoreManager.winloseValue(indexPath: indexPath) {
             // winloseプロパティがnilではない場合
-            if winloseValue == "lose" {
-                // loseボタンを押したとき既にloseが既に選択済みだった場合
+            
+            if winloseValue == pushButton {
+                // 押したボタンが既に選択されていた場合
+                
                 WeaponsPerStageStoreManager.both(indexPath: indexPath)
                 winloseStatus = "both"
             } else {
-                // lose以外だった場合
-                WeaponsPerStageStoreManager.lose(indexPath: indexPath)
-                winloseStatus = "lose"
+                // 押したボタンが選択されていなかった場合
+                
+                if pushButton == "win" {
+                    // winボタンを押していた場合
+                    WeaponsPerStageStoreManager.win(indexPath: indexPath)
+                } else if pushButton == "lose" {
+                    // loseボタンを押していた場合
+                    WeaponsPerStageStoreManager.lose(indexPath: indexPath)
+                } else {
+                    WeaponsPerStageStoreManager.both(indexPath: indexPath)
+                }
+                // 押したボタンのステータスに変更
+                winloseStatus = pushButton
             }
         }
         
