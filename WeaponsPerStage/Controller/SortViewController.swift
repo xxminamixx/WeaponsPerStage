@@ -17,7 +17,7 @@ class SortViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         
-        let nib = UINib.init(nibName: SortTableViewCell.nibName, bundle: nil)
+        let nib = UINib(nibName: SortTableViewCell.nibName, bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: SortTableViewCell.nibName)
         
         super.viewDidLoad()

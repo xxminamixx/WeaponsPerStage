@@ -57,29 +57,29 @@ class HomeViewController: UIViewController {
         separatorView.backgroundColor = ConstColor.iconGreen
         
         // キャプチャボタンをNavigationBarの右に追加
-        let rightCaptureButton = UIButton.init()
-        rightCaptureButton.setImage(UIImage.init(named: "Capture.png"), for: .normal)
+        let rightCaptureButton = UIButton()
+        rightCaptureButton.setImage(UIImage(named: "Capture.png"), for: .normal)
         rightCaptureButton.sizeToFit()
         rightCaptureButton.addTarget(self, action: #selector(capture), for: UIControlEvents.touchUpInside)
         
-         let rightSpaceButton = UIButton.init()
-        rightSpaceButton.contentRect(forBounds: CGRect.init(x: 0, y: 0, width: 20, height: 20))
+        let rightSpaceButton = UIButton()
+        rightSpaceButton.contentRect(forBounds: CGRect(x: 0, y: 0, width: 20, height: 20))
         
-        let rightTweetButton = UIButton.init()
-        rightTweetButton.setImage(UIImage.init(named: "TwitterIcon.png"), for: .normal)
+        let rightTweetButton = UIButton()
+        rightTweetButton.setImage(UIImage(named: "TwitterIcon.png"), for: .normal)
         rightTweetButton.sizeToFit()
         rightTweetButton.addTarget(self, action: #selector(tweetImage), for: UIControlEvents.touchUpInside)
         
-        let rightCaptureButtonItem = UIBarButtonItem.init(customView: rightCaptureButton)
-        let rightSpaceButtonItem = UIBarButtonItem.init(customView: rightSpaceButton)
-        let rightTweetButtonItem = UIBarButtonItem.init(customView: rightTweetButton)
+        let rightCaptureButtonItem = UIBarButtonItem(customView: rightCaptureButton)
+        let rightSpaceButtonItem = UIBarButtonItem(customView: rightSpaceButton)
+        let rightTweetButtonItem = UIBarButtonItem(customView: rightTweetButton)
 
         self.navigationItem.setRightBarButtonItems([rightCaptureButtonItem, rightSpaceButtonItem,rightTweetButtonItem], animated: true)
         
         // ステージと武器一覧のTableViewの初期設定
         weaponsPerStageTableView.dataSource = self
         weaponsPerStageTableView.delegate = self
-        let nib = UINib.init(nibName: WaponsPerStageTableViewCell.nibName, bundle: nil)
+        let nib = UINib(nibName: WaponsPerStageTableViewCell.nibName, bundle: nil)
         weaponsPerStageTableView.register(nib, forCellReuseIdentifier: WaponsPerStageTableViewCell.nibName)
         
         super.viewDidLoad()

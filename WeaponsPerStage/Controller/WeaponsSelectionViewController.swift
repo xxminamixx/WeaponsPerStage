@@ -24,7 +24,7 @@ class WeaponsSelectionViewController: UIViewController {
         // tableView初期設定
         weaponsTableView.dataSource = self
         weaponsTableView.delegate = self
-        let nib = UINib.init(nibName: WeaponsTableViewCell.nibName, bundle: nil)
+        let nib = UINib(nibName: WeaponsTableViewCell.nibName, bundle: nil)
         weaponsTableView.register(nib, forCellReuseIdentifier: WeaponsTableViewCell.nibName)
         
         slideMenuController()?.delegate = self

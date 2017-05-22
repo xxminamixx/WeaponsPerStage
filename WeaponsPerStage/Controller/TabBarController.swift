@@ -25,8 +25,8 @@ class TabBarController: UITabBarController {
         }
         
         // TabBarのアイコン設定
-        tabBar.items?[0].image = UIImage.init(named: "Home.png")
-        tabBar.items?[1].image = UIImage.init(named: "Config.png")
+        tabBar.items?[0].image = UIImage(named: "Home.png")
+        tabBar.items?[1].image = UIImage(named: "Config.png")
         
         // TabBarのタイトル設定
         tabBar.items?[0].title = "ホーム"

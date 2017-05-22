@@ -34,7 +34,7 @@ class WeaponsTableViewCell: UITableViewCell {
     func setup(weapon: String, indexPath: IndexPath) {
         self.weapon.text = weapon
         if let weaponIcon = DataSource.weaponsIconRelation[weapon] {
-            self.weaponIcon.image = UIImage.init(named: weaponIcon)
+            self.weaponIcon.image = UIImage(named: weaponIcon)
         }
         
         storedHandler(weapon: weapon,
