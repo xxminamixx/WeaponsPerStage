@@ -49,22 +49,19 @@ class WaponsPerStageTableViewCell: UITableViewCell {
     /// 自身のプロパティに値をセットする
     ///
     /// - Parameters:
-    ///   - stage: ステージ名
-    ///   - weapon: 武器名
-    ///   - subWeapon: サブ名
-    ///   - specialWeapon: スペシャル名
-    func setup(stage: String, weapon: String, weaponIcon: String, subWeapon: String, specialWeapon: String, winlose: String, indexPath: IndexPath, completion: @escaping () -> Void) {
-        self.stage.text = stage
-        self.weapon.text = weapon
-        
-        self.subWeapon.text = subWeapon
-        self.specialWeapon.text = specialWeapon
-        self.winloseStatus = winlose
+    ///   - entity: ステージと武器情報のエンティティ
+    ///   - indexPath: 選択しているセルのindexPath
+    ///   - completion: winloseボタンを押したときのクロージャ
+    func setup(entity: WeaponsPerStageEntity, indexPath: IndexPath, completion: @escaping () -> Void) {
+        self.stage.text = entity.stage
+        self.weapon.text = entity.weapon
+        self.subWeapon.text = entity.subWeapon
+        self.specialWeapon.text = entity.specialWeapon
+        self.winloseStatus = entity.winlose ?? "both"
         self.indexPath = indexPath
         self.completion = completion
-        self.weaponImage.image = UIImage.init(named: weaponIcon)
+        self.weaponImage.image = UIImage.init(named: entity.weaponIcon ?? "wakaba-shooter.png ")
         buttonColorSwitch()
-        // TODO: 画像表示
     }
     
     @IBAction func winButton(_ sender: Any) {
