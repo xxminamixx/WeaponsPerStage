@@ -37,6 +37,12 @@ class WeaponsPerStageStoreManager: NSObject {
         }
     }
     
+    // 指定したindexにあるwinloseプロパティを取得
+    static func winloseValue(indexPath: IndexPath) -> String? {
+        let array = weaponsPerStageList()
+        return array[indexPath.row].winlose
+    }
+    
     // 指定したindexにあるプロパティをwinに更新
     static func win(indexPath: IndexPath) {
         let array = weaponsPerStageList()
@@ -50,6 +56,14 @@ class WeaponsPerStageStoreManager: NSObject {
         let array = weaponsPerStageList()
         save {
             array[indexPath.row].winlose = "lose"
+        }
+    }
+    
+    // 指定したindexにあるプロパティをbothに更新
+    static func both(indexPath: IndexPath) {
+        let array = weaponsPerStageList()
+        save {
+            array[indexPath.row].winlose = "both"
         }
     }
 

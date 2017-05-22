@@ -65,17 +65,39 @@ class WaponsPerStageTableViewCell: UITableViewCell {
     }
     
     @IBAction func winButton(_ sender: Any) {
-        // TODO: 自身のindexpathと対応したRealmのwinloseプロパティを変更する
-        WeaponsPerStageStoreManager.win(indexPath: indexPath)
-        winloseStatus = "win"
+        
+        if let winloseValue = WeaponsPerStageStoreManager.winloseValue(indexPath: indexPath) {
+            // winloseプロパティがnilではない場合
+            if winloseValue == "win" {
+                // winボタンを押したとき既にwinが選択済みだった場合
+                WeaponsPerStageStoreManager.both(indexPath: indexPath)
+                winloseStatus = "both"
+            } else {
+                // win以外だった場合
+                WeaponsPerStageStoreManager.win(indexPath: indexPath)
+                winloseStatus = "win"
+            }
+        }
+        
         buttonColorSwitch()
         completion()
     }
     
     @IBAction func loseButton(_ sender: Any) {
-        // TODO: 自身のindexpathと対応したRealmのwinloseプロパティを変更する
-        WeaponsPerStageStoreManager.lose(indexPath: indexPath)
-        winloseStatus = "lose"
+        
+        if let winloseValue = WeaponsPerStageStoreManager.winloseValue(indexPath: indexPath) {
+            // winloseプロパティがnilではない場合
+            if winloseValue == "lose" {
+                // loseボタンを押したとき既にloseが既に選択済みだった場合
+                WeaponsPerStageStoreManager.both(indexPath: indexPath)
+                winloseStatus = "both"
+            } else {
+                // lose以外だった場合
+                WeaponsPerStageStoreManager.lose(indexPath: indexPath)
+                winloseStatus = "lose"
+            }
+        }
+        
         buttonColorSwitch()
         completion()
     }
