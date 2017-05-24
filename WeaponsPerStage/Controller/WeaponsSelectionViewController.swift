@@ -24,7 +24,7 @@ class WeaponsSelectionViewController: UIViewController {
         // tableView初期設定
         weaponsTableView.dataSource = self
         weaponsTableView.delegate = self
-        let nib = UINib.init(nibName: WeaponsTableViewCell.nibName, bundle: nil)
+        let nib = UINib(nibName: WeaponsTableViewCell.nibName, bundle: nil)
         weaponsTableView.register(nib, forCellReuseIdentifier: WeaponsTableViewCell.nibName)
         
         slideMenuController()?.delegate = self
@@ -46,18 +46,30 @@ class WeaponsSelectionViewController: UIViewController {
     
 }
 
-
 // MARK: - TableViewDataSource
 extension WeaponsSelectionViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // 武器個数
-        return JsonManager.CountAllWeapons()
+        if WeaponsPerStageStoreManager.isFavoriteWeapon() && WeaponsSelectHandlingManager.isShowFavorite {
+            return WeaponsPerStageStoreManager.favoriteWeaponsCount()
+        } else {
+            return JsonManager.CountAllWeapons()
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier:  WeaponsTableViewCell.nibName, for: indexPath) as! WeaponsTableViewCell
-        cell.setup(weapon: (DataSource.weaponNameList?[indexPath.row])!)
+        
+        if WeaponsPerStageStoreManager.isFavoriteWeapon() && WeaponsSelectHandlingManager.isShowFavorite {
+            // お気に入り武器表示
+            if let weapon = WeaponsPerStageStoreManager.favoriteWeaponsList()[indexPath.row].weapon {
+                cell.setup(weapon: weapon, indexPath: indexPath)
+            }
+        } else {
+            // filterされた武器表示
+            cell.setup(weapon: (DataSource.weaponNameList?[indexPath.row])!, indexPath: indexPath)
+        }
         return cell
     }
 }
@@ -73,6 +85,7 @@ extension WeaponsSelectionViewController: UITableViewDelegate {
     
     func tableView(_ table: UITableView,didSelectRowAt indexPath: IndexPath) {
         // タップした武器名をからDataSourceの武器名、サブ名、スペシャル名を、武器アイコンを変更
+        
         let weaponStage = WeaponsPerStageStoreManager.weaponsPerStageList()[IndexManager.indexPath.row]
         WeaponsPerStageStoreManager.save(closure: {
             weaponStage.weapon = JsonManager.weaponsName()[indexPath.row]

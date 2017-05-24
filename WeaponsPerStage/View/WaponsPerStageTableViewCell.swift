@@ -49,36 +49,55 @@ class WaponsPerStageTableViewCell: UITableViewCell {
     /// 自身のプロパティに値をセットする
     ///
     /// - Parameters:
-    ///   - stage: ステージ名
-    ///   - weapon: 武器名
-    ///   - subWeapon: サブ名
-    ///   - specialWeapon: スペシャル名
-    func setup(stage: String, weapon: String, weaponIcon: String, subWeapon: String, specialWeapon: String, winlose: String, indexPath: IndexPath, completion: @escaping () -> Void) {
-        self.stage.text = stage
-        self.weapon.text = weapon
-        
-        self.subWeapon.text = subWeapon
-        self.specialWeapon.text = specialWeapon
-        self.winloseStatus = winlose
+    ///   - entity: ステージと武器情報のエンティティ
+    ///   - indexPath: 選択しているセルのindexPath
+    ///   - completion: winloseボタンを押したときのクロージャ
+    func setup(entity: WeaponsPerStageEntity, indexPath: IndexPath, completion: @escaping () -> Void) {
+        self.stage.text = entity.stage
+        self.weapon.text = entity.weapon
+        self.subWeapon.text = entity.subWeapon
+        self.specialWeapon.text = entity.specialWeapon
+        self.winloseStatus = entity.winlose ?? "both"
         self.indexPath = indexPath
         self.completion = completion
-        self.weaponImage.image = UIImage.init(named: weaponIcon)
+        self.weaponImage.image = UIImage(named: entity.weaponIcon ?? "wakaba-shooter.png ")
         buttonColorSwitch()
-        // TODO: 画像表示
     }
     
     @IBAction func winButton(_ sender: Any) {
-        // TODO: 自身のindexpathと対応したRealmのwinloseプロパティを変更する
-        WeaponsPerStageStoreManager.win(indexPath: indexPath)
-        winloseStatus = "win"
-        buttonColorSwitch()
-        completion()
+        winloseStatusChange(pushButton: "win")
     }
     
     @IBAction func loseButton(_ sender: Any) {
-        // TODO: 自身のindexpathと対応したRealmのwinloseプロパティを変更する
-        WeaponsPerStageStoreManager.lose(indexPath: indexPath)
-        winloseStatus = "lose"
+        winloseStatusChange(pushButton: "lose")
+    }
+    
+    func winloseStatusChange(pushButton: String) {
+        if let winloseValue = WeaponsPerStageStoreManager.winloseValue(indexPath: indexPath) {
+            // winloseプロパティがnilではない場合
+            
+            if winloseValue == pushButton {
+                // 押したボタンが既に選択されていた場合
+                
+                WeaponsPerStageStoreManager.both(indexPath: indexPath)
+                winloseStatus = "both"
+            } else {
+                // 押したボタンが選択されていなかった場合
+                
+                if pushButton == "win" {
+                    // winボタンを押していた場合
+                    WeaponsPerStageStoreManager.win(indexPath: indexPath)
+                } else if pushButton == "lose" {
+                    // loseボタンを押していた場合
+                    WeaponsPerStageStoreManager.lose(indexPath: indexPath)
+                } else {
+                    WeaponsPerStageStoreManager.both(indexPath: indexPath)
+                }
+                // 押したボタンのステータスに変更
+                winloseStatus = pushButton
+            }
+        }
+        
         buttonColorSwitch()
         completion()
     }

@@ -17,6 +17,8 @@ class WeaponsTableViewCell: UITableViewCell {
     @IBOutlet weak var weapon: UILabel!
     /// 武器アイコン
     @IBOutlet weak var weaponIcon: UIImageView!
+    /// お気に入りボタン
+    @IBOutlet weak var favoriteButton: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -29,10 +31,41 @@ class WeaponsTableViewCell: UITableViewCell {
     /// 武器名を自身のラベルにセットする
     ///
     /// - Parameter weapon: 武器名
-    func setup(weapon: String) {
+    func setup(weapon: String, indexPath: IndexPath) {
         self.weapon.text = weapon
         if let weaponIcon = DataSource.weaponsIconRelation[weapon] {
-            self.weaponIcon.image = UIImage.init(named: weaponIcon)
+            self.weaponIcon.image = UIImage(named: weaponIcon)
+        }
+        
+        storedHandler(weapon: weapon,
+                      exist: { favoriteButton.setTitleColor(ConstColor.purple, for: .normal) },
+                      notEexist: { favoriteButton.setTitleColor(UIColor.gray, for: .normal) })
+        
+    }
+    
+    @IBAction func favoriteButton(_ sender: Any) {
+        if let weapon = weapon.text {
+            storedHandler(weapon: weapon,
+                          exist: {
+                            favoriteButton.setTitleColor(UIColor.gray, for: .normal)
+                            WeaponsPerStageStoreManager.favoriteDelete(weapon: weapon)
+            },
+                          notEexist: {
+                            favoriteButton.setTitleColor(ConstColor.purple, for: .normal)
+                            let entity = FavoriteWeaponsEntity()
+                            entity.weapon = weapon
+                            WeaponsPerStageStoreManager.addFavoriteWeapon(object: entity)
+            })
+        }
+    }
+    
+    private func storedHandler(weapon: String, exist: () -> Void, notEexist: () -> Void ) {
+        if WeaponsPerStageStoreManager.isSameWeapon(weapon: weapon) {
+            // 同じ名前の武器がすでに永続化されている場合
+            exist()
+        } else {
+            // 同じ名前の武器が登録されていない場合
+            notEexist()
         }
     }
     
