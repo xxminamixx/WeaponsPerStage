@@ -34,14 +34,22 @@ class WeaponsPerStageStoreManager: NSObject {
     
     /// WeaponsPerStageEntityを取得しHistoryEntityに格納し永続化
     static func addHistory() {
-        var array: [WeaponsPerStageEntity]?
-            
+        
+//        let realm = try! Realm()
+//        for weaponPerStage in weaponsPerStageList() {
+//            let entity = HistoryEntity()
+//            entity.weaponsPerStageEntityList = weaponPerStage
+//            try! realm.write {
+//                realm.add(entity)
+//            }
+//        }
+        
+        let entity = HistoryEntity()
+        
         // 永続化されているweaponsPerStageを取得
         for weaponsPerStage in weaponsPerStageList() {
-            array?.append(weaponsPerStage)
+            entity.weaponsPerStageEntityList.append(weaponsPerStage.copy() as! WeaponsPerStageEntity)
         }
-        let entity = HistoryEntity()
-        entity.weaponsPerStageEntityList = array
         
         let realm = try! Realm()
         try! realm.write {

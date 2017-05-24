@@ -138,6 +138,8 @@
 		9D74A7611E6943D400AC66A6 /* WeaponsPerStageEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D74A7601E6943D400AC66A6 /* WeaponsPerStageEntity.swift */; };
 		9D74A7631E6945B300AC66A6 /* WeaponsPerStageStoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D74A7621E6945B300AC66A6 /* WeaponsPerStageStoreManager.swift */; };
 		9D74A7651E69552500AC66A6 /* ConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D74A7641E69552500AC66A6 /* ConfigViewController.swift */; };
+		9DB7D0C81ED551570019283E /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB7D0C61ED551570019283E /* HistoryTableViewCell.swift */; };
+		9DB7D0C91ED551570019283E /* HistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DB7D0C71ED551570019283E /* HistoryTableViewCell.xib */; };
 		9DF46B741ED2DEE200D7A510 /* HistoryEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF46B731ED2DEE200D7A510 /* HistoryEntity.swift */; };
 		9DF46B761ED2E82F00D7A510 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF46B751ED2E82F00D7A510 /* HistoryViewController.swift */; };
 		9DF691FE1E85008400E5A063 /* ContainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF691FD1E85008400E5A063 /* ContainViewController.swift */; };
@@ -301,6 +303,8 @@
 		9D74A7601E6943D400AC66A6 /* WeaponsPerStageEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WeaponsPerStageEntity.swift; path = Model/Entity/WeaponsPerStageEntity.swift; sourceTree = "<group>"; };
 		9D74A7621E6945B300AC66A6 /* WeaponsPerStageStoreManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WeaponsPerStageStoreManager.swift; path = Model/Manager/WeaponsPerStageStoreManager.swift; sourceTree = "<group>"; };
 		9D74A7641E69552500AC66A6 /* ConfigViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConfigViewController.swift; path = Controller/ConfigViewController.swift; sourceTree = "<group>"; };
+		9DB7D0C61ED551570019283E /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoryTableViewCell.swift; path = View/HistoryTableViewCell.swift; sourceTree = "<group>"; };
+		9DB7D0C71ED551570019283E /* HistoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HistoryTableViewCell.xib; path = View/HistoryTableViewCell.xib; sourceTree = "<group>"; };
 		9DF46B731ED2DEE200D7A510 /* HistoryEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoryEntity.swift; path = Model/Entity/HistoryEntity.swift; sourceTree = "<group>"; };
 		9DF46B751ED2E82F00D7A510 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoryViewController.swift; path = Controller/HistoryViewController.swift; sourceTree = "<group>"; };
 		9DF691FD1E85008400E5A063 /* ContainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContainViewController.swift; path = Controller/ContainViewController.swift; sourceTree = "<group>"; };
@@ -574,6 +578,8 @@
 				9D74A74F1E692E2C00AC66A6 /* WeaponsTableViewCell.xib */,
 				9DF714161EB2DF1000E9F41A /* SortTableViewCell.swift */,
 				9DF714171EB2DF1000E9F41A /* SortTableViewCell.xib */,
+				9DB7D0C61ED551570019283E /* HistoryTableViewCell.swift */,
+				9DB7D0C71ED551570019283E /* HistoryTableViewCell.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -777,6 +783,7 @@
 				6AA603AD1E863CDA0098FAC1 /* r-blaster-elite.png in Resources */,
 				6AA6037E1E863CDA0098FAC1 /* carbon-roller-deco.png in Resources */,
 				6A43BACA1EA05B9F00A9AA02 /* TwitterIcon@2x.png in Resources */,
+				9DB7D0C91ED551570019283E /* HistoryTableViewCell.xib in Resources */,
 				6AA603A01E863CDA0098FAC1 /* n-zap-89.png in Resources */,
 				6AA6039E1E863CDA0098FAC1 /* n-zap-83.png in Resources */,
 				6AA603821E863CDA0098FAC1 /* dynamo-roller-burned.png in Resources */,
@@ -960,6 +967,7 @@
 			files = (
 				9DF714131EB1B5B900E9F41A /* FavoriteWeaponsEntity.swift in Sources */,
 				9D74A7501E692E2C00AC66A6 /* WaponsPerStageTableViewCell.swift in Sources */,
+				9DB7D0C81ED551570019283E /* HistoryTableViewCell.swift in Sources */,
 				9D74A75E1E692E5E00AC66A6 /* WeaponsSelectionViewController.swift in Sources */,
 				9D74A75D1E692E5E00AC66A6 /* HomeViewController.swift in Sources */,
 				9D374BAD1E810A2A00571005 /* TabBarController.swift in Sources */,

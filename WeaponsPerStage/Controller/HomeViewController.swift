@@ -76,6 +76,15 @@ class HomeViewController: UIViewController {
 
         self.navigationItem.setRightBarButtonItems([rightCaptureButtonItem, rightSpaceButtonItem,rightTweetButtonItem], animated: true)
         
+        let leftSaveEntityButton = UIButton()
+        leftSaveEntityButton.setImage(UIImage(named: "TwitterIcon.png"), for: .normal)
+        leftSaveEntityButton.sizeToFit()
+        leftSaveEntityButton.addTarget(self, action: #selector(saveEntity), for: UIControlEvents.touchUpInside)
+        
+        let leftSaveEntituButtonItem = UIBarButtonItem(customView: leftSaveEntityButton)
+        
+        self.navigationItem.setLeftBarButtonItems([leftSaveEntituButtonItem], animated: true)
+        
         // ステージと武器一覧のTableViewの初期設定
         weaponsPerStageTableView.dataSource = self
         weaponsPerStageTableView.delegate = self
@@ -162,6 +171,12 @@ class HomeViewController: UIViewController {
             twitterPostView.setInitialText(ConstText.twitterInitialText)
             self.present(twitterPostView, animated: true, completion: nil)
         }
+    }
+    
+    /// saveボタンを押したときに呼び出され、表示されているEntityを保存する
+    func saveEntity() {
+        WeaponsPerStageStoreManager.addHistory()
+        present(AlertControllerManager.customActionAlert(title: nil, message: "保存しました", defaultAction: {_ in }), animated: true, completion: nil)
     }
     
 }

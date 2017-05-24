@@ -17,10 +17,17 @@ class HistoryViewController: UIViewController {
         
         tableView.delegate = self
         tableView.dataSource = self
+        
+        let nib = UINib(nibName: HistoryTableViewCell.nibName, bundle: nil)
+        tableView.register(nib, forCellReuseIdentifier: HistoryTableViewCell.nibName)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        tableView.reloadData()
     }
     
 }
@@ -39,7 +46,30 @@ extension HistoryViewController: UITableViewDataSource {
          いつWeaponsePerEntityを永続化するのか
          セルをタップしたとき何をするのか
          */
-        let cell = tableView.dequeueReusableCell(withIdentifier: WaponsPerStageTableViewCell.nibName, for: indexPath) as! WaponsPerStageTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: HistoryTableViewCell.nibName, for: indexPath) as! HistoryTableViewCell
+        
+        let history = WeaponsPerStageStoreManager.historyList()[indexPath.row]
+        // プロパティに値をセットする
+        if let winCount = history.winCount() {
+            cell.winCount.text = String(winCount)
+        } else {
+            // TODO: nilだった場合に何をセットするか検討
+            cell.winCount.text = "0"
+        }
+        
+        if let loseCount = history.loseCount() {
+            cell.loseCount.text = String(loseCount)
+        } else {
+            cell.loseCount.text = "0"
+        }
+        
+        cell.loseCount.text = String(history.loseCount()!)
+        if history.winCount()! > history.loseCount()! {
+            cell.result.text = "win"
+        } else {
+            cell.result.text = "lose"
+        }
+        
         return cell
     }
     
