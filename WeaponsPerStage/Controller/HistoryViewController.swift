@@ -15,9 +15,11 @@ class HistoryViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationItem.title = "履歴"
+        
+        // TableViewの初期設定
         tableView.delegate = self
         tableView.dataSource = self
-        
         let nib = UINib(nibName: HistoryTableViewCell.nibName, bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: HistoryTableViewCell.nibName)
     }
@@ -44,31 +46,8 @@ extension HistoryViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: HistoryTableViewCell.nibName, for: indexPath) as! HistoryTableViewCell
         
         let history = WeaponsPerStageStoreManager.historyList()[indexPath.row]
-        // 勝敗をセット
-        if let winCount = history.winCount() {
-            cell.winCount.text = String(winCount)
-        } else {
-            // TODO: nilだった場合に何をセットするか検討
-            cell.winCount.text = "0"
-        }
         
-        if let loseCount = history.loseCount() {
-            cell.loseCount.text = String(loseCount)
-        } else {
-            cell.loseCount.text = "0"
-        }
-        
-        cell.loseCount.text = String(history.loseCount()!)
-        if history.winCount()! > history.loseCount()! {
-            cell.result.text = "win"
-        } else {
-            cell.result.text = "lose"
-        }
-        
-        // 日付をセット
-        cell.date.text = history.date
-        
-        cell.setup()
+        cell.setup(history: history)
         
         return cell
     }
@@ -86,9 +65,11 @@ extension HistoryViewController: UITableViewDelegate {
     func tableView(_ table: UITableView,didSelectRowAt indexPath: IndexPath) {
         let viewController = storyboard?.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
         // タップしたセルのデータをHomeViewControllerのインスタンス変数に格納
-        let entityList = WeaponsPerStageStoreManager.historyList()[indexPath.row].weaponsPerStageEntityList
+        let history = WeaponsPerStageStoreManager.historyList()[indexPath.row]
+        let entityList = history.weaponsPerStageEntityList
         
         if let winCount = WeaponsPerStageStoreManager.historyList()[indexPath.row].winCount() {
+            // UIの更新に関わるためmainスレッドで処理
             DispatchQueue.main.async {
                 viewController.winCount.text = String(winCount)
             }
@@ -108,9 +89,13 @@ extension HistoryViewController: UITableViewDelegate {
             }
         }
         
+        // 履歴のWeaponsPerStageを遷移先にセット
         for entity in entityList {
             viewController.weaponsePerStageList?.append(entity)
         }
+
+        // 遷移先のタイトルを日時に変更
+        ConstText.home = history.date!
         
         // HomeViewControllerにpushで画面遷移
         self.navigationController?.pushViewController(viewController, animated: true)

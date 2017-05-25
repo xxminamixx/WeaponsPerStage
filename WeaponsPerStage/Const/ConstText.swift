@@ -14,7 +14,7 @@ class ConstText {
     static let special = "special"
     
     /* NavigationTitle */
-    static let home = "イカウェポナー"
+    static var home = "イカウェポナー"
     static let weaponsSelection = "なにを持つ？"
     static let config = "設定"
     

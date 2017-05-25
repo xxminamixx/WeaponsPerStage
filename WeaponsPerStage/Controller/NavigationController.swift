@@ -12,11 +12,18 @@ class NavigationController: UINavigationController {
 
     override func viewDidLoad() {
         navigationBar.barTintColor = ConstColor.iconGreen
-        navigationBar.tintColor = UIColor.white
         
-        // 戻るボタンの文言を設定
-        // TODO: 変更できていないので対処法考える
-        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        //NavigationBarの透明度を消す
+        navigationController?.navigationBar.isTranslucent = false
+        //NavigationBarに乗っている部品の色を白にする
+        navigationController?.navigationBar.tintColor = UIColor.white
+        
+        //タイトル用の色および書式の設定
+        let attrsMainTitle = [
+            NSForegroundColorAttributeName : UIColor.white,
+            NSFontAttributeName : UIFont(name: "Georgia-Bold", size: 15)!
+        ]
+        navigationBar.titleTextAttributes = attrsMainTitle
         
         super.viewDidLoad()
     }

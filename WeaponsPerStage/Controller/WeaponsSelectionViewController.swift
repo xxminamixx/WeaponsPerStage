@@ -17,6 +17,10 @@ class WeaponsSelectionViewController: UIViewController {
     override func viewDidLoad() {
         // NavigationBarのタイトル
         navigationItem.title = ConstText.weaponsSelection
+        //NavigationBarの透明度を消す
+        navigationController?.navigationBar.isTranslucent = false
+        //NavigationBarに乗っている部品の色を白にする
+        navigationController?.navigationBar.tintColor = UIColor.white
         
         // 武器名配列を初期化
         DataSource.weaponNameList = JsonManager.weaponsName()

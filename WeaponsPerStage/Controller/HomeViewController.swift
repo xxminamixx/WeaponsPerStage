@@ -240,13 +240,6 @@ extension HomeViewController: UITableViewDataSource {
         // セルのデリゲート設定
         cell.delegate = self
         
-        // TODO: 強制アンラップしているが、nil判定が必要
-//        let weaponStage = WeaponsPerStageStoreManager.weaponsPerStageList()[indexPath.row]
-//        cell.setup(entity: weaponStage, indexPath: indexPath, completion: {
-//            self.winCount.text = WeaponsPerStageStoreManager.winCount().description
-//            self.loseCount.text = WeaponsPerStageStoreManager.loseCount().description
-//        })
-        
         if let weaponsStage = weaponsePerStageList?[indexPath.row] {
             cell.setup(entity: weaponsStage, indexPath: indexPath, completion: {
                 self.winLoseCountLoad()

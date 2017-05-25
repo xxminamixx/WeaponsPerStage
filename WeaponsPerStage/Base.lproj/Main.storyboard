@@ -372,7 +372,7 @@
         <!--Item-->
         <scene sceneID="54z-LB-RdX">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7W6-qP-oGW" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7W6-qP-oGW" customClass="NavigationController" customModule="イカウェポナー" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="ntL-eZ-6fW"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="dbp-Ts-DzN">

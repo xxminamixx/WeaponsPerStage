@@ -25,7 +25,31 @@ class HistoryTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
-    func setup() {
+    func setup(history: HistoryEntity) {
+        
+        // 勝敗をセット
+        if let winCount = history.winCount() {
+            self.winCount.text = String(winCount)
+        } else {
+            // TODO: nilだった場合に何をセットするか検討
+            self.winCount.text = "0"
+        }
+        
+        if let loseCount = history.loseCount() {
+            self.loseCount.text = String(loseCount)
+        } else {
+            self.loseCount.text = "0"
+        }
+        
+        if history.winCount()! > history.loseCount()! {
+            result.text = "win"
+        } else {
+            result.text = "lose"
+        }
+        
+        // 日付をセット
+        date.text = history.date
+
         /// 勝敗ラベルの背景色を変更
         result.textColor = UIColor.white
         if result.text == "win" {
