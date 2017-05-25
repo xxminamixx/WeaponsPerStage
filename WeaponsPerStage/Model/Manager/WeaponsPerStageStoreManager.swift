@@ -35,20 +35,14 @@ class WeaponsPerStageStoreManager: NSObject {
     /// WeaponsPerStageEntityを取得しHistoryEntityに格納し永続化
     static func addHistory() {
         
-//        let realm = try! Realm()
-//        for weaponPerStage in weaponsPerStageList() {
-//            let entity = HistoryEntity()
-//            entity.weaponsPerStageEntityList = weaponPerStage
-//            try! realm.write {
-//                realm.add(entity)
-//            }
-//        }
-        
         let entity = HistoryEntity()
         
-        // 永続化されているweaponsPerStageを取得
-        for weaponsPerStage in weaponsPerStageList() {
-            entity.weaponsPerStageEntityList.append(weaponsPerStage.copy() as! WeaponsPerStageEntity)
+        // 永続化されているweaponsPerStageの中でリレーションプロパティがfalseのものを取得
+        for weaponsPerStage in weaponsPerStageList().filter({!($0.isRelationToHistory.value!)}) {
+            let copyInstance = weaponsPerStage.copy() as! WeaponsPerStageEntity
+            // リレーションフラグをtrueにしHistoryに格納
+            copyInstance.isRelationToHistory.value = true
+            entity.weaponsPerStageEntityList.append(copyInstance)
         }
         
         let realm = try! Realm()
@@ -112,12 +106,12 @@ class WeaponsPerStageStoreManager: NSObject {
 
     static func winCount() -> Int {
         let array = weaponsPerStageList()
-        return array.filter({ $0.winlose == "win" }).count
+        return array.filter({!( $0.isRelationToHistory.value! )}).filter({ $0.winlose == "win" }).count
     }
     
     static func loseCount() -> Int {
         let array = weaponsPerStageList()
-        return array.filter({ $0.winlose == "lose" }).count
+        return array.filter({!( $0.isRelationToHistory.value! )}).filter({ $0.winlose == "lose" }).count
     }
 
     // お気に入りも消える可能性あり

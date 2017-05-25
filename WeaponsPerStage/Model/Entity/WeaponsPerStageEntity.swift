@@ -16,8 +16,10 @@ class WeaponsPerStageEntity: Object, NSCopying {
     dynamic var subWeapon: String?
     dynamic var specialWeapon: String?
     dynamic var winlose: String?
+    // 履歴とリレーションをもっているか判定
+    var isRelationToHistory = RealmOptional<Bool>()
     
-    convenience init(stage: String, weapon: String, weaponIcon: String, subWeapon: String, specialWeapon: String, winlose: String) {
+    convenience init(stage: String, weapon: String, weaponIcon: String, subWeapon: String, specialWeapon: String, winlose: String, isRelationToHistory: Bool) {
         self.init()
         self.stage = stage
         self.weapon = weapon
@@ -25,10 +27,11 @@ class WeaponsPerStageEntity: Object, NSCopying {
         self.subWeapon = subWeapon
         self.specialWeapon = specialWeapon
         self.winlose = winlose
+        self.isRelationToHistory.value = isRelationToHistory
     }
     
     func copy(with zone: NSZone?) -> Any {
-        let instance = WeaponsPerStageEntity.init(stage: stage!, weapon: weapon!, weaponIcon: weaponIcon!, subWeapon: subWeapon!, specialWeapon: specialWeapon!, winlose: winlose!)
+        let instance = WeaponsPerStageEntity.init(stage: stage!, weapon: weapon!, weaponIcon: weaponIcon!, subWeapon: subWeapon!, specialWeapon: specialWeapon!, winlose: winlose!, isRelationToHistory: isRelationToHistory.value!)
         return instance
     }
 }
