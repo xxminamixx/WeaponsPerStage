@@ -30,6 +30,9 @@ class HomeViewController: UIViewController {
     /// 敗北数をカウント
     @IBOutlet weak var loseCount: UILabel!
     
+    /// TableViewに表示するDataSource
+    var weaponsePerStageList:[WeaponsPerStageEntity]? = []
+    
     override func viewDidLoad() {
         // NavigationBarのタイトル
         navigationItem.title = ConstText.home
@@ -91,6 +94,18 @@ class HomeViewController: UIViewController {
         let nib = UINib(nibName: WaponsPerStageTableViewCell.nibName, bundle: nil)
         weaponsPerStageTableView.register(nib, forCellReuseIdentifier: WaponsPerStageTableViewCell.nibName)
         
+        // TableViewが参照する初期データを設定
+        if (weaponsePerStageList?.count)! <= 0 {
+            // 配列の長さが0以下の場合
+            // TODO: Home画面の勝敗数が履歴の合計になってしまうため修正したい
+            
+//                for weaponsePerStage in WeaponsPerStageStoreManager.weaponsPerStageList().filter({$0.isRelationToHistory.value!}) {
+            for weaponsePerStage in WeaponsPerStageStoreManager.weaponsPerStageList() {
+                self.weaponsePerStageList?.append(weaponsePerStage)
+            }
+        }
+
+        
         super.viewDidLoad()
     }
     
@@ -108,8 +123,8 @@ class HomeViewController: UIViewController {
     }
     
     func winLoseCountLoad() {
-        self.winCount.text = WeaponsPerStageStoreManager.winCount().description
-        self.loseCount.text = WeaponsPerStageStoreManager.loseCount().description
+        self.winCount.text = String((self.weaponsePerStageList?.filter({$0.winlose == "win"}).count)!)
+        self.loseCount.text = String((self.weaponsePerStageList?.filter({$0.winlose == "lose"}).count)!)
     }
     
     
@@ -223,11 +238,20 @@ extension HomeViewController: UITableViewDataSource {
         cell.delegate = self
         
         // TODO: 強制アンラップしているが、nil判定が必要
-        let weaponStage = WeaponsPerStageStoreManager.weaponsPerStageList()[indexPath.row]
-        cell.setup(entity: weaponStage, indexPath: indexPath, completion: {
-            self.winCount.text = WeaponsPerStageStoreManager.winCount().description
-            self.loseCount.text = WeaponsPerStageStoreManager.loseCount().description
-        })
+//        let weaponStage = WeaponsPerStageStoreManager.weaponsPerStageList()[indexPath.row]
+//        cell.setup(entity: weaponStage, indexPath: indexPath, completion: {
+//            self.winCount.text = WeaponsPerStageStoreManager.winCount().description
+//            self.loseCount.text = WeaponsPerStageStoreManager.loseCount().description
+//        })
+        
+        if let weaponsStage = weaponsePerStageList?[indexPath.row] {
+            cell.setup(entity: weaponsStage, indexPath: indexPath, completion: {
+                //                self.winCount.text = WeaponsPerStageStoreManager.winCount().description
+                //                self.loseCount.text = WeaponsPerStageStoreManager.loseCount().description
+                self.winCount.text = String((self.weaponsePerStageList?.filter({$0.winlose == "win"}).count)!)
+                self.loseCount.text = String((self.weaponsePerStageList?.filter({$0.winlose == "lose"}).count)!)
+            })
+        }
         
         cell.buttonColorSwitch()
         return cell

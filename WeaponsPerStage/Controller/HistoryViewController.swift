@@ -83,6 +83,37 @@ extension HistoryViewController: UITableViewDelegate {
         return 100
     }
     
-    func tableView(_ table: UITableView,didSelectRowAt indexPath: IndexPath) {}
+    func tableView(_ table: UITableView,didSelectRowAt indexPath: IndexPath) {
+        let viewController = storyboard?.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+        // タップしたセルのデータをHomeViewControllerのインスタンス変数に格納
+        let entityList = WeaponsPerStageStoreManager.historyList()[indexPath.row].weaponsPerStageEntityList
+        
+        if let winCount = WeaponsPerStageStoreManager.historyList()[indexPath.row].winCount() {
+            DispatchQueue.main.async {
+                viewController.winCount.text = String(winCount)
+            }
+        } else {
+            DispatchQueue.main.async {
+                viewController.winCount.text = "0"
+            }
+        }
+        
+        if let loseCount = WeaponsPerStageStoreManager.historyList()[indexPath.row].loseCount() {
+            DispatchQueue.main.async {
+                viewController.loseCount.text = String(loseCount)
+            }
+        } else {
+            DispatchQueue.main.async {
+                viewController.loseCount.text = "0"
+            }
+        }
+        
+        for entity in entityList {
+            viewController.weaponsePerStageList?.append(entity)
+        }
+        
+        // HomeViewControllerにpushで画面遷移
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
     
 }
