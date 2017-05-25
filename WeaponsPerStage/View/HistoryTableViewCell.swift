@@ -25,4 +25,20 @@ class HistoryTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
+    func setup() {
+        /// 勝敗ラベルの背景色を変更
+        result.textColor = UIColor.white
+        if result.text == "win" {
+            // 勝敗ラベルがwinだった場合、ラベル背景を紫に変更
+            result.backgroundColor = ConstColor.purple
+        } else {
+            // 勝敗ラベルがloseだった場合、ラベル背景を青に変更
+            result.backgroundColor = ConstColor.skyBlue
+        }
+        
+        // 勝敗カウントの文字色を変更
+        winCount.textColor = ConstColor.purple
+        loseCount.textColor = ConstColor.skyBlue
+    }
+    
 }

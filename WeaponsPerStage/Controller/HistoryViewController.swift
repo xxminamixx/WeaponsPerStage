@@ -41,15 +41,10 @@ extension HistoryViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        /* TODO: 
-         カスタムセルを考えて作成
-         いつWeaponsePerEntityを永続化するのか
-         セルをタップしたとき何をするのか
-         */
         let cell = tableView.dequeueReusableCell(withIdentifier: HistoryTableViewCell.nibName, for: indexPath) as! HistoryTableViewCell
         
         let history = WeaponsPerStageStoreManager.historyList()[indexPath.row]
-        // プロパティに値をセットする
+        // 勝敗をセット
         if let winCount = history.winCount() {
             cell.winCount.text = String(winCount)
         } else {
@@ -69,6 +64,11 @@ extension HistoryViewController: UITableViewDataSource {
         } else {
             cell.result.text = "lose"
         }
+        
+        // 日付をセット
+        cell.date.text = history.date
+        
+        cell.setup()
         
         return cell
     }

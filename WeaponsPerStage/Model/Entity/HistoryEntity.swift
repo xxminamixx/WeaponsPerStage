@@ -12,16 +12,13 @@ import RealmSwift
 class HistoryEntity: Object {
     
     /// weaponsPerStageEntityを保持
-//    dynamic var weaponsPerStageEntityList: [WeaponsPerStageEntity]?
     let weaponsPerStageEntityList = List<WeaponsPerStageEntity>()
+    dynamic var date: String?
     
     /// 自身のプロパティから勝利ステージの数を返す
     ///
     /// - Returns: 勝利数を返す
     func winCount() -> Int? {
-//        guard weaponsPerStageEntityList = weaponsPerStageEntityList else {
-//            return nil
-//        }
         return weaponsPerStageEntityList.filter({$0.winlose == "win"}).count
     }
     
@@ -29,9 +26,6 @@ class HistoryEntity: Object {
     ///
     /// - Returns: 敗北数
     func loseCount() -> Int? {
-//        guard let weaponsPerStageEntityList = weaponsPerStageEntityList else {
-//            return nil
-//        }
         return weaponsPerStageEntityList.filter({$0.winlose == "lose"}).count
     }
     

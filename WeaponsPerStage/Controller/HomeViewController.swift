@@ -97,14 +97,12 @@ class HomeViewController: UIViewController {
         // TableViewが参照する初期データを設定
         if (weaponsePerStageList?.count)! <= 0 {
             // 配列の長さが0以下の場合
-            // TODO: Home画面の勝敗数が履歴の合計になってしまうため修正したい
-            
-//                for weaponsePerStage in WeaponsPerStageStoreManager.weaponsPerStageList().filter({$0.isRelationToHistory.value!}) {
             for weaponsePerStage in WeaponsPerStageStoreManager.weaponsPerStageList() {
-                self.weaponsePerStageList?.append(weaponsePerStage)
+                if !weaponsePerStage.isRelationToHistory.value! {
+                    self.weaponsePerStageList?.append(weaponsePerStage)
+                }
             }
         }
-
         
         super.viewDidLoad()
     }
@@ -190,7 +188,12 @@ class HomeViewController: UIViewController {
     
     /// saveボタンを押したときに呼び出され、表示されているEntityを保存する
     func saveEntity() {
-        WeaponsPerStageStoreManager.addHistory()
+        // 打刻時間を取得
+        let date = Date()
+        let format = DateFormatter()
+        format.dateFormat = "yyyy/MM/dd HH:mm"
+        
+        WeaponsPerStageStoreManager.addHistory(date: format.string(from: date))
         present(AlertControllerManager.customActionAlert(title: nil, message: "保存しました", defaultAction: {_ in }), animated: true, completion: nil)
     }
     
@@ -246,10 +249,7 @@ extension HomeViewController: UITableViewDataSource {
         
         if let weaponsStage = weaponsePerStageList?[indexPath.row] {
             cell.setup(entity: weaponsStage, indexPath: indexPath, completion: {
-                //                self.winCount.text = WeaponsPerStageStoreManager.winCount().description
-                //                self.loseCount.text = WeaponsPerStageStoreManager.loseCount().description
-                self.winCount.text = String((self.weaponsePerStageList?.filter({$0.winlose == "win"}).count)!)
-                self.loseCount.text = String((self.weaponsePerStageList?.filter({$0.winlose == "lose"}).count)!)
+                self.winLoseCountLoad()
             })
         }
         

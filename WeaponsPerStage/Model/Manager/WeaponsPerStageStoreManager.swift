@@ -33,7 +33,9 @@ class WeaponsPerStageStoreManager: NSObject {
     // MARK: HistoryEntity
     
     /// WeaponsPerStageEntityを取得しHistoryEntityに格納し永続化
-    static func addHistory() {
+    ///
+    /// - Parameter date: 永続化するときの時刻
+    static func addHistory(date: String) {
         
         let entity = HistoryEntity()
         
@@ -44,6 +46,9 @@ class WeaponsPerStageStoreManager: NSObject {
             copyInstance.isRelationToHistory.value = true
             entity.weaponsPerStageEntityList.append(copyInstance)
         }
+        
+        // 永続化時刻を保持
+        entity.date = date
         
         let realm = try! Realm()
         try! realm.write {
