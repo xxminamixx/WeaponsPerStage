@@ -15,6 +15,8 @@ class TabBarController: UITabBarController {
         
         // タブバーの色を設定
         tabBar.barTintColor = UIColor.white
+        // タブバーの透明度を消す
+        tabBar.alpha = 1.0
         // 選択時の色を設定
         UITabBar.appearance().tintColor = ConstColor.iconGreen
         
@@ -26,11 +28,13 @@ class TabBarController: UITabBarController {
         
         // TabBarのアイコン設定
         tabBar.items?[0].image = UIImage(named: "Home.png")
-        tabBar.items?[1].image = UIImage(named: "Config.png")
+        tabBar.items?[1].image = UIImage(named: "Home.png")
+        tabBar.items?[2].image = UIImage(named: "Config.png")
         
         // TabBarのタイトル設定
         tabBar.items?[0].title = "ホーム"
-        tabBar.items?[1].title = "設定"
+        tabBar.items?[1].title = "履歴"
+        tabBar.items?[2].title = "設定"
     }
 
     override func didReceiveMemoryWarning() {
