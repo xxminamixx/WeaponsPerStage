@@ -46,4 +46,10 @@ class ConfigViewController: UIViewController {
         }), animated: true, completion: nil)
 
     }
+    
+    @IBAction func formatSetWeapon(_ sender: Any) {
+    }
+    
+    @IBAction func formatFavorite(_ sender: Any) {
+    }
 }
