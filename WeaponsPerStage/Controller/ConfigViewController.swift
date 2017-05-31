@@ -47,9 +47,27 @@ class ConfigViewController: UIViewController {
 
     }
     
+    /// 選択した武器を全て初期化
     @IBAction func formatSetWeapon(_ sender: Any) {
+        WeaponsPerStageStoreManager.selectWeaponInit()
+        
+        // アラート表示
+        present(AlertControllerManager.customActionAlert(title: nil, message: "武器の初期化に成功しました", defaultAction: {_ in
+            // タブ切り替え処理
+            self.tabBarController?.selectedIndex = 0
+        }), animated: true, completion: nil)
+
     }
     
+    /// お気に入りを初期化
     @IBAction func formatFavorite(_ sender: Any) {
+        WeaponsPerStageStoreManager.favoriteDeleteAll()
+        
+        // アラート表示
+        present(AlertControllerManager.customActionAlert(title: nil, message: "お気に入り初期化に成功しました", defaultAction: {_ in
+            // タブ切り替え処理
+            self.tabBarController?.selectedIndex = 0
+        }), animated: true, completion: nil)
+
     }
 }
