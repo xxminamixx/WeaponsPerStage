@@ -19,20 +19,20 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="weapon" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NTj-k4-dnN">
-                        <rect key="frame" x="76" y="13.5" width="246" height="17"/>
+                        <rect key="frame" x="86" y="13.5" width="236" height="17"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Eso-JU-8Ke">
-                        <rect key="frame" x="30" y="3" width="36" height="36"/>
+                        <rect key="frame" x="40" y="3" width="36" height="36"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="36" id="P8M-aZ-Vb4"/>
                             <constraint firstAttribute="width" constant="36" id="kPV-2E-NWo"/>
                         </constraints>
                     </imageView>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M5a-Jm-mPH">
-                        <rect key="frame" x="5" y="12" width="20" height="20"/>
+                        <rect key="frame" x="10" y="12" width="20" height="20"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="20" id="Sua-sE-rEX"/>
                             <constraint firstAttribute="height" constant="20" id="bQI-on-d2F"/>
@@ -45,13 +45,23 @@
                             <action selector="favoriteButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="iXP-db-fk1"/>
                         </connections>
                     </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ful-O3-MCC">
+                        <rect key="frame" x="40" y="0.0" width="280" height="44"/>
+                        <connections>
+                            <action selector="selectButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Pf1-Jl-KMf"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="M5a-Jm-mPH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="6zx-4J-CQr"/>
+                    <constraint firstItem="M5a-Jm-mPH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="6zx-4J-CQr"/>
+                    <constraint firstAttribute="bottom" secondItem="ful-O3-MCC" secondAttribute="bottom" id="ANm-9G-1gm"/>
                     <constraint firstItem="M5a-Jm-mPH" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="AXP-cw-5f7"/>
-                    <constraint firstItem="Eso-JU-8Ke" firstAttribute="leading" secondItem="M5a-Jm-mPH" secondAttribute="trailing" constant="5" id="Ta1-xg-lGv"/>
+                    <constraint firstAttribute="trailing" secondItem="ful-O3-MCC" secondAttribute="trailing" id="E30-XN-FZB"/>
+                    <constraint firstItem="Eso-JU-8Ke" firstAttribute="leading" secondItem="ful-O3-MCC" secondAttribute="leading" id="IaE-Gf-g5p"/>
+                    <constraint firstItem="Eso-JU-8Ke" firstAttribute="leading" secondItem="M5a-Jm-mPH" secondAttribute="trailing" constant="10" id="Ta1-xg-lGv"/>
                     <constraint firstItem="NTj-k4-dnN" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="bCa-FH-NXk"/>
                     <constraint firstItem="NTj-k4-dnN" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="10" id="cbz-xL-2wi"/>
+                    <constraint firstItem="ful-O3-MCC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="tHa-LS-lWg"/>
                     <constraint firstItem="NTj-k4-dnN" firstAttribute="leading" secondItem="Eso-JU-8Ke" secondAttribute="trailing" constant="10" id="xFl-ZJ-ddC"/>
                     <constraint firstItem="Eso-JU-8Ke" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="xgX-1M-Q09"/>
                 </constraints>

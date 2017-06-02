@@ -19,6 +19,9 @@ class WeaponsTableViewCell: UITableViewCell {
     @IBOutlet weak var weaponIcon: UIImageView!
     /// お気に入りボタン
     @IBOutlet weak var favoriteButton: UIButton!
+    /// indexPath
+    var indexPath: IndexPath = [0, 0]
+    var delegate : WaponsPerStageTableViewCellDelegate?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -33,6 +36,7 @@ class WeaponsTableViewCell: UITableViewCell {
     /// - Parameter weapon: 武器名
     func setup(weapon: String, indexPath: IndexPath) {
         self.weapon.text = weapon
+        self.indexPath = indexPath
         if let weaponIcon = DataSource.weaponsIconRelation[weapon] {
             self.weaponIcon.image = UIImage(named: weaponIcon)
         }
@@ -57,6 +61,10 @@ class WeaponsTableViewCell: UITableViewCell {
                             WeaponsPerStageStoreManager.addFavoriteWeapon(object: entity)
             })
         }
+    }
+    
+    @IBAction func selectButton(_ sender: Any) {
+        delegate?.toWeaponSelect(indexPath: indexPath)
     }
     
     private func storedHandler(weapon: String, exist: () -> Void, notEexist: () -> Void ) {
