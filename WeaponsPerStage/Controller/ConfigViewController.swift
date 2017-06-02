@@ -22,15 +22,24 @@ class ConfigViewController: UIViewController {
 
     @IBAction func format(_ sender: Any) {
         
-        // 全データ削除
-        WeaponsPerStageStoreManager.DeleteAll()
-        // 初期データを流し込む
-        JsonManager.initUserData()
-        
         // アラート表示
-        present(AlertControllerManager.customActionAlert(title: nil, message: "初期化に成功しました", defaultAction: {_ in
-            // タブ切り替え処理
-            self.tabBarController?.selectedIndex = 0
+        present(AlertControllerManager.customActionAlert(title: nil, message: "本当に初期化しますか？", defaultAction: {_ in
+            
+            // 全データ削除
+            WeaponsPerStageStoreManager.DeleteAll()
+            // 初期データを流し込む
+            JsonManager.initUserData()
+            
+            let alert = AlertControllerManager.noActionAlert(title: nil, message: "初期化に成功しました")
+                self.present(alert, animated: true, completion: {
+                // アラートを閉じる
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
+                    alert.dismiss(animated: true, completion: {
+                        // タブ切り替え処理
+                        self.tabBarController?.selectedIndex = 0
+                    })
+                })
+            })
         }), animated: true, completion: nil)
     }
     
