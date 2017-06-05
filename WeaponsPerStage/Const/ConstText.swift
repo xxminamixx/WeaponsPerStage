@@ -18,6 +18,9 @@ class ConstText {
     static let weaponsSelection = "なにを持つ？"
     static let config = "設定"
     
+    /* アラート関連 */
+    static let allDeleteMessage = "本当に初期化しますか？"
+    
     /* Twitter関連 */
     static let twitterInitialText = "対抗戦の結果です。\n#イカウェポナー\n#対抗戦\n#スプラトゥーン"
 }
