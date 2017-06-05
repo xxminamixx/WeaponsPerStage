@@ -180,13 +180,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="c3J-uQ-Lkx">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="c3J-uQ-Lkx">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DUY-aU-6Ap" firstAttribute="top" secondItem="c3J-uQ-Lkx" secondAttribute="bottom" id="A8W-KD-Kpg"/>
+                            <constraint firstAttribute="trailing" secondItem="c3J-uQ-Lkx" secondAttribute="trailing" id="EAE-Wf-k9X"/>
+                            <constraint firstItem="c3J-uQ-Lkx" firstAttribute="leading" secondItem="NHM-HW-Dr2" secondAttribute="leading" id="KSX-Ts-caP"/>
+                            <constraint firstItem="c3J-uQ-Lkx" firstAttribute="top" secondItem="NHM-HW-Dr2" secondAttribute="top" id="ZLq-4o-VJe"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="tableView" destination="c3J-uQ-Lkx" id="Vpw-fO-klq"/>
