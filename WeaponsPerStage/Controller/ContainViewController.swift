@@ -27,6 +27,8 @@ class ContainViewController: SlideMenuController {
 
         // NavigationBarにボタン追加
         self.addRightBarButtonWithImage(UIImage(named: "Sort.png")!)
+        // ステータスバーを隠さない
+        SlideMenuOptions.hideStatusBar = false
         
         super.viewDidLoad()
     }
