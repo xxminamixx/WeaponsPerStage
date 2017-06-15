@@ -46,6 +46,31 @@ class WeaponsSelectionViewController: UIViewController {
     
 }
 
+// MARK: WaponsPerStageTableViewCellDelegate
+extension WeaponsSelectionViewController: WaponsPerStageTableViewCellDelegate {
+    
+    func toWeaponSelect(indexPath: IndexPath) {
+        // タップした武器名をからDataSourceの武器名、サブ名、スペシャル名を、武器アイコンを変更
+        
+        let weaponStage = WeaponsPerStageStoreManager.weaponsPerStageList()[IndexManager.indexPath.row]
+        WeaponsPerStageStoreManager.save(closure: {
+            weaponStage.weapon = JsonManager.weaponsName()[indexPath.row]
+            weaponStage.subWeapon = JsonManager.subWeaponsNameList()[indexPath.row]
+            weaponStage.specialWeapon = JsonManager.specialWeaponsList()[indexPath.row]
+            
+            if let weaponIcon = DataSource.weaponsIconRelation[JsonManager.weaponsName()[indexPath.row]] {
+                // データソースから武器アイコンをセットする
+                weaponStage.weaponIcon = weaponIcon
+            }
+            
+        })
+        
+        // ポップして前画面に戻る
+        _ = navigationController?.popToRootViewController(animated: true)
+    }
+    
+}
+
 // MARK: - TableViewDataSource
 extension WeaponsSelectionViewController: UITableViewDataSource {
     
@@ -60,6 +85,8 @@ extension WeaponsSelectionViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier:  WeaponsTableViewCell.nibName, for: indexPath) as! WeaponsTableViewCell
+        
+        cell.delegate = self
         
         if WeaponsPerStageStoreManager.isFavoriteWeapon() && WeaponsSelectHandlingManager.isShowFavorite {
             // お気に入り武器表示
@@ -83,25 +110,6 @@ extension WeaponsSelectionViewController: UITableViewDelegate {
         return 50
     }
     
-    func tableView(_ table: UITableView,didSelectRowAt indexPath: IndexPath) {
-        // タップした武器名をからDataSourceの武器名、サブ名、スペシャル名を、武器アイコンを変更
-        
-        let weaponStage = WeaponsPerStageStoreManager.weaponsPerStageList()[IndexManager.indexPath.row]
-        WeaponsPerStageStoreManager.save(closure: {
-            weaponStage.weapon = JsonManager.weaponsName()[indexPath.row]
-            weaponStage.subWeapon = JsonManager.subWeaponsNameList()[indexPath.row]
-            weaponStage.specialWeapon = JsonManager.specialWeaponsList()[indexPath.row]
-            
-            if let weaponIcon = DataSource.weaponsIconRelation[JsonManager.weaponsName()[indexPath.row]] {
-                // データソースから武器アイコンをセットする
-                weaponStage.weaponIcon = weaponIcon
-            }
-            
-        })
-        
-        // ポップして前画面に戻る
-        _ = navigationController?.popToRootViewController(animated: true)
-    }
 }
 
 extension WeaponsSelectionViewController: SlideMenuControllerDelegate {

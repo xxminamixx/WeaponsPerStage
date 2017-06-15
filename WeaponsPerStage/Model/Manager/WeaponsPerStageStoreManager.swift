@@ -144,6 +144,25 @@ class WeaponsPerStageStoreManager: NSObject {
         }
     }
     
+    /// お気に入りを全削除
+    static func favoriteDeleteAll() {
+        let realm = try! Realm()
+        try! realm.write {
+            realm.delete(favoriteWeaponsList())
+        }
+    }
+    
+    /// 選択武器初期化
+    static func selectWeaponInit() {
+        let realm = try! Realm()
+        try! realm.write {
+            weaponsPerStageList().setValue("わかばシューター", forKey: "weapon")
+            weaponsPerStageList().setValue("wakaba-shooter.png", forKey: "weaponIcon")
+            weaponsPerStageList().setValue("スプラッシュボム", forKey: "subWeapon")
+            weaponsPerStageList().setValue("バリア", forKey: "specialWeapon")
+        }
+    }
+    
     // MARK: Utility
     
     /// クロージャに更新処理を渡す
